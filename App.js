@@ -7,15 +7,30 @@ import store from './app/store'
 import { Provider } from 'react-redux'
 import LoginScreen from './screens/LoginScreen';
 
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Provider store={store}>
-        <Stack.Navigator>
-          <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Navigator
+          // screenOptions={{
+          //   headerShown: false
+          // }}
+        >
+          <Stack.Screen name="Login" component={LoginScreen} 
+            options={{
+              title: 'Login',
+              headerStyle: {
+                backgroundColor: '#f4511e',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+              headerTitleAlign: 'center'
+            }}
+          />
           <Stack.Screen name="Home" component={HomeScreen} />
         </Stack.Navigator>
       </Provider>
