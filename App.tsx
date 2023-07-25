@@ -16,6 +16,14 @@ import {
 import { useBearStore } from './app/store.zustand';
 import { useBoundStore } from './app/store.zustandCombine';
 
+import { NavigationContainer } from '@react-navigation/native';
+import 'react-native-gesture-handler';
+
+import { createStackNavigator } from '@react-navigation/stack';
+import Home from './screens/Home';
+
+const Stack = createStackNavigator();
+
 function App(): JSX.Element {
   const bears = useBearStore((state) => state.bears);
   const increaseBears = useBearStore((state) => state.increase);
@@ -23,13 +31,11 @@ function App(): JSX.Element {
   const bears1 = useBoundStore((state) => state.bears);
   const addBear = useBoundStore((state) => state.addBear);
   return (
-    <SafeAreaView>
-      <View className="flex-row items-center space-x-2 pb-2 mx-4">
-        <Text>Bears: {bears1}</Text>
-        <Button onPress={() => addBear(1)} title="Add Bears"/>
-        <ChevronDownIcon size={20} color="#00FFBB"/>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
