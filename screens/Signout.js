@@ -8,24 +8,18 @@ import { useNavigation } from '@react-navigation/native';
 const Signout = () => {
   const navigation = useNavigation();
 
-  const userInfo = StorageService.getItem(StorageService.USER);
-
   const removeUser = () => {
     StorageService.deleteItem(StorageService.USER);
     navigation.replace('Login');
   }
 
-  if(userInfo) {
-    return (
-      <View>
-        <TouchableOpacity onPress={() => removeUser()}>
-          <Text>{LanguageUtils.getLangText(languagekeys.signout)}</Text>
-        </TouchableOpacity>
-      </View>
-    )
-  } else {
-    return null;
-  }
+  return (
+    <View>
+      <TouchableOpacity onPress={() => removeUser()}>
+        <Text>{LanguageUtils.getLangText(languagekeys.signout)}</Text>
+      </TouchableOpacity>
+    </View>
+  )
 }
 
 export default Signout

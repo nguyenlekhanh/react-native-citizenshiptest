@@ -44,7 +44,14 @@ const LoginScreen = ({navigation}) => {
         });
         
         const json = await result.json();
-        //console.log(json);
+        if(json.token) {
+          let newUserInfo = userInfo;
+          newUserInfo.token = json.token;
+          
+          setUserInfo(prevState => [...prevState, newUserInfo]);
+          console.log(userInfo);
+
+        }
       }
 
       userCheck();
