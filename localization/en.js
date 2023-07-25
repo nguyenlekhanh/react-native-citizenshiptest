@@ -6,6 +6,10 @@ const en = {
 
     [languagekeys.signinWithGuest]: 'Sign in with Guess',
 
+    [languagekeys.signout]: 'Sign out',
+
+    
+
 }
 
 export default en;

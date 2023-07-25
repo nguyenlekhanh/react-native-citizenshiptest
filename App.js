@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import store from './app/store'
 import { Provider } from 'react-redux'
 import LoginScreen from './screens/LoginScreen';
+import Signout from './screens/Signout';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,17 +22,25 @@ export default function App() {
           <Stack.Screen name="Login" component={LoginScreen} 
             options={{
               title: 'Login',
-              headerStyle: {
-                backgroundColor: '#f4511e',
-              },
-              headerTintColor: '#fff',
-              headerTitleStyle: {
-                fontWeight: 'bold',
-              },
+              // headerStyle: {
+              //   backgroundColor: 'transparent',
+              // },
+              // headerTintColor: '#fff',
+              // headerTitleStyle: {
+              //   fontWeight: 'bold',
+              // },
               headerTitleAlign: 'center'
             }}
           />
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen 
+            name="Home" 
+            component={HomeScreen} 
+            options={{
+              headerRight: () => (
+                <Signout />
+              ),
+            }}
+          />
         </Stack.Navigator>
       </Provider>
     </NavigationContainer>

@@ -4,19 +4,24 @@ import * as WebBrowser from "expo-web-browser";
 import * as Google from "expo-auth-session/providers/google"
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { EventRegister } from 'react-native-event-listeners';
-
+import { 
+  googleExpoClientId,
+  googleAndroidClientId,
+  googleIosClientId,
+  googleWebClientId
+} from '@env';
 import Ads from './Ads';
 import { getUserInfo } from '../utils/googleUtil';
 import languagekeys from '../localization/languagekeys';
 import LanguageUtils from '../utils/LanguageUtils';
 
-const LoginScreen = () => {
+const LoginScreen = ({navigation}) => {
   const [userInfo, setUserInfo] = useState(null);
   const [request, response, promptAsync] = Google.useAuthRequest({
-    expoClientId: "941001352428-fbo21fnfabg5ruslf6giufujlea2kvu1.apps.googleusercontent.com",
-    androidClientId: "941001352428-5o71fbh7klqrlb0r0hft6emk4t7h31o6.apps.googleusercontent.com",
-    iosClientId: "941001352428-3jvqfq4mjbfa3me4bsglsc1qff81474q.apps.googleusercontent.com",
-    webClientId: "941001352428-ekedip2lb1eovghgq98dtn5mq1fc6l4i.apps.googleusercontent.com"
+    expoClientId: googleExpoClientId,
+    androidClientId: googleAndroidClientId,
+    iosClientId: googleIosClientId,
+    webClientId: googleWebClientId
   });
 
   useEffect(() => {
@@ -26,6 +31,7 @@ const LoginScreen = () => {
 
   useEffect(() => {
     if(userInfo) {
+      
       const userCheck = async () => {
         const url = "http://10.0.0.108:10000/user/signupWithGoogle/";
 
@@ -42,6 +48,7 @@ const LoginScreen = () => {
       }
 
       userCheck();
+      navigation.replace( "Home" );
     }
   }, [userInfo])
 
@@ -56,12 +63,9 @@ const LoginScreen = () => {
     }
   }
 
-  const removeUser = () => {
-    AsyncStorage.removeItem("@user");
-    setUserInfo('');
+  const singInWithGuest = async () => {
+    navigation.replace( "Home" );
   }
-
-  const signInWithGoogleTxt = LanguageUtils.getLangText(languagekeys.signinWithGoogle)
 
   return (
     <View className="flex-columns items-center w-full h-max">
@@ -75,7 +79,7 @@ const LoginScreen = () => {
           </View>
           <Button 
             title={LanguageUtils.getLangText(languagekeys.signinWithGuest)} 
-            onPress={() => {}} 
+            onPress={() => singInWithGuest()} 
           />
         </View>
       </View>

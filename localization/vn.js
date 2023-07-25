@@ -6,6 +6,7 @@ const en = {
 
     [languagekeys.signinWithGuest]: 'Đăng nhập khách',
 
+    [languagekeys.signout]: 'Đăng xuất',
 }
 
 export default en;
