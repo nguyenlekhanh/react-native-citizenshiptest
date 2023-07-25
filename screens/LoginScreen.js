@@ -3,9 +3,12 @@ import React, { useEffect, useState } from 'react'
 import * as WebBrowser from "expo-web-browser";
 import * as Google from "expo-auth-session/providers/google"
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { EventRegister } from 'react-native-event-listeners';
 
-import { getUserInfo } from '../utils/googleUtil';
 import Ads from './Ads';
+import { getUserInfo } from '../utils/googleUtil';
+import languagekeys from '../localization/languagekeys';
+import LanguageUtils from '../utils/LanguageUtils';
 
 const LoginScreen = () => {
   const [userInfo, setUserInfo] = useState(null);
@@ -58,17 +61,22 @@ const LoginScreen = () => {
     setUserInfo('');
   }
 
+  const signInWithGoogleTxt = LanguageUtils.getLangText(languagekeys.signinWithGoogle)
+
   return (
     <View className="flex-columns items-center w-full h-max">
       <View className="w-full h-[90%] items-center justify-center">
         <View className="w-2/4">
           <View className="mb-3">
             <Button 
-              title="Sign in with Google" 
+              title={LanguageUtils.getLangText(languagekeys.signinWithGoogle)}
               onPress={() => promptAsync()} 
             />
           </View>
-          <Button title="Sign in with Guess" onPress={() => {}} />
+          <Button 
+            title={LanguageUtils.getLangText(languagekeys.signinWithGuest)} 
+            onPress={() => {}} 
+          />
         </View>
       </View>
 

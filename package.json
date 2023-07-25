@@ -25,7 +25,11 @@
     "react-dom": "18.2.0",
     "react-native": "0.71.8",
     "react-native-dotenv": "^3.4.9",
+    "react-native-event-listeners": "^1.0.7",
+    "react-native-google-mobile-ads": "^11.4.0",
     "react-native-heroicons": "^3.2.0",
+    "react-native-localize": "^3.0.2",
+    "react-native-restart": "^0.0.27",
     "react-native-svg": "13.4.0",
     "react-native-web": "~0.18.10",
     "react-redux": "^8.1.1"
