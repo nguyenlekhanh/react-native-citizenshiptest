@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "firstInit.app"
-               BlueprintName = "firstInit"
-               ReferencedContainer = "container:firstInit.xcodeproj">
+               BuildableName = "citizenshiptest.app"
+               BlueprintName = "citizenshiptest"
+               ReferencedContainer = "container:citizenshiptest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "firstInitTests.xctest"
-               BlueprintName = "firstInitTests"
-               ReferencedContainer = "container:firstInit.xcodeproj">
+               BuildableName = "citizenshiptestTests.xctest"
+               BlueprintName = "citizenshiptestTests"
+               ReferencedContainer = "container:citizenshiptest.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "firstInit.app"
-            BlueprintName = "firstInit"
-            ReferencedContainer = "container:firstInit.xcodeproj">
+            BuildableName = "citizenshiptest.app"
+            BlueprintName = "citizenshiptest"
+            ReferencedContainer = "container:citizenshiptest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "firstInit.app"
-            BlueprintName = "firstInit"
-            ReferencedContainer = "container:firstInit.xcodeproj">
+            BuildableName = "citizenshiptest.app"
+            BlueprintName = "citizenshiptest"
+            ReferencedContainer = "container:citizenshiptest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

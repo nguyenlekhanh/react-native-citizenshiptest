@@ -1,4 +1,4 @@
-package com.firstinit;
+package com.programming.citizenshiptest;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.firstinit"
+    namespace "com.programming.citizenshiptest"
     defaultConfig {
-        applicationId "com.firstinit"
+        applicationId "com.programming.citizenshiptest"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
