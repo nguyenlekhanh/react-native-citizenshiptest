@@ -6,15 +6,20 @@ import {
   statusCodes,
 } from '@react-native-google-signin/google-signin';
 
-const signOut = async () => {
-  try {
-    await GoogleSignin.signOut();
-  } catch (error) {
-    console.error(error);
-  }
-}
+import {
+  googleAndroidClientId,
+  googleIosClientId
+} from '../utils/variables';
 
 const LoginScreen: React.FC = () => {
+  const signOut = async () => {
+    try {
+      await GoogleSignin.signOut();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <View className="flex-columns items-center w-full h-max">
       <View className="w-full h-[90%] items-center justify-center">
@@ -31,8 +36,8 @@ const LoginScreen: React.FC = () => {
           />
           <Button title={'Sign in with Google'} onPress={() =>  {
                 GoogleSignin.configure({
-                    androidClientId: '',
-                    iosClientId: '',
+                    androidClientId: {googleAndroidClientId},
+                    iosClientId: {googleIosClientId},
                 });
                 GoogleSignin.hasPlayServices().then((hasPlayService) => {
                     if (hasPlayService) {
@@ -51,6 +56,8 @@ const LoginScreen: React.FC = () => {
             title="Sign Out"
             onPress={() => signOut()} 
           />
+          <Text>{googleAndroidClientId}</Text>
+          <Text>{googleIosClientId}</Text>
         </View>
       </View>
 
