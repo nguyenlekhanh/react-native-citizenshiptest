@@ -19,6 +19,9 @@ import SignoutScreen from './screens/SignoutScreen';
 
 const Stack = createStackNavigator();
 
+import "./locales/i18n";
+
+
 function App(): JSX.Element {
   return (
     <NavigationContainer>

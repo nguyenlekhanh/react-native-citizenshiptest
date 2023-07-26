@@ -1,15 +1,26 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
-import languagekeys from '../localization/languagekeys';
-import LanguageUtils from '../utils/LanguageUtils';
 import { useUserStore } from '../app/store.zustand.user';
 import { useNavigation } from '@react-navigation/native';
-import { googleSignOut } from '../utils/googleUtil';
+import { googleSignIn, googleSignOut } from '../utils/googleUtil';
+import StorageService from '../utils/StorageService';
+import { useTranslation } from 'react-i18next';
 
 const SignoutScreen: React.FC = () => {
   const navigation = useNavigation();
   const userInfo  = useUserStore((state) => state.user);
   const setUser  = useUserStore((state) => state.setUser);
+  const {t} = useTranslation();
+
+  const googleSignInHandler = async () => {
+    const user = await StorageService.getItem(StorageService.USER);
+
+    if(!user) {
+      googleSignIn(setUser);
+    } else {
+      setUser(JSON.parse(user));
+    }
+  }
 
   const removeUser = () => {
     googleSignOut(setUser);
@@ -20,14 +31,22 @@ const SignoutScreen: React.FC = () => {
     return (
       <TouchableOpacity onPress={() => removeUser()}>
         <Text
-          className="bold mr-1"
+          className="bold mr-1 text-lg"
         >
-          {LanguageUtils.getLangText(languagekeys.signout)}
+          {t("sign-out")}
         </Text>
       </TouchableOpacity>
     )
   } else {
-    return null;
+    return (
+      <TouchableOpacity onPress={() => googleSignInHandler()}>
+        <Text
+          className="bold mr-1 text-lg"
+        >
+          {t("sign-in-with-google")}
+        </Text>
+      </TouchableOpacity>
+    );
   }
 }
 
