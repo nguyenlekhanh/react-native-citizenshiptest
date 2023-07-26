@@ -11,6 +11,9 @@ import {
   googleIosClientId
 } from '../utils/variables';
 
+import languagekeys from '../localization/languagekeys';
+import LanguageUtils from '../utils/LanguageUtils';
+
 const LoginScreen: React.FC = () => {
   const signOut = async () => {
     try {
@@ -26,12 +29,12 @@ const LoginScreen: React.FC = () => {
         <View className="w-2/4">
           <View className="mb-3">
             <Button 
-              title="Sign in with Google"
+              title={LanguageUtils.getLangText(languagekeys.signinWithGoogle)}
               onPress={() => {}} 
             />
           </View>
           <Button 
-            title="Sign in with Guest"
+            title={LanguageUtils.getLangText(languagekeys.signinWithGuest)} 
             onPress={() => {}} 
           />
           <Button title={'Sign in with Google'} onPress={() =>  {
