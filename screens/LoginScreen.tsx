@@ -70,6 +70,10 @@ const LoginScreen = ({ route, navigation }: Props) => {
     }
   }
 
+  const singInWithGuest = async () => {
+    navigation.replace( "Home" );
+  }
+
   return (
     <View className="flex-columns items-center w-full h-max">
       <View className="w-full h-[90%] items-center justify-center">
@@ -82,7 +86,7 @@ const LoginScreen = ({ route, navigation }: Props) => {
           </View>
           <Button 
             title={LanguageUtils.getLangText(languagekeys.signinWithGuest)} 
-            onPress={() => {}} 
+            onPress={() => singInWithGuest()} 
           />
         </View>
       </View>
