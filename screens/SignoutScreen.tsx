@@ -8,6 +8,7 @@ import { googleSignOut } from '../utils/googleUtil';
 
 const SignoutScreen: React.FC = () => {
   const navigation = useNavigation();
+  const userInfo  = useUserStore((state) => state.user);
   const setUser  = useUserStore((state) => state.setUser);
 
   const removeUser = () => {
@@ -15,15 +16,19 @@ const SignoutScreen: React.FC = () => {
     navigation.replace('Login');
   }
 
-  return (
-    <TouchableOpacity onPress={() => removeUser()}>
-      <Text
-        className="bold mr-1"
-      >
-        {LanguageUtils.getLangText(languagekeys.signout)}
-      </Text>
-    </TouchableOpacity>
-  )
+  if(userInfo) {
+    return (
+      <TouchableOpacity onPress={() => removeUser()}>
+        <Text
+          className="bold mr-1"
+        >
+          {LanguageUtils.getLangText(languagekeys.signout)}
+        </Text>
+      </TouchableOpacity>
+    )
+  } else {
+    return null;
+  }
 }
 
 export default SignoutScreen

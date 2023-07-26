@@ -23,28 +23,28 @@ function App(): JSX.Element {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name="Login" component={LoginScreen} 
-            options={{
-              title: 'Login',
-              // headerStyle: {
-              //   backgroundColor: 'transparent',
-              // },
-              // headerTintColor: '#fff',
-              // headerTitleStyle: {
-              //   fontWeight: 'bold',
-              // },
-              headerTitleAlign: 'center'
-            }}
-          />
-          <Stack.Screen 
-            name="Home" 
-            component={HomeScreen} 
-            options={{
-              headerRight: () => (
-                <SignoutScreen />
-              ),
-            }}
-          />
+        {/* <Stack.Screen name="Login" component={LoginScreen} 
+          options={{
+            title: 'Login',
+            // headerStyle: {
+            //   backgroundColor: 'transparent',
+            // },
+            // headerTintColor: '#fff',
+            // headerTitleStyle: {
+            //   fontWeight: 'bold',
+            // },
+            headerTitleAlign: 'center'
+          }}
+        /> */}
+        <Stack.Screen 
+          name="Home" 
+          component={HomeScreen} 
+          options={{
+            headerRight: () => (
+              <SignoutScreen />
+            ),
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

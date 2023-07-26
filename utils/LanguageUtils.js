@@ -52,7 +52,7 @@ export default class LanguageUtils {
       //     return language;
       // }
 
-      const language = this.languages.english;
+      const language = this.languages.vietnam;
       this.setAppLangauge(language);
   }
 
@@ -87,10 +87,10 @@ export default class LanguageUtils {
    * @returns the string value of key in selected language
    */
   static getLangText(key) {
-      if (this.currentAppLanguage === this.languages.vietnam) {
-          return vn[key];
+      if (this.currentAppLanguage === this.languages.english) {
+          return en[key];
       }
 
-      return en[key];
+      return vn[key];
   }
 }
