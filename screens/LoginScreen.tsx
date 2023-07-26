@@ -11,6 +11,8 @@ import LanguageUtils from '../utils/LanguageUtils';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useUserStore } from '../app/store.zustand.user';
 import StorageService from '../utils/StorageService';
+import { serverUrl, signupWithGoogleUrl } from '../utils/variables';
+
 
 //add typescript for props.navigation
 //https://reactnavigation.org/docs/typescript/
@@ -30,7 +32,7 @@ const LoginScreen = ({ route, navigation }: Props) => {
     if(userInfo) {
       
       const userCheck = async () => {
-        const url = "http://10.0.0.108:10000/user/signupWithGoogle/";
+        const url = serverUrl + signupWithGoogleUrl;
 
         const result = await fetch(url, {
           method: "POST",
@@ -59,10 +61,9 @@ const LoginScreen = ({ route, navigation }: Props) => {
   };
 
   const googleSignInHandler = async () => {
-    const user = await AsyncStorage.getItem("@user");
+    const user = await StorageService.getItem(StorageService.USER);
 
     if(!user) {
-      
       googleSignIn(setUser);
     } else {
       setUser(JSON.parse(user));
