@@ -10,12 +10,17 @@ type ItemProps = {
   question_vn: string,
   answer: string,
   answer_vn: string,
-  voice: string
+  voice: string,
+  toggleTranslate: boolean
 };
 
 let audio:Sound;
 
-const QuestionsCardScreen = ({count, question, question_vn, answer, answer_vn, voice}: ItemProps) => {
+const QuestionsCardScreen = (
+  {
+    count, question, question_vn, answer, answer_vn, voice,
+    toggleTranslate
+  }: ItemProps) => {
 
   const pauseAudio = () => {
     if(audio) {
@@ -78,15 +83,19 @@ const QuestionsCardScreen = ({count, question, question_vn, answer, answer_vn, v
           </TouchableOpacity>
         }
       </Text>
-      <Text className="text-[18px] mb-2">
-        ({question_vn})
-      </Text>
+      {toggleTranslate && 
+        <Text className="text-[18px] mb-2">
+          ({question_vn})
+        </Text>
+      }
       <Text className="text-[20px] text-blue-700">
         <Text className="underline">Answer</Text>: {typeof answer == "string" ? answer : JSON.stringify(answer, null, 2)}
       </Text>
-      <Text className="text-[18px]">
-      {typeof answer_vn == "string" ? answer_vn : JSON.stringify(answer_vn, null, 2)}
-      </Text>
+      {toggleTranslate && 
+        <Text className="text-[18px]">
+          {typeof answer_vn == "string" ? answer_vn : JSON.stringify(answer_vn, null, 2)}
+        </Text>
+      }
     </View>
   )
 }

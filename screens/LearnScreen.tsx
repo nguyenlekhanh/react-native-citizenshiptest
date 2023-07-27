@@ -13,6 +13,7 @@ import {
 import ScrollToTopScreen from './ScrollToTopScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AdsScreen from './AdsScreen';
+import CheckBox from '../components/CheckBox';
 
 type RootStackParamList = {};
 
@@ -25,6 +26,8 @@ const LearnScreen = ({ route, navigation }: Props) => {
 
   const jsonData = useDataStore((state) => state.data);
   const setJsonData = useDataStore((state) => state.setData);
+
+  const [toggleTranslate, setToggleTranslate] = useState<boolean>(false)
 
   useEffect(() => {
     if(!jsonData) {
@@ -44,6 +47,10 @@ const LearnScreen = ({ route, navigation }: Props) => {
     listRef.current.scrollToOffset({ offset: 0, animated: true });
   }
 
+  const toggleTranslateHandler = () => {
+    setToggleTranslate(!toggleTranslate);
+  }
+
   return (
     <SafeAreaView className="flex-columns items-center w-full h-max">
       <View className="w-full h-[89%] mt-2">
@@ -57,11 +64,19 @@ const LearnScreen = ({ route, navigation }: Props) => {
           <View className="m-2">
             <View className="absolute top-0 left-0 w-full">
               <View className="flex-row justify-between	">
-                <View>
-                  <Text>Song Ngữ</Text>
+                <View className="flex-row">
+                  <TouchableOpacity
+                    onPress={() => toggleTranslateHandler()}
+                    className="flex-row"
+                  >
+                    <Text className="text-xl text-blue-700">Song Ngữ</Text>
+                    <CheckBox 
+                      toggleTranslate={toggleTranslate}
+                    />
+                  </TouchableOpacity>
                 </View>
                 <View>
-                  <Text>Font size</Text>
+                  <Text className="text-xl text-blue-700">Font size</Text>
                 </View>
               </View>
             </View>
@@ -76,6 +91,7 @@ const LearnScreen = ({ route, navigation }: Props) => {
                                           answer={item.answer}
                                           answer_vn={item.answer_vn}
                                           voice={item.voice}
+                                          toggleTranslate={toggleTranslate}
                                       />
                               }
               keyExtractor={(item, index) => index.toString()}
