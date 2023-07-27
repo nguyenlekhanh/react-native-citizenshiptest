@@ -1,6 +1,6 @@
 import { View, Text, TextInput, SafeAreaView, Button } from 'react-native'
 import React from 'react'
-import Ads from './AdsScreen';
+import AdsScreen from './AdsScreen';
 import { TouchableOpacity } from 'react-native';
 import languagekeys from '../localization/languagekeys';
 import LanguageUtils from '../utils/LanguageUtils';
@@ -61,7 +61,7 @@ const HomeScreen = ({ route, navigation }: Props) => {
             </View>
         </View>
 
-        <Ads />
+        <AdsScreen />
     </SafeAreaView>
   )
 }

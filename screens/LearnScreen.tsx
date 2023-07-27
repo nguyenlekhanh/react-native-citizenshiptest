@@ -11,6 +11,8 @@ import {
   ChevronUpIcon
 } from 'react-native-heroicons/outline';
 import ScrollToTopScreen from './ScrollToTopScreen';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import AdsScreen from './AdsScreen';
 
 type RootStackParamList = {};
 
@@ -26,7 +28,6 @@ const LearnScreen = ({ route, navigation }: Props) => {
 
   useEffect(() => {
     if(!jsonData) {
-      console.log('nodata');
       setTimeout(() => {
         const parsedData = JSON.stringify(data.questions);
           if(parsedData) {
@@ -35,7 +36,6 @@ const LearnScreen = ({ route, navigation }: Props) => {
           }
       }, 1);
     } else {
-      console.log('hasdata');
       setIsLoadingData(false);
     }
   }, [jsonData]);
@@ -45,40 +45,56 @@ const LearnScreen = ({ route, navigation }: Props) => {
   }
 
   return (
-    <View>
-      {isLoadingData &&
-        <ActivityIndicator
-          animating = {isLoadingData}
-          color = '#bc2b78'
-          size = "large"/>
-      }
-      {jsonData && jsonData?.length &&
-        <View className="m-2">
-          <FlatList
-            ref={listRef}
-            data={jsonData}
-            renderItem={({item, index}) => <QuestionsCardScreen 
-                                        count={index}
-                                        question={item.question}
-                                        question_vn={item.question_vn}
-                                        answer={item.answer}
-                                        answer_vn={item.answer_vn}
-                                    />
-                            }
-            keyExtractor={(item, index) => index.toString()}
-          />
-          {/* <TouchableOpacity 
-            className="absolute right-0 bottom-2 mr-2"
-            onPress={() => scrollToTopHandler()}
-          >
-            <View className="w-10 h-10 border border-lime-400 rounded-full">
-              <Text>sklsdf</Text>
+    <SafeAreaView className="flex-columns items-center w-full h-max">
+      <View className="w-full h-[89%] mt-2">
+        {isLoadingData &&
+          <ActivityIndicator
+            animating = {isLoadingData}
+            color = '#bc2b78'
+            size = "large"/>
+        }
+        {jsonData && jsonData?.length &&
+          <View className="m-2">
+            <View className="absolute top-0 left-0 w-full">
+              <View className="flex-row justify-between	">
+                <View>
+                  <Text>Song Ngữ</Text>
+                </View>
+                <View>
+                  <Text>Font size</Text>
+                </View>
+              </View>
             </View>
-          </TouchableOpacity> */}
-          <ScrollToTopScreen ref={listRef}/>
-        </View>
-      }
-    </View>
+            <FlatList
+              className="mt-10"
+              ref={listRef}
+              data={jsonData}
+              renderItem={({item, index}) => <QuestionsCardScreen 
+                                          count={index}
+                                          question={item.question}
+                                          question_vn={item.question_vn}
+                                          answer={item.answer}
+                                          answer_vn={item.answer_vn}
+                                          voice={item.voice}
+                                      />
+                              }
+              keyExtractor={(item, index) => index.toString()}
+            />
+            {/* <TouchableOpacity 
+              className="absolute right-0 bottom-2 mr-2"
+              onPress={() => scrollToTopHandler()}
+            >
+              <View className="w-10 h-10 border border-lime-400 rounded-full">
+                <Text>sklsdf</Text>
+              </View>
+            </TouchableOpacity> */}
+            <ScrollToTopScreen ref={listRef}/>
+          </View>
+        }
+      </View>
+
+      <AdsScreen />
+    </SafeAreaView>
   )
 }
 

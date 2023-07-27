@@ -44,7 +44,7 @@
       "answer": ["sets up the government", "defines the government", "protects basic rights of Americans"],
       "question_vn": "Hiến Pháp thực thi điều gì",
       "answer_vn": ["Thiết lập chính phủ", "Định rõ chính phủ", "Bảo vệ các quyền cơ bản của người dân Hoa Kỳ"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2002.mp3"
     },
     {
       "question": "The idea of self-government is in the first three words of the Constitution. What are these words?",
@@ -69,7 +69,7 @@
       "answer": "We the People",
       "question_vn": "Ý tưởng tự quản trị nằm trong ba chữ đầu tiên của Hiến Pháp. Các chữ này là những chữ nào?",
       "answer_vn": "Chúng ta [người] dân",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2003.mp3"
     },
     {
       "question": "What is an amendment?",
@@ -94,7 +94,7 @@
       "answer": ["a change (to the Constitution)", "an addition (to the Constitution)"],
       "question_vn": "Tu chính án là gì?",
       "answer_vn": ["một sự thay đổi (trong Hiến Pháp)", "một sự thêm (vào Hiến Pháp)"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2004.mp3"
     },
     {
       "question": "What do we call the first ten amendments to the Constitution?",
@@ -119,7 +119,7 @@
       "answer": "the Bill of Rights",
       "question_vn": "Ta gọi mười tu chính đầu tiên vào Hiến Pháp là gì?",
       "answer_vn": "Luật Dân Quyền",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2005.mp3"
     },
     {
       "question": "What is one right or freedom from the First Amendment?",
@@ -140,7 +140,7 @@
       "answer": ["speech", "religion", "assembly", "press", "petition the government"],
       "question_vn": "Kể ra Một quyền hoặc một tự do trong Tu Chính Án Đầu Tiên (First Amendment)?*",
       "answer_vn": ["tự do ngôn luận", "tự do tôn giáo", "tự do hội họp", " tự do báo chí", "tự do thỉnh nguyện chánh phủ"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2006.mp3"
     },
     {
       "question": "How many amendments does the Constitution have?",
@@ -161,7 +161,7 @@
       "answer": "twenty-seven (27)",
       "question_vn": "Hiến Pháp có bao nhiêu tu chính án?",
       "answer_vn": "hai mươi bảy (27)",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2007.mp3"
     },
     {
       "question": "What did the Declaration of Independence do?",
@@ -182,7 +182,7 @@
       "answer": ["announced our independence (from Great Britain)", "declared our independence (from Great Britain)", "said that the United States is free (from Great Britain)"],
       "question_vn": "Bản Tuyên Ngôn Độc Lập có ý nghĩa gì?",
       "answer_vn": ["thông báo nền độc lập của chúng ta (khỏi Anh Quốc)", " tuyên cáo nền độc lập của chúng ta (khỏi Anh Quốc)", "cho biết Hoa Kỳ đã tự do (khỏi Anh Quốc)"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2008.mp3"
     },
     {
       "question": "What are two rights in the Declaration of Independence?",
@@ -203,7 +203,7 @@
       "answer": ["life", "liberty", "pursuit of happiness"],
       "question_vn": "Kể ra Hai quyền trong bản Bản Tuyên Ngôn Độc Lập?",
       "answer_vn": ["quyền sống", "quyền tự do", "quyền theo đuổi hạnh phúc"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2009.mp3"
     },
     {
       "question": "What is freedom of religion?",
@@ -228,7 +228,7 @@
       "answer": "You can practice any religion, or not practice a religion.",
       "question_vn": "Tự do tôn giáo là gì?",
       "answer_vn": "Bạn có thể theo bất cứ tôn giáo nào, hoặc không theo tôn giáo nào",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2010.mp3"
     },
     {
       "question": "What is the economic system in the United States?",
@@ -249,7 +249,7 @@
       "answer": ["capitalist economy", "market economy"],
       "question_vn": "Hệ thống kinh tế của Hoa Kỳ gọi là gì?*",
       "answer_vn": ["kinh tế tư bản", "kinh tế thị trường"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2011.mp3"
     },
     {
       "question": "What is the 'rule of law'?",
@@ -274,7 +274,7 @@
       "answer": ["Everyone must follow the law.", "Leaders must obey the law.", "Government must obey the law.", "No one is above the law."],
       "question_vn": "“Thượng tôn luật pháp” là gì?",
       "answer_vn": ["Mọi người đều phải tuân theo luật pháp.", "Cả các người lãnh đạo đều phải tuân theo luật pháp.", "Nhà cầm quyền phải tuân theo luật pháp.", "Không ai được ở trên pháp luật cả."],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2012.mp3"
     },
     {
       "question": "Name one branch or part of the government.",
@@ -299,7 +299,7 @@
       "answer": ["Congress", "legislative", "President", "executive", "the courts", "judicial"],
       "question_vn": "Cho biết một ngành hay phần của công quyền.*",
       "answer_vn": ["Quốc Hội", "lập pháp", " Tổng Thống", "hành pháp", "các tòa án", "tư pháp"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2013.mp3"
     },
     {
       "question": "What stops one branch of government from becoming too powerful?",
@@ -324,7 +324,7 @@
       "answer": ["checks and balances", "separation of powers"],
       "question_vn": "Cách nào ngăn cản một ngành công quyền trở thành quá mạnh?",
       "answer_vn": ["kiểm soát lẫn nhau", "phân quyền"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2014.mp3"
     },
     {
       "question": "Who is in charge of the executive branch?",
@@ -349,7 +349,7 @@
       "answer": "the President",
       "question_vn": "Ai phụ trách hành pháp?",
       "answer_vn": "Tổng Thống",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2015.mp3"
     },
     {
       "question": "Who makes federal laws?",
@@ -374,7 +374,7 @@
       "answer": ["Congress", "Senate and House (of Representatives)", "(U.S. or national) legislature"],
       "question_vn": "Ai làm luật liên bang?",
       "answer_vn": ["Quốc Hội", " Thượng và Hạ Nghị Viện", "Ngành Lập Pháp (của Liên Bang hay Quốc Gia)"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2016.mp3"
     },
     {
       "question": "What are the two parts of the U.S. Congress?",
@@ -395,7 +395,7 @@
       "answer": "the Senate and House (of Representatives)",
       "question_vn": "Hai phần của Quốc Hội Hoa Kỳ là gì?*",
       "answer_vn": "Thượng và Hạ Nghị Viện",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2017.mp3"
     },
     {
       "question": "How many U.S. Senators are there?",
@@ -416,7 +416,7 @@
       "answer": "one hundred (100)",
       "question_vn": "Có bao nhiêu Thượng Nghị Sĩ Liên Bang?",
       "answer_vn": "100",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2018.mp3"
     },
     {
       "question": "We elect a U.S. Senator for how many years?",
@@ -441,7 +441,7 @@
       "answer": "six (6)",
       "question_vn": "Chúng ta bầu Thượng Nghị Sĩ cho bao nhiêu năm?",
       "answer_vn": "6",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2019.mp3"
     },
     {
       "question": "Who is one of your state's U.S. Senators now?",
@@ -449,7 +449,7 @@
       "answer": "Answers will vary. [District of Columbia residents and residents of U.S. territories should answer that D.C. (or the territory where the applicant lives) has no U.S. Senators.]",
       "question_vn": "Ai là một trong những Thượng Nghị Sĩ Liên Bang của bạn?*",
       "answer_vn": "Câu trả lời thay đổi tùy tiểu bang. [Cư dân ở thủ đô Washington, D.C. và cư dân ở các lãnh thổ Hoa Kỳ trả lời là DC hoặc lãnh thổ mình ở không có thượng-nghị-sĩ.]",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2020.mp3"
     },
     {
       "question": "The House of Representatives has how many voting members?",
@@ -474,7 +474,7 @@
       "answer": "four hundred thirty-five (435)",
       "question_vn": "Hạ-Nghị-Viện có bao nhiêu dân biểu?",
       "answer_vn": "453",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2021.mp3"
     },
     {
       "question": "We elect a U.S. Representative for how many years?",
@@ -495,7 +495,7 @@
       "answer": "two (2)",
       "question_vn": "Chúng ta bầu dân biểu cho mấy năm?",
       "answer_vn": "2",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2022.mp3"
     },
     {
       "question": "Name your U.S. Representative.",
@@ -503,7 +503,7 @@
       "answer": "Answers will vary. [Residents of territories with nonvoting Delegates or Resident Commissioners may provide the name of that Delegate or Commissioner. Also acceptable is any statement that the territory has no (voting) Representatives in Congress.]",
       "question_vn": "Cho biết tên dân biểu của bạn.",
       "answer_vn": " Câu trả lời sẽ thay đổi tùy nơi. [Cư dân ở các nơi có Đại Biểu “không có quyền biểu quyết” hoặc Đại Biểu Thường Trú có thể nói tên người đó. Cũng có thể trả lời là vùng đó không có đại diện có quyền biểu quyết tại Quốc Hội.]",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2023.mp3"
     },
     {
       "question": "Who does a U.S. Senator represent?",
@@ -524,7 +524,7 @@
       "answer": "all people of the state",
       "question_vn": "Thượng-nghị-sĩ đại diện ai?",
       "answer_vn": "Tất cả người dân trong tiểu bang",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2024.mp3"
     },
     {
       "question": "Why do some states have more Representatives than other states?",
@@ -549,7 +549,7 @@
       "answer": ["(because of) the state's population", "(because) they have more people", "(because) some states have more people"],
       "question_vn": "Tại sao có những tiểu bang có nhiều đại biểu hơn các tiểu bang khác?",
       "answer_vn": [" (Vì) dân số tiểu bang đó", " (Vì) tiểu bang đó đông dân hơn", " (Vì) một số tiểu bang đông dân hơn tiểu bang khác"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2025.mp3"
     },
     {
       "question": "We elect a President for how many years?",
@@ -574,7 +574,7 @@
       "answer": "four (4)",
       "question_vn": "Nhiệm kỳ Tổng Thống là mấy năm?",
       "answer_vn": "4",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2026.mp3"
     },
     {
       "question": "In what month do we vote for President?",
@@ -595,7 +595,7 @@
       "answer": "November",
       "question_vn": "Bầu Tổng Thống vào tháng nào?*",
       "answer_vn": "9",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2027.mp3"
     },
     {
       "question": "What is the name of the President of the United States now?",
@@ -616,7 +616,7 @@
       "answer": "Visit uscis.gov/citizenship/testupdates for the name of the President of the United States.",
       "question_vn": "Hiện nay tên Tổng Thống Hoa Kỳ là gì?*",
       "answer_vn": "[Visit uscis.gov/citizenship/testupdates for the name of the President of the United States.]",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track_28.mp3"
     },
     {
       "question": "What is the name of the Vice President of the United States now?",
@@ -637,7 +637,7 @@
       "answer": "Visit uscis.gov/citizenship/testupdates for the name of the Vice President of the United States.",
       "question_vn": "Hiện nay tên Phó Tổng Thống Hoa Kỳ là gì?",
       "answer_vn": "Visit uscis.gov/citizenship/testupdates for the name of the Vice President of the United States.",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track_29.mp3"
     },
     {
       "question": "If the President can no longer serve, who becomes President?",
@@ -658,7 +658,7 @@
       "answer": "the Vice President",
       "question_vn": "Nếu Tổng Thống không còn làm việc được nữa, ai sẽ thay thế làm Tổng Thống?",
       "answer_vn": "Phó Tổng Thống",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2030.mp3"
     },
     {
       "question": "If both the President and the Vice President can no longer serve, who becomes President?",
@@ -679,7 +679,7 @@
       "answer": "the Speaker of the House",
       "question_vn": "Nếu cả Tổng Thống và Phó Tổng Thống không còn làm việc được nữa, ai sẽ thay thế?",
       "answer_vn": "Chủ Tịch Hạ Nghị Viện",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2031.mp3"
     },
     {
       "question": "Who is the Commander in Chief of the military?",
@@ -704,7 +704,7 @@
       "answer": "the President",
       "question_vn": "Ai là Tổng Tư Lệnh quân đội?",
       "answer_vn": "Tổng Thống",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2032.mp3"
     },
     {
       "question": "Who signs bills to become laws?",
@@ -729,7 +729,7 @@
       "answer": "the President",
       "question_vn": "Ai sẽ ký dự thảo luật thành luật?",
       "answer_vn": "Tổng Thống",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2033.mp3"
     },
     {
       "question": "Who vetoes bills?",
@@ -750,7 +750,7 @@
       "answer": "the President",
       "question_vn": "Ai có quyền phủ quyết các dự luật?",
       "answer_vn": "Tổng Thống",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2034.mp3"
     },
     {
       "question": "What does the President's Cabinet do?",
@@ -771,7 +771,7 @@
       "answer": "advises the President",
       "question_vn": "Nội các của Tổng Thống làm gì?",
       "answer_vn": "Cố vấn cho Tổng Thống",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2035.mp3"
     },
     {
       "question": "What are two Cabinet-level positions?",
@@ -792,7 +792,7 @@
       "answer": ["Secretary of Agriculture", "Secretary of Commerce", "Secretary of Defense", "Secretary of Education", "Secretary of Energy", "Secretary of Health and Human Services", "Secretary of Homeland Security", "Secretary of Housing and Urban Development", "Secretary of the Interior", "Secretary of Labor", "Secretary of State", "Secretary of Transportation", "Secretary of the Treasury", "Secretary of Veterans Affairs", "Attorney General", "Vice President"],
       "question_vn": "Kể ra Hai chức vụ trong hàng nội các.",
       "answer_vn": [  "Bộ Trưởng Canh Nông",  "Bộ Trưởng Thương Mại",  "Bộ Trưởng Quốc Phòng",  "Bộ Trưởng Giáo Dục",  "Bộ Trưởng Năng Lượng",  "Bộ Trưởng Y Tế và Phục Vụ Nhân Sinh",  "Bộ Trưởng Nội An",  "Bộ Trưởng Gia Cư và Phát Triển Đô Thị",  "Bộ Trưởng Nội Vụ",  "Bộ Trưởng Lao Động",  "Bộ Trưởng Ngoại Giao",  "Bộ Trưởng Giao Thông",  "Bộ Trưởng Ngân Khố hay Tài Chính",  "Bộ Trưởng Cựu Chiến Binh",  "Bộ Trưởng Tư Pháp"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2036.mp3"
     },
     {
       "question": "What does the judicial branch do?",
@@ -817,7 +817,7 @@
       "answer": ["reviews laws", "explains laws", "resolves disputes (disagreements)", "decides if a law goes against the Constitution"],
       "question_vn": "Ngành tư pháp làm gì?",
       "answer_vn": [  "duyệt lại luật lệ",  "cắt nghĩa luật lệ",  "giải quyết tranh cãi (bất hòa)",  "quyết định xem luật có đi ngược lại hiến pháp không"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2037.mp3"
     },
     {
       "question": "What is the highest court in the United States?",
@@ -838,7 +838,7 @@
       "answer": "the Supreme Court",
       "question_vn": "Tòa án cao nhất ở Hoa Kỳ là gì?",
       "answer_vn": "Tối Cao Pháp Viện",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2038.mp3"
     },
     {
       "question": "How many justices are on the Supreme Court?",
@@ -859,7 +859,7 @@
       "answer": "Visit uscis.gov/citizenship/testupdates for the number of justices on the Supreme Court.",
       "question_vn": "Có bao nhiêu thẩm phán ở Tối Cao Pháp Viện?",
       "answer_vn": "Chín (9) [Visit uscis.gov/citizenship/testupdates for the number of justices on the Supreme Court.]",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track_39.mp3"
     },
     {
       "question": "Who is the Chief Justice of the United States now?",
@@ -880,7 +880,7 @@
       "answer": "Visit uscis.gov/citizenship/testupdates for the name of the Chief Justice of the United States.",
       "question_vn": "Ai đang là Chủ Tịch Tối Cao Pháp Viện?",
       "answer_vn": "John Roberts (John G. Roberts, Jr.) [Visit uscis.gov/citizenship/testupdates for the name of the Chief Justice of the United States.]",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track_40.mp3"
     },
     {
       "question": "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
@@ -901,7 +901,7 @@
       "answer": ["to print money", "to declare war", "to create an army", "to make treaties"],
       "question_vn": "Theo Hiến Pháp, chánh phủ liên bang có một số quyền. Một trong các quyền của chánh phủ liên bang là?",
       "answer_vn": [  "in tiền",  "tuyên chiến",  "lập quân đội",  "ký các hòa ước"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2041.mp3"
     },
     {
       "question": "Under our Constitution, some powers belong to the states. What is one power of the states?",
@@ -926,7 +926,7 @@
       "answer": ["provide schooling and education", "provide protection (police)", "provide safety (fire departments)", "give a driver's license", "approve zoning and land use"],
       "question_vn": "Theo Hiến Pháp, các tiểu bang có một số quyền. Một trong những quyền này là gì? ",
       "answer_vn": [  "cung cấp trường học và giáo dục",  "bảo vệ dân chúng (cảnh sát)",  "bảo vệ an toàn (các sở cứu hỏa)",  "cấp bằng lái xe",  "chia vùng và chấp thuận cách xử dụng đất đai"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2042.mp3"
     },
     {
       "question": "Who is the Governor of your state now?",
@@ -934,7 +934,7 @@
       "answer": "Answers will vary. [District of Columbia residents should answer that D.C. does not have a Governor.]",
       "question_vn": "Thống Đốc tiểu bang của bạn tên gì?",
       "answer_vn": "Câu trả lời tùy tiểu bang. [Cư dân vùng thủ đô Washington, D.C. phải trả lời là vùng thủ đô DC không có Thống Đốc.]",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2043.mp3"
     },
     {
       "question": "What is the capital of your state?",
@@ -942,7 +942,7 @@
       "answer": "Answers will vary. [District of Columbia residents should answer that D.C. is not a state and does not have a capital. Residents of U.S. territories should name the capital of the territory.]",
       "question_vn": "Thủ phủ của tiểu bang bạn tên gì?*",
       "answer_vn": "Câu trả lời tùy theo tiểu bang. [Cư dân vùng thủ đô Washington, D.C. phải trả lời là vùng DC không phải là một tiểu bang và không có thủ phủ. Cư dân các lãnh thổ hải ngoại của Hoa Kỳ phải cho biết thủ phủ của vùng lãnh thổ hải ngoại này.]",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2044.mp3"
     },
     {
       "question": "What are the two major political parties in the United States?",
@@ -967,7 +967,7 @@
       "answer": "Democratic and Republican",
       "question_vn": "Hai đảng chính của Hoa Kỳ là gì?*",
       "answer_vn": "Dân Chủ và Cộng Hòa",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2045.mp3"
     },
     {
       "question": "What is the political party of the President now?",
@@ -988,7 +988,7 @@
       "answer": "Visit uscis.gov/citizenship/testupdates for the political party of the President.",
       "question_vn": "Đảng của Tổng Thống hiện tại là đảng nào?",
       "answer_vn": "Visit uscis.gov/citizenship/testupdates for the political party of the President.",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track_46.mp3"
     },
     {
       "question": "What is the name of the Speaker of the House of Representatives now?",
@@ -1009,7 +1009,7 @@
       "answer": "Visit uscis.gov/citizenship/testupdates for the name of the Speaker of the House of Representatives.",
       "question_vn": "Chủ Tịch Hạ Viện hiện thời tên gì?",
       "answer_vn": "Visit uscis.gov/citizenship/testupdates for the name of the Speaker of the House of Representatives.",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track_47.mp3"
     },
     {
       "question": "There are four amendments to the Constitution about who can vote. Describe one of them.",
@@ -1034,7 +1034,7 @@
       "answer": ["Citizens eighteen (18) and older (can vote).", "You don't have to pay (a poll tax) to vote.", "Any citizen can vote. (Women and men can vote.)", "A male citizen of any race (can vote)."],
       "question_vn": "Có bốn tu chính án Hiến Pháp về việc ai có quyền bầu cử. Kể ra Một trong các thứ đó",
       "answer_vn": [  "Công dân mười tám (18) tuổi và hơn (được đi bầu).",  "Không phải trả (thuế bầu cử) để được bầu.",  "Bất cứ công dân nào cũng được bầu (phụ nữ và nam giới đều được bầu).",  "Nam giới của bất cứ chủng tộc nào (cũng đều được bầu)."],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2048.mp3"
     },
     {
       "question": "What is one responsibility that is only for United States citizens?",
@@ -1055,7 +1055,7 @@
       "answer": ["serve on a jury", "vote in a federal election"],
       "question_vn": "Một trong các bổn phận chỉ dành riêng cho công dân Hoa Kỳ là gì?*",
       "answer_vn": ["phục vụ trong bồi thẩm đoàn", "đi bầu trong bầu cử liên bang"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2049.mp3"
     },
     {
       "question": "Name one right only for United States citizens.",
@@ -1076,7 +1076,7 @@
       "answer": ["vote in a federal election", "run for federal office"],
       "question_vn": "Cho biết một quyền của riêng công dân Hoa Kỳ",
       "answer_vn": ["tham gia bầu cử cấp liên bang", "ứng cử chức vụ liên bang"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2050.mp3"
     },
     {
       "question": "What are two rights of everyone living in the United States?",
@@ -1101,7 +1101,7 @@
       "answer": ["freedom of expression", "freedom of speech", "freedom of assembly", "freedom to petition the government", "freedom of religion", "the right to bear arms"],
       "question_vn": "Cho biết hai quyền của mỗi người sống ở Hoa Kỳ?",
       "answer_vn": [  "tự do phát biểu ý kiến",  "tự do ngôn luận",  "tự do hội họp",  "tự do thỉnh nguyện chính quyền",  "tự do thờ phượng",  "quyền mang vũ khí tự vệ"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track_51.mp3"
     },
     {
       "question": "What do we show loyalty to when we say the Pledge of Allegiance?",
@@ -1126,7 +1126,7 @@
       "answer": ["the United States", "the flag"],
       "question_vn": "Khi nói Lời Tuyên Thệ Trung Thành (Pledge of Allegiance), chúng ta chứng tỏ sự trung thành với cái gì?",
       "answer_vn": ["Hoa Kỳ", "Lá Cờ"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2052.mp3"
     },
     {
       "question": "What is one promise you make when you become a United States citizen?",
@@ -1147,7 +1147,7 @@
       "answer": ["give up loyalty to other countries", "defend the Constitution and laws of the United States", "obey the laws of the United States", "serve in the U.S. military (if needed)", "serve (do important work for) the nation (if needed)", "be loyal to the United States"],
       "question_vn": "Khi trở thành công dân Hoa Kỳ, một trong những lời hứa của bạn là gì?",
       "answer_vn": [  "từ bỏ sự trung thành với các quốc gia khác",  "bảo vệ Hiến Pháp và luật lệ Hoa Kỳ",  "tuân hành luật lệ của Hoa Kỳ",  "phục vụ trong quân đội Hoa Kỳ (nếu cần)",  "phục vụ (công việc quan trọng cho) Hoa Kỳ (nếu cần)",  "trung thành với quốc gia Hoa Kỳ"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2053.mp3"
     },
     {
       "question": "How old do citizens have to be to vote for President?",
@@ -1168,7 +1168,7 @@
       "answer": "eighteen (18) and older",
       "question_vn": "Công dân phải bao nhiêu tuổi mới được bầu Tổng Thống?*",
       "answer_vn": "Mười Tám (18) và hơn",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2054.mp3"
     },
     {
       "question": "What are two ways that Americans can participate in their democracy?",
@@ -1193,7 +1193,7 @@
       "answer": ["vote", "join a political party", "help with a campaign", "join a civic group", "join a community group", "give an elected official your opinion on an issue", "call Senators and Representatives", "publicly support or oppose an issue or policy", "run for office", "write to a newspaper"],
       "question_vn": "Có hai cách công dân Hoa Kỳ có thể tham dự vào nền dân chủ là các cách nào?",
       "answer_vn": [  "bầu cử",  "tham gia một đảng phái chính trị",  "tham dự vào một cuộc vận động tranh cử",  "tham dự vào một nhóm hoạt động công dân",  "tham dự vào một nhóm hoạt động cộng đồng",  "phát biểu ý kiến về một vấn đề với một vị dân cử",  "gọi điện thoại cho nghị sĩ và dân biểu",  "công khai ủng hộ hoặc phản đối một vấn đề hay chính sách nào đó",  "tranh cử",  "góp ý kiến trên một tờ báo"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2055.mp3"
     },
     {
       "question": "When is the last day you can send in federal income tax forms?",
@@ -1214,7 +1214,7 @@
       "answer": "April 15",
       "question_vn": "Ngày cuối cùng có thể nạp mẫu khai thuế cho liên bang là?*",
       "answer_vn": "15 Tháng Tư",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2056.mp3"
     },
     {
       "question": "When must all men register for the Selective Service?",
@@ -1235,7 +1235,7 @@
       "answer": ["at age eighteen (18)", "between eighteen (18) and twenty-six (26)"],
       "question_vn": "Khi nào tất cả nam giới phải ghi tên cho Sở Quân Vụ (Selective Service)?",
       "answer_vn": ["ở tuổi mười tám (18)", "ở giữa tuổi mười tám (18) và hai mươi sáu (26"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2057.mp3"
     },
     {
       "question": "What is one reason colonists came to America?",
@@ -1260,7 +1260,7 @@
       "answer": ["freedom", "political liberty", "religious freedom", "economic opportunity", "practice their religion", "escape persecution"],
       "question_vn": "Một trong những lý do khiến người di dân thời thuộc địa tới Mỹ Châu là gì?",
       "answer_vn": [  "tự do",  "tự do chính trị",  "tự do tôn giáo",  "cơ hội kinh tế",  "hành xử tôn giáo của mình",  "tránh sự áp bức"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2058.mp3"
     },
     {
       "question": "Who lived in America before the Europeans arrived?",
@@ -1285,7 +1285,7 @@
       "answer": ["American Indians", "Native Americans"],
       "question_vn": "Những ai sống tại Mỹ trước khi người Âu Châu tới?",
       "answer_vn": [" người da đỏ Mỹ Châu", "thổ dân Mỹ Châu"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2059.mp3"
     },
     {
       "question": "What group of people was taken to America and sold as slaves?",
@@ -1310,7 +1310,7 @@
       "answer": ["Africans", "people from Africa"],
       "question_vn": "Nhóm người nào được mang tới Mỹ Châu và bán làm nô lệ?",
       "answer_vn": ["người Phi Châu", "người từ Phi Châu"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2060.mp3"
     },
     {
       "question": "Why did the colonists fight the British?",
@@ -1331,7 +1331,7 @@
       "answer": ["because of high taxes (taxation without representation)", "because the British army stayed in their houses (boarding, quartering)", "because they didn't have self-government"],
       "question_vn": "Tại sao những người di dân thời thuộc địa chống lại người Anh?",
       "answer_vn": [  "vì thuế má cao quá (phải đóng thuế mà không có người đại diện)",  "vì quân đội Anh đồn trú trong nhà của họ (ở trọ, làm trại binh)",  "vì người di dân thời thuộc địa không có chính quyền tự quản"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2061.mp3"
     },
     {
       "question": "Who wrote the Declaration of Independence?",
@@ -1356,7 +1356,7 @@
       "answer": "(Thomas) Jefferson",
       "question_vn": "Ai viết Bản Tuyên Ngôn Độc Lập?",
       "answer_vn": "(Thomas) Jefferson",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2062.mp3"
     },
     {
       "question": "When was the Declaration of Independence adopted?",
@@ -1377,7 +1377,7 @@
       "answer": "July 4, 1776",
       "question_vn": "Bản Tuyên Ngôn Độc Lập được chấp nhận lúc nào?",
       "answer_vn": " 4 Tháng Bảy 1776",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2063.mp3"
     },
     {
       "question": "There were 13 original states. Name three.",
@@ -1398,7 +1398,7 @@
       "answer": ["New Hampshire", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Delaware", "Maryland", "Virginia", "North Carolina", "South Carolina", "Georgia"],
       "question_vn": "Có 13 tiểu bang nguyên thủy. Cho biết ba tiểu bang",
       "answer_vn": [  "New Hampshire",  "Massachusetts",  "Rhode Island",  "Connecticut",  "New York",  "New Jersey",  "Pennsylvania",  "Delaware",  "Maryland",  "Virginia",  "North Carolina",  "South Carolina",  "Georgia"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2064.mp3"
     },
     {
       "question": "What happened at the Constitutional Convention?",
@@ -1419,7 +1419,7 @@
       "answer": ["The Constitution was written.", "The Founding Fathers wrote the Constitution."],
       "question_vn": "Việc gì xảy ra tại Đại Hội Lập Hiến (Constitutional Convention)?",
       "answer_vn": ["Soạn thảo Hiến Pháp.", "Các nhà lập quốc soạn thảo Hiến Pháp"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2065.mp3"
     },
     {
       "question": "When was the Constitution written?",
@@ -1440,7 +1440,7 @@
       "answer": "1787",
       "question_vn": "Hiến Pháp được soạn thảo khi nào?",
       "answer_vn": "1787",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2066.mp3"
     },
     {
       "question": "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
@@ -1461,7 +1461,7 @@
       "answer": ["(James) Madison", "(Alexander) Hamilton", "(John) Jay", "Publius"],
       "question_vn": "Các bài tham luận gọi là Federalist Papers có mục đích hỗ trợ việc thông qua Hiến Pháp Hoa Kỳ. Kể tên một trong những người viết tham luận",
       "answer_vn": [  "(James) Madison",  "(Alexander) Hamilton",  "(John) Jay",  "Publius"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2067.mp3"
     },
     {
       "question": "What is one thing Benjamin Franklin is famous for?",
@@ -1486,7 +1486,7 @@
       "answer": ["U.S. diplomat", "oldest member of the Constitutional Convention", "first Postmaster General of the United States", "writer of 'Poor Richard's Almanac'", "started the first free libraries"],
       "question_vn": "Một việc gì làm Benjamin Franklin nổi tiếng?",
       "answer_vn": [  "nhà ngoại giao Hoa Kỳ",  "thành viên già nhất của Đại Hội Lập Hiến",  "Tổng Giám Đốc Bưu Điện đầu tiên của Hoa Kỳ",  "người viết cuốn lịch “Poor Richard’s Almanac”",  "khởi công xây các thư viện miễn phí đầu tiên của Hoa Kỳ"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2068.mp3"
     },
     {
       "question": "Who is the 'Father of Our Country'?",
@@ -1511,7 +1511,7 @@
       "answer": "(George) Washington",
       "question_vn": "Ai được gọi là cha đẻ của nước Mỹ?",
       "answer_vn": "(George) Washington",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2069.mp3"
     },
     {
       "question": "Who was the first President?",
@@ -1532,7 +1532,7 @@
       "answer": "(George) Washington",
       "question_vn": "Ai là Tổng Thống đầu tiên?*",
       "answer_vn": "(George) Washington",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2070.mp3"
     },
     {
       "question": "What territory did the United States buy from France in 1803?",
@@ -1553,7 +1553,7 @@
       "answer": ["the Louisiana Territory", "Louisiana"],
       "question_vn": "Hoa Kỳ mua lãnh thổ nào của Pháp vào năm 1803?",
       "answer_vn": ["Lãnh Thổ Louisiana", "Louisiana"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2071.mp3"
     },
     {
       "question": "Name one war fought by the United States in the 1800s.",
@@ -1574,7 +1574,7 @@
       "answer": ["War of 1812", "Mexican-American War", "Civil War", "Spanish-American War"],
       "question_vn": "Nói tên một trong những cuộc chiến Hoa Kỳ tham dự thời 1800.",
       "answer_vn": [  "Chiến tranh 1812",  "Chiến tranh Hoa Kỳ-Mễ-Tây-Cơ (Mexico)",  "Nội chiến",  "Chiến tranh Hoa Kỳ-Tây-Ban-Nha"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2072.mp3"
     },
     {
       "question": "Name the U.S. war between the North and the South.",
@@ -1595,7 +1595,7 @@
       "answer": ["the Civil War", "the War between the States"],
       "question_vn": "Tên gọi của cuộc chiến trên đất Hoa Kỳ giữa miền Bắc và miền Nam là gì.",
       "answer_vn": [" Nội chiến", "Chiến tranh giữa các Tiểu Bang"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2073.mp3"
     },
     {
       "question": "Name one problem that led to the Civil War.",
@@ -1616,7 +1616,7 @@
       "answer": ["slavery", "economic reasons", "states' rights"],
       "question_vn": "Cho biết một vấn đề đưa tới cuộc nội chiến.",
       "answer_vn": [  "vấn đề nô lệ",  "các vấn đề kinh tế",  "quyền của các tiểu bang"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2074.mp3"
     },
     {
       "question": "What was one important thing that Abraham Lincoln did?",
@@ -1637,7 +1637,7 @@
       "answer": ["freed the slaves (Emancipation Proclamation)", "saved (or preserved) the Union", "led the United States during the Civil War"],
       "question_vn": "Một điều quan trọng mà Abraham Lincoln làm là gì?*",
       "answer_vn": [  "giải phóng nô lệ (Tuyên Ngôn Giải Phóng)",  "giữ gìn (hoặc bảo tồn) đoàn kết Quốc Gia",  "lãnh đạo Hoa Kỳ trong Cuộc Nội Chiến"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2075.mp3"
     },
     {
       "question": "What did the Emancipation Proclamation do?",
@@ -1658,7 +1658,7 @@
       "answer": ["freed the slaves", "freed slaves in the Confederacy", "freed slaves in the Confederate states", "freed slaves in most Southern states"],
       "question_vn": "Tuyên Ngôn Giải Phóng làm gì?",
       "answer_vn": [  "giải phóng nô lệ",  "giải phóng nô lệ thuộc tập hợp (nhóm) các tiểu bang ly khai miền Nam",  "giải phóng nô lệ ở các tiểu bang miền Nam",  "giải phóng nô lệ ở đa số các tiểu bang miền Nam"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2076.mp3"
     },
     {
       "question": "What did Susan B. Anthony do?",
@@ -1683,7 +1683,7 @@
       "answer": ["fought for women's rights", "fought for civil rights"],
       "question_vn": "Bà Susan B. Anthony làm gì?",
       "answer_vn": [" tranh đấu cho quyền phụ nữ", " tranh đấu cho dân quyền"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2077.mp3"
     },
     {
       "question": "Name one war fought by the United States in the 1900s.",
@@ -1704,7 +1704,7 @@
       "answer": ["World War I", "World War II", "Korean War", "(Persian) Gulf War"],
       "question_vn": "Cho biết một cuộc chiến mà Hoa Kỳ tham dự vào thập niên 1900.*",
       "answer_vn": [  "Thế Chiến Thứ Nhất",  "Thế Chiến Thứ Hai",  "Chiến Tranh Cao Ly (Triều Tiên)",  "Chiến Tranh Việt Nam",  "Chiến tranh Vùng Vịnh (Ba Tư)"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2078.mp3"
     },
     {
       "question": "Who was President during World War I?",
@@ -1725,7 +1725,7 @@
       "answer": "(Woodrow) Wilson",
       "question_vn": "Ai là Tổng Thống trong Thế Chiến Thứ Nhất?",
       "answer_vn": "(Woodrow) Wilson",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2079.mp3"
     },
     {
       "question": "Who was President during the Great Depression and World War II?",
@@ -1746,7 +1746,7 @@
       "answer": "(Franklin) Roosevelt",
       "question_vn": "Ai là Tổng Thống trong thời kỳ Khủng Hoảng Kinh Tế và Thế Chiến Thứ Hai? ",
       "answer_vn": "(Franklin) Roosevelt",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2080.mp3"
     },
     {
       "question": "Who did the United States fight in World War II?",
@@ -1767,7 +1767,7 @@
       "answer": "Japan, Germany, and Italy",
       "question_vn": "Trong Thế Chiến Thứ Hai, Hoa Kỳ chiến đấu chống các nước nào?",
       "answer_vn": "Nhật Bản, Đức và Ý",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2081.mp3"
     },
     {
       "question": "Before he was President, Eisenhower was a general. What war was he in?",
@@ -1788,7 +1788,7 @@
       "answer": "World War II",
       "question_vn": "Trước khi trở thành Tổng Thống, Eisenhower là tướng lãnh. Ông ta đánh trận nào?",
       "answer_vn": "World War II",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2082.mp3"
     },
     {
       "question": "During the Cold War, what was the main concern of the United States?",
@@ -1809,7 +1809,7 @@
       "answer": "Communism",
       "question_vn": "Trong thời kỳ Chiến Tranh Lạnh, quan tâm chính của Hoa Kỳ là gì?",
       "answer_vn": "Communism",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2083.mp3"
     },
     {
       "question": "What movement tried to end racial discrimination?",
@@ -1830,7 +1830,7 @@
       "answer": "civil rights (movement)",
       "question_vn": "Phong trào nào tìm cách chấm dứt sự phân biệt chủng tộc?",
       "answer_vn": "(phong trào) dân quyền",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2084.mp3"
     },
     {
       "question": "What did Martin Luther King, Jr. do?",
@@ -1855,7 +1855,7 @@
       "answer": ["fought for civil rights", "worked for equality for all Americans"],
       "question_vn": "Martin Luther King, Jr. đã làm gì?*",
       "answer_vn": ["tranh đấu cho dân quyền", "hoạt động nhằm mang lại bình đẳng cho mọi người Mỹ"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2085.mp3"
     },
     {
       "question": "What major event happened on September 11, 2001, in the United States?",
@@ -1880,7 +1880,7 @@
       "answer": "Terrorists attacked the United States.",
       "question_vn": "Biến cố lớn lao nào xảy ra vào ngày 11 tháng 9 năm 2001 tại Hoa Kỳ?",
       "answer_vn": "Bọn khủng bố tấn công Hoa Kỳ.",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2086.mp3"
     },
     {
       "question": "Name one American Indian tribe in the United States.",
@@ -1901,7 +1901,7 @@
       "answer": ["Cherokee", "Navajo", "Sioux", "Chippewa", "Choctaw", "Pueblo", "Apache", "Iroquois", "Creek", "Blackfeet", "Seminole", "Cheyenne", "Arawak", "Shawnee", "Mohegan", "Huron", "Oneida", "Lakota", "Crow", "Teton", "Hopi", "Inuit"],
       "question_vn": "Kể tên một bộ lạc da đỏ tại Mỹ.",
       "answer_vn": [  "Cherokee",  "Navajo",  "Sioux",  "Chippewa",  "Choctaw",  "Pueblo",  "Apache",  "Iroquois",  "Creek",  "Blackfeet",  "Seminole",  "Cheyenne",  "Arawak",  "Shawnee",  "Mohegan",  "Huron",  "Oneida",  "Lakota",  "Crow",  "Teton",  "Hopi",  "Inuit"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2087.mp3"
     },
     {
       "question": "Name one of the two longest rivers in the United States.",
@@ -1922,7 +1922,7 @@
       "answer": ["Missouri (River)", "Mississippi (River)"],
       "question_vn": "Cho biết một trong hai con sông dài nhất ở Hoa Kỳ.",
       "answer_vn": ["(Sông) Missouri", " (Sông) Mississippi"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2088.mp3"
     },
     {
       "question": "What ocean is on the West Coast of the United States?",
@@ -1943,7 +1943,7 @@
       "answer": "Pacific (Ocean)",
       "question_vn": "Biển nào ở bờ biển phía Tây Hoa Kỳ?",
       "answer_vn": "(Thái-Bình-Dương) Pacific (Ocean)",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2089.mp3"
     },
     {
       "question": "What ocean is on the East Coast of the United States?",
@@ -1964,7 +1964,7 @@
       "answer": "Atlantic (Ocean)",
       "question_vn": "Biển nào ở bờ biển phía Đông Hoa Kỳ?",
       "answer_vn": "(Đại-Tây-Dương) Atlantic (Ocean)",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2090.mp3"
     },
     {
       "question": "Name one U.S. territory.",
@@ -1985,7 +1985,7 @@
       "answer": ["Puerto Rico", "U.S. Virgin Islands", "American Samoa", "Northern Mariana Islands", "Guam"],
       "question_vn": "Cho biết một lãnh thổ hải ngoại của Hoa Kỳ.",
       "answer_vn": [  "Puerto Rico",  "Quần Đảo Virgin",  "Đảo Samoa",  "Quần Đảo Bắc Mariana",  "Đảo Guam"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2091.mp3"
     },
     {
       "question": "Name one state that borders Canada.",
@@ -2006,7 +2006,7 @@
       "answer": ["Maine", "New Hampshire", "Vermont", "New York", "Pennsylvania", "Ohio", "Michigan", "Minnesota", "North Dakota", "Montana", "Idaho", "Washington", "Alaska"],
       "question_vn": "Cho biết một trong những tiểu bang ráp ranh Gia-Nã-Đại.",
       "answer_vn": [  "Maine",  "New Hampshire",  "Vermont",  "New York",  "Pennsylvania",  "Ohio",  "Michigan",  "Minnesota",  "North Dakota",  "Montana",  "Idaho",  "Washington",  "Alaska"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2092.mp3"
     },
     {
       "question": "Name one state that borders Mexico.",
@@ -2027,7 +2027,7 @@
       "answer": ["California", "Arizona", "New Mexico", "Texas"],
       "question_vn": "Cho biết một trong những tiểu bang ráp ranh Mễ-Tây-Cơ.",
       "answer_vn": [  "California",  "Arizona",  "New Mexico",  "Texas"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2093.mp3"
     },
     {
       "question": "What is the capital of the United States?",
@@ -2048,7 +2048,7 @@
       "answer": "Washington, D.C.",
       "question_vn": "Thủ đô của Hoa Kỳ tên gì?*",
       "answer_vn": "Washington, D.C",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2094.mp3"
     },
     {
       "question": "Where is the Statue of Liberty?",
@@ -2069,7 +2069,7 @@
       "answer": ["New York (Harbor)", "Liberty Island"],
       "question_vn": "Tượng Nữ Thần Tự Do ở đâu?*",
       "answer_vn": ["New York (Harbor)", "Đảo Liberty Island"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2095.mp3"
     },
     {
       "question": "Why does the flag have 13 stripes?",
@@ -2090,7 +2090,7 @@
       "answer": ["because there were 13 original colonies", "because the stripes represent the original colonies"],
       "question_vn": "Tại sao lá cờ Hoa Kỳ có 13 lằn gạch?",
       "answer_vn": ["bởi vì đã có 13 thuộc địa nguyên thủy", "bởi vì các lằn này tượng trưng cho 13 thuộc địa nguyên thủy"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2096.mp3"
     },
     {
       "question": "Why does the flag have 50 stars?",
@@ -2111,7 +2111,7 @@
       "answer": ["because there is one star for each state", "because each star represents a state", "because there are 50 states"],
       "question_vn": "Tại sao lá cờ Hoa Kỳ có 50 ngôi sao?*",
       "answer_vn": [  "bởi vì mỗi tiểu bang có một ngôi sao",  "bởi vì mỗi ngôi sao tượng trưng cho một tiểu bang",  "bởi vì có 50 tiểu bang"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2097.mp3"
     },
     {
       "question": "What is the name of the national anthem?",
@@ -2132,7 +2132,7 @@
       "answer": "The Star-Spangled Banner",
       "question_vn": "Tựa của bài quốc ca Hoa Kỳ là gì?",
       "answer_vn": "The Star-Spangled Banner",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2098.mp3"
     },
     {
       "question": "When do we celebrate Independence Day?",
@@ -2153,7 +2153,7 @@
       "answer": "July 4",
       "question_vn": "Ngày nào là ngày Lễ Độc Lập?*",
       "answer_vn": "4 Tháng Bảy",
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%2099.mp3"
     },
     {
       "question": "Name two national U.S. holidays.",
@@ -2174,7 +2174,7 @@
       "answer": ["New Year's Day", "Martin Luther King, Jr. Day", "Presidents' Day", "Memorial Day", "Independence Day", "Labor Day", "Columbus Day", "Veterans Day", "Thanksgiving", "Christmas"],
       "question_vn": "Cho biết hai ngày lễ quốc gia của Hoa Kỳ.",
       "answer_vn": [  "Tết Tây",  "Ngày Sinh của Martin Luther King, Jr.",  "Ngày Các Tổng Thống",  "Lễ Chiến Sĩ Trận Vong (Memorial Day)",  "Lễ Độc Lập (Independence Day)",  "Lễ Lao Động (Labor Day)",  "Ngày Tưởng Niệm Columbus",  "Ngày Cựu Chiến Binh (Veterans Day)",  "Lễ Tạ Ơn (Thanksgiving)",  "Lễ Giáng Sinh"],
-      "voice": ""
+      "voice": "https://www.uscis.gov/sites/default/files/document/audio/Track%20100.mp3.mp3"
     }
   ]
 }
