@@ -1,8 +1,9 @@
 import { View, Text } from 'react-native'
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { FlatList, ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import Sound from 'react-native-sound';
 import { PlayIcon, StopIcon } from 'react-native-heroicons/solid';
+import cls from "classnames";
 
 type ItemProps = {
   count: number,
@@ -11,7 +12,9 @@ type ItemProps = {
   answer: string,
   answer_vn: string,
   voice: string,
-  toggleTranslate: boolean
+  toggleTranslate: boolean,
+  primaryFontSize: number,
+  subFontSize: number
 };
 
 let audio:Sound;
@@ -19,7 +22,7 @@ let audio:Sound;
 const QuestionsCardScreen = (
   {
     count, question, question_vn, answer, answer_vn, voice,
-    toggleTranslate
+    toggleTranslate, primaryFontSize, subFontSize
   }: ItemProps) => {
 
   const pauseAudio = () => {
@@ -66,7 +69,7 @@ const QuestionsCardScreen = (
 
   return (
     <View className="bg-[#fff] mb-8 p-1">
-      <Text className="text-[20px] text-blue-700">
+      <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
         <Text className="underline">Question {count+1}</Text>: {question} &nbsp;
         {voice &&
           <TouchableOpacity
@@ -84,15 +87,15 @@ const QuestionsCardScreen = (
         }
       </Text>
       {toggleTranslate && 
-        <Text className="text-[18px] mb-2">
+        <Text style={{fontSize: subFontSize, marginBottom: 10}}>
           ({question_vn})
         </Text>
       }
-      <Text className="text-[20px] text-blue-700">
+      <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
         <Text className="underline">Answer</Text>: {typeof answer == "string" ? answer : JSON.stringify(answer, null, 2)}
       </Text>
       {toggleTranslate && 
-        <Text className="text-[18px]">
+        <Text style={{fontSize: subFontSize}}>
           {typeof answer_vn == "string" ? answer_vn : JSON.stringify(answer_vn, null, 2)}
         </Text>
       }

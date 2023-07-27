@@ -8,7 +8,7 @@ import { useDataStore } from '../app/store.zustand.data';
 import QuestionsCardScreen from './QuestionsCardScreen';
 
 import {
-  ChevronUpIcon
+  MinusIcon, PlusIcon
 } from 'react-native-heroicons/outline';
 import ScrollToTopScreen from './ScrollToTopScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -28,6 +28,28 @@ const LearnScreen = ({ route, navigation }: Props) => {
   const setJsonData = useDataStore((state) => state.setData);
 
   const [toggleTranslate, setToggleTranslate] = useState<boolean>(false)
+  const [fontsize, setFontsize] = useState<number>(0);
+  let defaultPrimaryFontSize = 20;
+  let defaultSubSizeNumber = 20;
+  //let primaryFontSize = 'text-[20px]';
+  //let subFontSize = 'text-[18px]';
+  const [primaryFontSize, setPrimaryFontSize] = useState<number>(20);
+  const [subFontSize, setSubFontSize] = useState<number>(18);
+
+  const changeFontsizeHandler = (action:number) => {
+    
+    if(action === 1) {
+      if(fontsize < 30) {
+        setFontsize((prev) => prev = prev + 1);
+      }
+    } else {
+      if(fontsize > 0) {
+        setFontsize((prev) => prev = prev - 1);
+      }
+    }
+    setPrimaryFontSize(defaultPrimaryFontSize + fontsize);
+    setSubFontSize(defaultSubSizeNumber + fontsize);
+  }
 
   useEffect(() => {
     if(!jsonData) {
@@ -75,8 +97,19 @@ const LearnScreen = ({ route, navigation }: Props) => {
                     />
                   </TouchableOpacity>
                 </View>
-                <View>
-                  <Text className="text-xl text-blue-700">Font size</Text>
+                <View className="flex-row">
+                  <Text className="text-xl text-blue-700">Font size &nbsp;</Text>
+                  <TouchableOpacity
+                    onPress={() => changeFontsizeHandler(1)}
+                  >
+                    <PlusIcon size={25} color="blue" />
+                  </TouchableOpacity>
+                  <Text>&nbsp;&nbsp;&nbsp;</Text>
+                  <TouchableOpacity
+                    onPress={() => changeFontsizeHandler(2)}
+                  >
+                    <MinusIcon size={25} color="blue" />
+                  </TouchableOpacity>
                 </View>
               </View>
             </View>
@@ -92,6 +125,8 @@ const LearnScreen = ({ route, navigation }: Props) => {
                                           answer_vn={item.answer_vn}
                                           voice={item.voice}
                                           toggleTranslate={toggleTranslate}
+                                          primaryFontSize={primaryFontSize}
+                                          subFontSize={subFontSize}
                                       />
                               }
               keyExtractor={(item, index) => index.toString()}
