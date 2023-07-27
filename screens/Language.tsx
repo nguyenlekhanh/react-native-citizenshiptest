@@ -4,11 +4,14 @@ import { TestIds } from 'react-native-google-mobile-ads'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import LanguageUtils from '../utils/LanguageUtils';
 import { useTranslation } from 'react-i18next';
+import StorageService from '../utils/StorageService';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const LanguageScreen: React.FC = () => {
   const {i18n} = useTranslation();
 
-  const changeLng = (lng: string) => {
+  const changeLng = async (lng: string) => {
+    await StorageService.saveItem(StorageService.APP_LANGUAGE, {"language": lng});
     i18n.changeLanguage(lng);
   };
 

@@ -13,6 +13,7 @@ import ScrollToTopScreen from './ScrollToTopScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AdsScreen from './AdsScreen';
 import CheckBox from '../components/CheckBox';
+import { useTranslation } from 'react-i18next';
 
 type RootStackParamList = {};
 
@@ -22,6 +23,7 @@ type Props = NativeStackScreenProps<RootStackParamList>;
 const LearnScreen = ({ route, navigation }: Props) => {
   const listRef = useRef(null);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
+  const {t} = useTranslation();
 
   const jsonData = useDataStore((state) => state.data);
   const setJsonData = useDataStore((state) => state.setData);
@@ -90,14 +92,14 @@ const LearnScreen = ({ route, navigation }: Props) => {
                     onPress={() => toggleTranslateHandler()}
                     className="flex-row"
                   >
-                    <Text className="text-xl text-blue-700">Song Ngữ</Text>
+                    <Text className="text-xl text-blue-700">{t("show-translate")}</Text>
                     <CheckBox 
                       toggleTranslate={toggleTranslate}
                     />
                   </TouchableOpacity>
                 </View>
                 <View className="flex-row">
-                  <Text className="text-xl text-blue-700">Font size &nbsp;</Text>
+                  <Text className="text-xl text-blue-700">{t("change-font-size")} &nbsp;</Text>
                   <TouchableOpacity
                     onPress={() => changeFontsizeHandler(1)}
                   >

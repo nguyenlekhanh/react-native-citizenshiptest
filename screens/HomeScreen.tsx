@@ -1,5 +1,5 @@
 import { View, Text, TextInput, SafeAreaView, Button } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import AdsScreen from './AdsScreen';
 import { TouchableOpacity } from 'react-native';
 import languagekeys from '../localization/languagekeys';
@@ -8,6 +8,7 @@ import LanguageScreen from './Language';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import StorageService from '../utils/StorageService';
 
 type RootStackParamList = {};
 
@@ -15,12 +16,22 @@ type Props = NativeStackScreenProps<RootStackParamList>;
 
 const HomeScreen = ({ route, navigation }: Props) => {
   const buttonStyle = "w-auto p-3 bg-lime-500 rounded bold mt-2";
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
 
   const learnHandler = () => {
       navigation.navigate("Learn");
   }
   
+  useEffect(() => {
+    const getLanguage = async () => {
+      const language = await StorageService.getItem(StorageService.APP_LANGUAGE);
+      if(language) {
+        i18n.changeLanguage(language?.language);
+      }
+    }
+    getLanguage();
+  }, []);
+
   return (
     <SafeAreaView className="flex-columns items-center w-full h-max">
         <View className="w-full h-[89%] mt-2">
