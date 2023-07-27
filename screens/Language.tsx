@@ -6,7 +6,6 @@ import LanguageUtils from '../utils/LanguageUtils';
 import { useTranslation } from 'react-i18next';
 
 const LanguageScreen: React.FC = () => {
-
   const {i18n} = useTranslation();
 
   const changeLng = (lng: string) => {

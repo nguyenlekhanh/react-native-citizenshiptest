@@ -20,6 +20,7 @@ import SignoutScreen from './screens/SignoutScreen';
 const Stack = createStackNavigator();
 
 import "./locales/i18n";
+import LearnScreen from './screens/LearnScreen';
 
 
 function App(): JSX.Element {
@@ -42,6 +43,15 @@ function App(): JSX.Element {
         <Stack.Screen 
           name="Home" 
           component={HomeScreen} 
+          options={{
+            headerRight: () => (
+              <SignoutScreen />
+            ),
+          }}
+        />
+        <Stack.Screen 
+          name="Learn" 
+          component={LearnScreen} 
           options={{
             headerRight: () => (
               <SignoutScreen />

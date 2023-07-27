@@ -28,6 +28,7 @@ export const googleSignIn = async (setUser) => {
         if (hasPlayService) {
             GoogleSignin.signIn().then((googleUserInfo) => {
               setUser(googleUserInfo);
+              StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
             }).catch((e) => {
               console.log("ERROR IS: " + JSON.stringify(e));
             })
@@ -43,6 +44,7 @@ export const getGoogleUser = async (setUser) => {
         if(!user) {
             const googleUserInfo = await GoogleSignin.signInSilently();
             setUser(googleUserInfo);
+            StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
         } else {
             setUser(JSON.parse(user));
         }

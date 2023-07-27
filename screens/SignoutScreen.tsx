@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useUserStore } from '../app/store.zustand.user';
 import { useNavigation } from '@react-navigation/native';
 import { googleSignIn, googleSignOut } from '../utils/googleUtil';
@@ -11,6 +11,16 @@ const SignoutScreen: React.FC = () => {
   const userInfo  = useUserStore((state) => state.user);
   const setUser  = useUserStore((state) => state.setUser);
   const {t} = useTranslation();
+
+  useEffect(() => {
+    const getUser = async () => {
+      const user = await StorageService.getItem(StorageService.USER);
+      if(user) {
+        setUser(JSON.parse(user));
+      }
+    }
+    getUser();
+  }, []);
 
   const googleSignInHandler = async () => {
     const user = await StorageService.getItem(StorageService.USER);

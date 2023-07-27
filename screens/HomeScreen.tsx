@@ -7,11 +7,19 @@ import LanguageUtils from '../utils/LanguageUtils';
 import LanguageScreen from './Language';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useTranslation } from 'react-i18next';
-import i18next from '../utils/i18next';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-const HomeScreen: React.FC = () => {
+type RootStackParamList = {};
+
+type Props = NativeStackScreenProps<RootStackParamList>;
+
+const HomeScreen = ({ route, navigation }: Props) => {
   const buttonStyle = "w-auto p-3 bg-lime-500 rounded bold mt-2";
   const {t} = useTranslation();
+
+  const learnHandler = () => {
+      navigation.navigate("Learn");
+  }
   
   return (
     <SafeAreaView className="flex-columns items-center w-full h-max">
@@ -23,11 +31,13 @@ const HomeScreen: React.FC = () => {
                     <Text className="bold text-2xl">2008</Text>
                   </View>
                   <View>
-                      <TouchableOpacity className={buttonStyle}>
-                          <Text className="text-[#fff] text-xl">View 100 questions 2008 Civics Test</Text>
+                      <TouchableOpacity className={buttonStyle}
+                        onPress={() => learnHandler()}
+                      >
+                          <Text className="text-[#fff] text-xl">{t("learn100questions")}</Text>
                       </TouchableOpacity>
                       <TouchableOpacity className={buttonStyle}>
-                          <Text className="text-[#fff] text-xl">Test 100 questions 2008 Civics Test</Text>
+                          <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
                       </TouchableOpacity>
                   </View>
 
@@ -36,10 +46,10 @@ const HomeScreen: React.FC = () => {
                   </View>
                   <View>
                       <TouchableOpacity className={buttonStyle}>
-                          <Text className="text-[#fff] text-xl">View 128 questions 2020 Civics Test</Text>
+                          <Text className="text-[#fff] text-xl">{t("learn128questions")}</Text>
                       </TouchableOpacity>
                       <TouchableOpacity className={buttonStyle}>
-                          <Text className="text-[#fff] text-xl">Test 128 questions 2020 Civics Test</Text>
+                          <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
                       </TouchableOpacity>
                   </View>
                 </View>
