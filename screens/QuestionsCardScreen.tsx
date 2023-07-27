@@ -69,28 +69,30 @@ const QuestionsCardScreen = (
 
   return (
     <View className="bg-[#fff] mb-8 p-1">
-      <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
-        <Text className="underline">Question {count+1}</Text>: {question} &nbsp;
-        {voice &&
-          <TouchableOpacity
-            onPress={() => playingAudio(voice)}
-          >
-            <PlayIcon size={20} color="blue"/>
-          </TouchableOpacity>
-        }&nbsp;&nbsp;
-        {voice &&
-          <TouchableOpacity
-            onPress={() => pauseAudio()}
-          >
-            <StopIcon size={20} color="blue"/>
-          </TouchableOpacity>
-        }
-      </Text>
-      {toggleTranslate && 
-        <Text style={{fontSize: subFontSize, marginBottom: 10}}>
-          ({question_vn})
+      <View className="mb-3">
+        <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
+          <Text className="underline">Question {count+1}</Text>: {question} &nbsp;
+          {voice &&
+            <TouchableOpacity
+              onPress={() => playingAudio(voice)}
+            >
+              <PlayIcon size={20} color="blue"/>
+            </TouchableOpacity>
+          }&nbsp;&nbsp;
+          {voice &&
+            <TouchableOpacity
+              onPress={() => pauseAudio()}
+            >
+              <StopIcon size={20} color="blue"/>
+            </TouchableOpacity>
+          }
         </Text>
-      }
+        {toggleTranslate && 
+          <Text style={{fontSize: subFontSize}}>
+            ({question_vn})
+          </Text>
+        }
+      </View>
       <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
         <Text className="underline">Answer</Text>: {typeof answer == "string" ? answer : JSON.stringify(answer, null, 2)}
       </Text>

@@ -22,6 +22,34 @@ const Stack = createStackNavigator();
 import "./locales/i18n";
 import LearnScreen from './screens/LearnScreen';
 
+// import { createDrawerNavigator } from '@react-navigation/drawer';
+
+// function Feed() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//       <Text>Feed Screen</Text>
+//     </View>
+//   );
+// }
+
+// function Article() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//       <Text>Article Screen</Text>
+//     </View>
+//   );
+// }
+
+// const Drawer = createDrawerNavigator();
+
+// function MyDrawer() {
+//   return (
+//     <Drawer.Navigator useLegacyImplementation={false}>
+//       <Drawer.Screen name="Home" component={HomeScreen} />
+//       <Drawer.Screen name="Learn" component={LearnScreen} />
+//     </Drawer.Navigator>
+//   );
+// }
 
 function App(): JSX.Element {
   return (

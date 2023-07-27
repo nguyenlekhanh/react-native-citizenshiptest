@@ -1,7 +1,6 @@
 import { View, Text, ActivityIndicator, TouchableOpacity } from 'react-native'
 import React, { useEffect, useRef, useState } from 'react'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { learn_2008, serverUrl } from '../utils/variables';
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import data from "../data/civics_test_2008.json";
 import { useDataStore } from '../app/store.zustand.data';

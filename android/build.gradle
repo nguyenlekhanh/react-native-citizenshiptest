@@ -14,8 +14,16 @@ buildscript {
         google()
         mavenCentral()
     }
+    configurations.all {
+       resolutionStrategy {
+           // Remove this override in 0.65+, as a proper fix is included in react-native itself.
+           force "com.facebook.react:react-native:" + "0.67.3"
+       }
+    }
     dependencies {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
     }
 }
+
+def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
