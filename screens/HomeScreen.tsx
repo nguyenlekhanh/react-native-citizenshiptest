@@ -9,6 +9,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import StorageService from '../utils/StorageService';
+import AdsFullScreen from './AdsFullScreen';
 
 type RootStackParamList = {};
 
@@ -20,6 +21,10 @@ const HomeScreen = ({ route, navigation }: Props) => {
 
   const learnHandler = () => {
       navigation.navigate("Learn");
+  }
+
+  const testHandler = () => {
+    navigation.navigate("Test");
   }
   
   useEffect(() => {
@@ -42,12 +47,16 @@ const HomeScreen = ({ route, navigation }: Props) => {
                     <Text className="bold text-2xl">2008</Text>
                   </View>
                   <View>
-                      <TouchableOpacity className={buttonStyle}
+                      <TouchableOpacity 
+                        className={buttonStyle}
                         onPress={() => learnHandler()}
                       >
                           <Text className="text-[#fff] text-xl">{t("learn100questions")}</Text>
                       </TouchableOpacity>
-                      <TouchableOpacity className={buttonStyle}>
+                      <TouchableOpacity 
+                        className={buttonStyle}
+                        onPress={() => testHandler()}
+                      >
                           <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
                       </TouchableOpacity>
                   </View>
