@@ -35,7 +35,6 @@ const HomeScreen = ({ route, navigation }: Props) => {
       }
     }
     getLanguage();
-    console.log('a1');
   }, []);
 
   return (

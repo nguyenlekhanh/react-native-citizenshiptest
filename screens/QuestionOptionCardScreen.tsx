@@ -12,6 +12,7 @@ type ChoiceProps = {
 
 type ItemProps = {
   count: number,
+  question: string,
   choice: ChoiceProps,
   subFontSize: number,
   showAnswerHandler: () => void,
@@ -25,6 +26,7 @@ type ItemProps = {
 const QuestionOptionsCardScreen = (
   {
     count,
+    question,
     choice,
     subFontSize,
     showAnswerHandler,
@@ -60,21 +62,6 @@ const QuestionOptionsCardScreen = (
 
         //first choose answer and right
         updateRightWrongAnswer(count, true);
-        
-        if(userChoiceParam === 1 && userInfo && userInfo?.token) {
-          const data = {
-            token: userInfo.token,
-            //TODO
-            //only update one time send one parameter to block when updated
-            //do it for wrong answer and only one time
-            //save the number of times of doing the test, that means when
-            //   openning a test save a test number and save a question that user has answered
-            //
-          }
-          
-          //updateAnswer();
-          //call to server update score
-        }
       } else {
         setRefTextColor('red');
         Toast.show({
@@ -83,8 +70,31 @@ const QuestionOptionsCardScreen = (
         });
         updateRightWrongAnswer(count, false);
       }
-      
+
+      //send the answer to server
+      if(userChoiceParam === 1 && userInfo && userInfo?.token) {
+        const data = {
+          token: userInfo.token,
+          question: question,
+          isCorrect: item.isCorrect,
+          email: userInfo.user.email
+          //TODO
+          //only update one time send one parameter to block when updated
+          //do it for wrong answer and only one time
+          //save the number of times of doing the test, that means when
+          //   openning a test save a test number and save a question that user has answered
+          //
+        }
+        
+        //send to server
+        console.log('send request to server');
+        updateAnswer(data);
+        //call to server update score
+      }
+
+      //count the user choice times per one question
       increaseUserChoiceHandler();
+
     }
   }
   

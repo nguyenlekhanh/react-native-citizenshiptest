@@ -18,7 +18,7 @@ type ItemProps = {
   primaryFontSize: number,
   subFontSize: number,
   optionsChoice: [],
-  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => {}
+  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => void
 };
 
 let audio:Sound;
@@ -127,10 +127,11 @@ const QuestionsTestCardScreen = (
         </Text>
 
         <View>
-        {optionsChoice.length > 1 && <FlatList
+        {optionsChoice && optionsChoice?.length && optionsChoice?.length > 1 ? <FlatList
             data={optionsChoice}
             renderItem={({item, index}) => <QuestionOptionsCardScreen 
                                               count={count+1}
+                                              question={question}
                                               choice={item}
                                               subFontSize={subFontSize}
                                               showAnswerHandler={showAnswerHandler}
@@ -143,7 +144,7 @@ const QuestionsTestCardScreen = (
                             }
             keyExtractor={(item, index) => index.toString()}
           />
-        }
+        : (<View><Text>No Data</Text></View>)}
         </View>
       </View>
 

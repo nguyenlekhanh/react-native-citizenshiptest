@@ -1,14 +1,21 @@
 import { serverUrl, test_answer_2008 } from "./variables";
 
 async function fetchData(url, data) {
+  const token = "Bearer " + data.token;
+  
+  let options = {
+    method: 'POST',
+    headers: {
+      Authorization: token,
+      "Content-type": "application/json"
+    },
+    body: JSON.stringify(data),
+  }
+
+  console.log(options);
+  ///const clientData = [...data];
   try {
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: data,
-    });
+    const response = await fetch(url, options);
 
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -25,12 +32,11 @@ async function fetchData(url, data) {
 
 const updateAnswer = async (data) => {
   const url = serverUrl + test_answer_2008;
-
-  fetchData(url, userInfo)
-    .then((data) => {
-      console.log(data);
+  console.log('fetch data from server');
+  fetchData(url, data)
+    .then((response) => {
+      console.log(response);
       // Process the fetched data here
-      updateTokenUserInfo(data, data);
     })
     .catch((error) => {
       // Handle errors if necessary

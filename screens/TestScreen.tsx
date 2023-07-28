@@ -63,7 +63,7 @@ const TestScreen: React.FC = () => {
       }
     }
     const totalAnswered:number = rightAnswerCount.current + wrongAnswerCount.current;
-    console.log(totalAnswered + ":" + totalQuestions.current);
+    //console.log(totalAnswered + ":" + totalQuestions.current);
     if(totalAnswered >= totalQuestions.current) {
       setFinishTest(true);
       setTimeout(() => {
@@ -98,6 +98,7 @@ const TestScreen: React.FC = () => {
     if(parsedData) {
       const questionDataServer = JSON.parse(parsedData);
 
+      console.log(randomNumber);
       randomNumber.map((item, index) => {
         //if(index<1) {
           tenQuestionsData.push(questionDataServer[item]);
@@ -199,7 +200,7 @@ const TestScreen: React.FC = () => {
                                             toggleTranslate={toggleTranslate}
                                             primaryFontSize={primaryFontSize}
                                             subFontSize={subFontSize}
-                                            optionsChoice={item.options}
+                                            optionsChoice={item?.options}
                                             updateRightWrongAnswer={updateRightWrongAnswer}
                                         />
                                 }
