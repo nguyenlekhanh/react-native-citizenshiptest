@@ -20,12 +20,18 @@ import "./locales/i18n";
 
 import {MainStackNavigator} from "./navigation/StackNavigator"
 // import DrawerNavigator from "./navigation/DrawerNavigator";
+import Toast from 'react-native-toast-message';
+import { toastConfig } from './configs/toastConfig';
+
 
 function App(): JSX.Element {
   return (
-    <NavigationContainer>
-      <MainStackNavigator />
-    </NavigationContainer>
+    <>
+      <NavigationContainer>
+        <MainStackNavigator />
+      </NavigationContainer>
+      <Toast config={toastConfig} />
+    </>
   );
 }
 

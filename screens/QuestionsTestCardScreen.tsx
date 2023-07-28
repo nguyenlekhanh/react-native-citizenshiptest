@@ -1,9 +1,11 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Sound from 'react-native-sound';
 import { PlayIcon, StopIcon } from 'react-native-heroicons/solid';
 import cls from "classnames";
+import QuestionOptionsCardScreen from './QuestionOptionCardScreen';
+import { useTranslation } from 'react-i18next';
 
 type ItemProps = {
   count: number,
@@ -14,16 +16,28 @@ type ItemProps = {
   voice: string,
   toggleTranslate: boolean,
   primaryFontSize: number,
-  subFontSize: number
+  subFontSize: number,
+  optionsChoice: []
 };
 
 let audio:Sound;
 
-const QuestionsCardScreen = (
+const QuestionsTestCardScreen = (
   {
     count, question, question_vn, answer, answer_vn, voice,
-    toggleTranslate, primaryFontSize, subFontSize
+    toggleTranslate, primaryFontSize, subFontSize, optionsChoice
   }: ItemProps) => {
+
+  const {t} = useTranslation();
+  const [showAnswer, setShowAnswer] = useState<boolean>(false);
+
+  const toggleAnswerHandler = () => {
+    setShowAnswer(!showAnswer);
+  }
+
+  const showAnswerHandler = () => {
+    setShowAnswer(true);
+  }
 
   const pauseAudio = () => {
     if(audio) {
@@ -94,17 +108,44 @@ const QuestionsCardScreen = (
         }
       </View>
 
-      <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
-        <Text className="underline">Answer</Text>: {typeof answer == "string" ? answer : JSON.stringify(answer, null, 2)}
-      </Text>
+      <View className="mb-3">
+        <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
+          <Text className="underline">Choices</Text>:
+        </Text>
 
-      {toggleTranslate && 
+        <View>
+        {optionsChoice && <FlatList
+            data={optionsChoice}
+            renderItem={({item, index}) => <QuestionOptionsCardScreen 
+                                              choice={item}
+                                              subFontSize={subFontSize}
+                                              showAnswerHandler={showAnswerHandler}
+                                            />
+                            }
+            keyExtractor={(item, index) => index.toString()}
+          />
+        }
+        </View>
+      </View>
+
+      <TouchableOpacity
+          onPress={() => toggleAnswerHandler()}
+        >
+        <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>{t("show-answer")}</Text>
+      </TouchableOpacity>
+      {showAnswer && 
+        <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
+          <Text className="underline">Answer</Text>: {typeof answer == "string" ? answer : JSON.stringify(answer, null, 2)}
+        </Text>
+      }
+      {showAnswer && toggleTranslate ? (
         <Text style={{fontSize: subFontSize}}>
           {typeof answer_vn == "string" ? answer_vn : JSON.stringify(answer_vn, null, 2)}
         </Text>
+        ) : (<Text></Text>)
       }
     </View>
   )
 }
 
-export default QuestionsCardScreen
+export default QuestionsTestCardScreen
