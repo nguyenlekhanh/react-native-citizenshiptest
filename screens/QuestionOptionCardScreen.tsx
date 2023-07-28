@@ -2,6 +2,8 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Toast, {ErrorToast} from 'react-native-toast-message';
 import { useTranslation } from 'react-i18next';
+import { updateAnswer } from '../utils/updateData';
+import { useUserStore } from '../app/store.zustand.user';
 
 type ChoiceProps = {
   "answer": string,
@@ -9,26 +11,31 @@ type ChoiceProps = {
 };
 
 type ItemProps = {
+  count: number,
   choice: ChoiceProps,
   subFontSize: number,
   showAnswerHandler: () => void,
   increaseUserChoiceHandler: () => void,
   userChoiceParam:number,
   setChoseTrueAnswerHandler: () => void,
-  choseTrueAnswer: boolean
+  choseTrueAnswer: boolean,
+  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => {}
 };
 
 const QuestionOptionsCardScreen = (
   {
+    count,
     choice,
     subFontSize,
     showAnswerHandler,
     increaseUserChoiceHandler,
     userChoiceParam,
     setChoseTrueAnswerHandler,
-    choseTrueAnswer
+    choseTrueAnswer,
+    updateRightWrongAnswer
   }: ItemProps) => {
 
+  const userInfo  = useUserStore((state) => state.user);
   const {t} = useTranslation();
   const [refTextColor, setRefTextColor] = useState<string>('#84CC15');
 
@@ -52,7 +59,20 @@ const QuestionOptionsCardScreen = (
         setChoseTrueAnswerHandler();
 
         //first choose answer and right
-        if(userChoiceParam === 1) {
+        updateRightWrongAnswer(count, true);
+        
+        if(userChoiceParam === 1 && userInfo && userInfo?.token) {
+          const data = {
+            token: userInfo.token,
+            //TODO
+            //only update one time send one parameter to block when updated
+            //do it for wrong answer and only one time
+            //save the number of times of doing the test, that means when
+            //   openning a test save a test number and save a question that user has answered
+            //
+          }
+          
+          //updateAnswer();
           //call to server update score
         }
       } else {
@@ -61,6 +81,7 @@ const QuestionOptionsCardScreen = (
           type: 'error',
           text1: t("try-again"),
         });
+        updateRightWrongAnswer(count, false);
       }
       
       increaseUserChoiceHandler();

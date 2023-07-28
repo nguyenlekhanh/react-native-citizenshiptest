@@ -16,10 +16,13 @@ import CheckBox from '../components/CheckBox';
 import { useTranslation } from 'react-i18next';
 import { getRandomNumbersArray } from '../utils/libs';
 import QuestionsTestCardScreen from './QuestionsTestCardScreen';
+import Toast from 'react-native-toast-message';
 
 type RootStackParamList = {};
 
 type Props = NativeStackScreenProps<RootStackParamList>;
+
+import Fireworks from 'react-native-fireworks';
 
 const TestScreen: React.FC = () => {
   const listRef = useRef(null);
@@ -39,8 +42,40 @@ const TestScreen: React.FC = () => {
   //let subFontSize = 'text-[18px]';
   const [primaryFontSize, setPrimaryFontSize] = useState<number>(20);
   const [subFontSize, setSubFontSize] = useState<number>(18);
+  const [finishTest, setFinishTest] = useState<boolean>(false);
+
+  const totalQuestions = useRef<number>(0);
+  const rightAnswerCount = useRef<number>(0);
+  const wrongAnswerCount = useRef<number>(0);
+  const questionsHasAnswered: Array<number> = [];
 
   const randomNumber = getRandomNumbersArray(10);
+
+  const updateRightWrongAnswer = (questionAnswered: number, answer: boolean) => {
+    const hasAnswered = questionsHasAnswered.includes(questionAnswered);
+
+    if(!hasAnswered) {
+      questionsHasAnswered.push(questionAnswered);
+      if(answer) {
+        rightAnswerCount.current = rightAnswerCount.current + 1;
+      } else {
+        wrongAnswerCount.current = wrongAnswerCount.current + 1;
+      }
+    }
+    const totalAnswered:number = rightAnswerCount.current + wrongAnswerCount.current;
+    console.log(totalAnswered + ":" + totalQuestions.current);
+    if(totalAnswered >= totalQuestions.current) {
+      setFinishTest(true);
+      setTimeout(() => {
+        setFinishTest(false);
+      }, 10000)
+      const messageFinishTest = t("message-finish-test") + " " + rightAnswerCount.current.toString() + "/" + totalQuestions.current.toString();
+      Toast.show({
+        type: 'success',
+        text1: messageFinishTest,
+      });
+    }
+  }
 
   const changeFontsizeHandler = (action:number) => {
     if(action === 1) {
@@ -66,8 +101,14 @@ const TestScreen: React.FC = () => {
       randomNumber.map((item, index) => {
         //if(index<1) {
           tenQuestionsData.push(questionDataServer[item]);
+          if(typeof(questionDataServer[item]?.options) != 'undefined' && 
+            questionDataServer[item]?.options.length > 2) {
+            totalQuestions.current = totalQuestions.current + 1;
+          }
+          // console.log("totalquestion:"+totalQuestions.current)
         //}
       });
+      //console.log(totalQuestions.current);
       //console.log(JSON.stringify(tenQuestionsData));
       setRandomQuestionData(tenQuestionsData);
     }
@@ -159,6 +200,7 @@ const TestScreen: React.FC = () => {
                                             primaryFontSize={primaryFontSize}
                                             subFontSize={subFontSize}
                                             optionsChoice={item.options}
+                                            updateRightWrongAnswer={updateRightWrongAnswer}
                                         />
                                 }
                 keyExtractor={(item, index) => index.toString()}
@@ -173,6 +215,7 @@ const TestScreen: React.FC = () => {
       </View>
 
       <AdsScreen />
+      {finishTest && <Fireworks />}
     </SafeAreaView>
   )
 }

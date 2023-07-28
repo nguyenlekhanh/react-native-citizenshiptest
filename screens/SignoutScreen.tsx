@@ -108,9 +108,6 @@ const SignoutScreen: React.FC = () => {
 
     if(!user) {
       googleSignIn(setUser);
-      await StorageService.saveItem(StorageService.USER, JSON.stringify(userInfo));
-
-      
     } else {
       setUser(JSON.parse(user));
     }
@@ -118,7 +115,7 @@ const SignoutScreen: React.FC = () => {
 
   const removeUser = () => {
     googleSignOut(setUser);
-    navigation.replace('Login');
+    //navigation.replace('Login');
   }
 
   if(userInfo) {

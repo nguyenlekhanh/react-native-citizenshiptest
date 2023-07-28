@@ -8,5 +8,6 @@
   "show-translate": "Translate",
   "change-font-size": "Font size",
   "show-answer": "Show Answer",
-  "try-again": "Try again"
+  "try-again": "Try again",
+  "message-finish-test": "You have done your test"
 }

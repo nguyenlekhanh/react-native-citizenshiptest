@@ -16,26 +16,32 @@ GoogleSignin.configure({
     iosClientId: {googleIosClientId},
 });
 
+const saveGoogleUserToStore = async (googleUserInfo) => {
+    await StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
+}
+
 export const googleSignIn = async (setUser) => {
     //Another to sign in
-      // await GoogleSignin.hasPlayServices();
-      // const googleUserInfo = await GoogleSignin.signIn();
-      // setUserInfo(googleUserInfo);
-      // console.log(googleUserInfo);
+    await GoogleSignin.hasPlayServices();
+    const googleUserInfo = await GoogleSignin.signIn();
+    if(googleUserInfo) {
+        await StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
+        setUser(googleUserInfo);
+    }
 
-
-    GoogleSignin.hasPlayServices().then((hasPlayService) => {
-        if (hasPlayService) {
-            GoogleSignin.signIn().then((googleUserInfo) => {
-              setUser(googleUserInfo);
-              StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
-            }).catch((e) => {
-              console.log("ERROR IS: " + JSON.stringify(e));
-            })
-        }
-    }).catch((e) => {
-        console.log("ERROR IS: " + JSON.stringify(e));
-    })
+    // GoogleSignin.hasPlayServices().then((hasPlayService) => {
+    //     if (hasPlayService) {
+    //         GoogleSignin.signIn().then((googleUserInfo) => {
+    //           saveGoogleUserToStore(googleUserInfo);
+    //           //setUser(googleUserInfo);
+    //           //StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
+    //         }).catch((e) => {
+    //           console.log("ERROR IS: " + JSON.stringify(e));
+    //         })
+    //     }
+    // }).catch((e) => {
+    //     console.log("ERROR IS: " + JSON.stringify(e));
+    // })
 }
 
 export const getGoogleUser = async (setUser) => {
@@ -59,7 +65,7 @@ export const getGoogleUser = async (setUser) => {
 
 export const googleSignOut = async (setUser) => {
     try {
-        StorageService.deleteItem(StorageService.USER);
+        await StorageService.deleteItem(StorageService.USER);
         setUser('');
         await GoogleSignin.signOut();
     } catch (error) {

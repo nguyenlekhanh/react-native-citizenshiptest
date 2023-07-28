@@ -17,7 +17,8 @@ type ItemProps = {
   toggleTranslate: boolean,
   primaryFontSize: number,
   subFontSize: number,
-  optionsChoice: []
+  optionsChoice: [],
+  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => {}
 };
 
 let audio:Sound;
@@ -25,7 +26,8 @@ let audio:Sound;
 const QuestionsTestCardScreen = (
   {
     count, question, question_vn, answer, answer_vn, voice,
-    toggleTranslate, primaryFontSize, subFontSize, optionsChoice
+    toggleTranslate, primaryFontSize, subFontSize, optionsChoice,
+    updateRightWrongAnswer
   }: ItemProps) => {
 
   const {t} = useTranslation();
@@ -39,7 +41,7 @@ const QuestionsTestCardScreen = (
 
   const increaseUserChoiceHandler = () => {
     setUserChoice((prev) => prev + 1);
-    console.log(userChoice);
+    //console.log(userChoice);
   }
 
   const toggleAnswerHandler = () => {
@@ -125,9 +127,10 @@ const QuestionsTestCardScreen = (
         </Text>
 
         <View>
-        {optionsChoice && <FlatList
+        {optionsChoice.length > 1 && <FlatList
             data={optionsChoice}
             renderItem={({item, index}) => <QuestionOptionsCardScreen 
+                                              count={count+1}
                                               choice={item}
                                               subFontSize={subFontSize}
                                               showAnswerHandler={showAnswerHandler}
@@ -135,6 +138,7 @@ const QuestionsTestCardScreen = (
                                               userChoiceParam={userChoice}
                                               setChoseTrueAnswerHandler={setChoseTrueAnswerHandler}
                                               choseTrueAnswer={choseTrueAnswer}
+                                              updateRightWrongAnswer={updateRightWrongAnswer}
                                             />
                             }
             keyExtractor={(item, index) => index.toString()}

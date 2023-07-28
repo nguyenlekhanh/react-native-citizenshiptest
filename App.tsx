@@ -23,7 +23,6 @@ import {MainStackNavigator} from "./navigation/StackNavigator"
 import Toast from 'react-native-toast-message';
 import { toastConfig } from './configs/toastConfig';
 
-
 function App(): JSX.Element {
   return (
     <>

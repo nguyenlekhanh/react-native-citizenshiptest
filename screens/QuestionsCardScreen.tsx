@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Sound from 'react-native-sound';
@@ -30,6 +30,14 @@ const QuestionsCardScreen = (
       audio.stop();
     }
   }
+
+  useEffect(() => {
+
+    // Specify how to clean up after this effect:
+    return () => {
+      audio.stop();
+    };
+  }, []);
 
   const playingAudio = (url: string) => {
     if(audio){
