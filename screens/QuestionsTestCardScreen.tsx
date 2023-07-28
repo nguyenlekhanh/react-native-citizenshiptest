@@ -30,6 +30,17 @@ const QuestionsTestCardScreen = (
 
   const {t} = useTranslation();
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
+  const [userChoice, setUserChoice] = useState<number>(1);
+  const [choseTrueAnswer, setChoseTrueAnswer] = useState<boolean>(false);
+
+  const setChoseTrueAnswerHandler = () => {
+    setChoseTrueAnswer(true);
+  }
+
+  const increaseUserChoiceHandler = () => {
+    setUserChoice((prev) => prev + 1);
+    console.log(userChoice);
+  }
 
   const toggleAnswerHandler = () => {
     setShowAnswer(!showAnswer);
@@ -120,6 +131,10 @@ const QuestionsTestCardScreen = (
                                               choice={item}
                                               subFontSize={subFontSize}
                                               showAnswerHandler={showAnswerHandler}
+                                              increaseUserChoiceHandler={increaseUserChoiceHandler}
+                                              userChoiceParam={userChoice}
+                                              setChoseTrueAnswerHandler={setChoseTrueAnswerHandler}
+                                              choseTrueAnswer={choseTrueAnswer}
                                             />
                             }
             keyExtractor={(item, index) => index.toString()}
