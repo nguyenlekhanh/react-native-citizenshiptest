@@ -6,92 +6,43 @@ import { googleSignIn, googleSignOut } from '../utils/googleUtil';
 import StorageService from '../utils/StorageService';
 import { useTranslation } from 'react-i18next';
 import { serverUrl, signupWithGoogleUrl } from '../utils/variables';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { fetchData } from '../utils/updateData';
 
 const SignoutScreen: React.FC = () => {
   const navigation = useNavigation();
   const userServerUpdated = useState<number>(1);
-  const userInfo  = useUserStore((state) => state.user);
+  const userInfo = useUserStore((state) => state.user);
   const setUser  = useUserStore((state) => state.setUser);
+  const token = useUserStore((state) => state.token);
+  const setToken  = useUserStore((state) => state.setToken);
   const {t} = useTranslation();
-
-  async function fetchData(url: string, user:any): Promise<any[]> {
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(user),
-      });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-  
-      const data: any[] = await response.json();
-      return data;
-    } catch (error) {
-      // You can handle errors here
-      console.error('Error fetching data:', error);
-      throw error;
-    }
-  }
-
-  async function updateTokenUserInfo(data: any[], user:any) {
-
-    if(data && data?.token) {
-      user.token = data.token;
-
-      await StorageService.saveItem(StorageService.USER, JSON.stringify(user));
-
-      setUser(user);
-    }
-  }
 
   useEffect(() => {
     const getUser = async () => {
       const user = await StorageService.getItem(StorageService.USER);
 
       if(user) {
-        const parseUser = JSON.parse(user);
-
-        if(typeof(parseUser.token) == "undefined") {
-
-          const userCheck = async () => {
-            const url = serverUrl + signupWithGoogleUrl;
-    
-            fetchData(url, parseUser)
-              .then((data) => {
-                console.log(data);
-                // Process the fetched data here
-                updateTokenUserInfo(data, parseUser);
-              })
-              .catch((error) => {
-                // Handle errors if necessary
-              });
-          }
-          userCheck();
-        } else {
+        if(typeof user == 'string') {
           setUser(JSON.parse(user));
+        } if(typeof user == 'object') {
+          setUser(user);
         }
       }
     }
     getUser();
   }, []);
 
-
   useEffect(() => {
 
-    if(userInfo && typeof(userInfo.token) == "undefined") {
-  
+    if(userInfo && !token) {
+      console.log('check user');
       const userCheck = async () => {
         const url = serverUrl + signupWithGoogleUrl;
 
         fetchData(url, userInfo)
           .then((data) => {
-            console.log(data);
-            // Process the fetched data here
-            updateTokenUserInfo(data, [...userInfo]);
+            setToken(data.token);
           })
           .catch((error) => {
             // Handle errors if necessary
@@ -103,10 +54,19 @@ const SignoutScreen: React.FC = () => {
   }, [userInfo]);
 
 
+  useEffect(() => {
+    if(token) {
+      
+    }
+    console.log('serverToken');
+    console.log(token);
+  }, [token]);
+
   const googleSignInHandler = async () => {
     const user = await StorageService.getItem(StorageService.USER);
 
     if(!user) {
+      console.log('google sign in');
       googleSignIn(setUser);
     } else {
       setUser(JSON.parse(user));
@@ -114,11 +74,11 @@ const SignoutScreen: React.FC = () => {
   }
 
   const removeUser = () => {
+    setToken('');
     googleSignOut(setUser);
-    //navigation.replace('Login');
   }
 
-  if(userInfo) {
+  if(userInfo || token) {
     return (
       <TouchableOpacity onPress={() => removeUser()}>
         <Text

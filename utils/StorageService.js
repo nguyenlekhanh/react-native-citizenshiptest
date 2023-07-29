@@ -5,12 +5,13 @@ const StorageKeys = {
     USER: '@user'
 }
 
-function getItem(key) {
-    return AsyncStorage.getItem(key)
-        .then((i) => {
-            return JSON.parse(i);
-        })
-        .catch((e) => console.log(e.message, e));
+async function getItem(key) {
+    const data = await AsyncStorage.getItem(key);
+    let parseData = '';
+    if(data) {
+        parseData = JSON.parse(data);
+    }
+    return parseData;
 }
 
 function saveItem(key, item) {

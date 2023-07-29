@@ -1,10 +1,10 @@
 import { serverUrl, test_answer_2008 } from "./variables";
 
-async function fetchData(url, data) {
-  const token = "Bearer " + data.token;
+async function fetchData(url, data, type="POST") {
+  const token = "Bearer " + data?.token?? '';
   
   let options = {
-    method: 'POST',
+    method: type,
     headers: {
       Authorization: token,
       "Content-type": "application/json"
@@ -12,8 +12,6 @@ async function fetchData(url, data) {
     body: JSON.stringify(data),
   }
 
-  console.log(options);
-  ///const clientData = [...data];
   try {
     const response = await fetch(url, options);
 
@@ -43,4 +41,4 @@ const updateAnswer = async (data) => {
     });
 }
 
-export { updateAnswer };
+export { updateAnswer, fetchData };
