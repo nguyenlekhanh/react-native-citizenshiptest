@@ -55,6 +55,10 @@ const HomeScreen = ({ route, navigation }: Props) => {
     setshowErrorShowMyScore(false);
   }
 
+  const showContactScreenHandler = () => {
+    navigation.navigate('Contact');
+  }
+
   return (
     <SafeAreaView className="flex-columns items-center w-full h-max">
         <View className="w-full h-[89%] mt-2">
@@ -109,6 +113,18 @@ const HomeScreen = ({ route, navigation }: Props) => {
                             {t("show-my-score")}
                           </Text>
                       </TouchableOpacity>
+                  </View>
+
+                  <View
+                    className="w-full items-end mt-5"
+                  >
+                    <TouchableOpacity
+                      onPress={() => showContactScreenHandler()}
+                    >
+                      <Text 
+                        className="text-xl bold underline text-blue-700"
+                      >{t("contact")}</Text>
+                    </TouchableOpacity>
                   </View>
                 </View>
 

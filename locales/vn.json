@@ -12,5 +12,10 @@
   "try-again": "Thử lại",
   "message-finish-test": "Hoàn thành bài kiểm tra",
   "show-my-score": "Xem Kết Quả",
-  "error-use-func-msg": "Bạn cần đăng nhập để thực hiện chức năng này!"
+  "error-use-func-msg": "Bạn cần đăng nhập để thực hiện chức năng này!",
+  "contact": "Góp ý",
+  "send": "Gửi",
+  "your-name": "Tên của bạn",
+  "subject": "Chủ đề",
+  "your-message": "Nội dung"
 }
