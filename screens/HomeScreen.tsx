@@ -1,5 +1,5 @@
 import { View, Text, TextInput, SafeAreaView, Button } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import AdsScreen from './AdsScreen';
 import { TouchableOpacity } from 'react-native';
 import languagekeys from '../localization/languagekeys';
@@ -10,6 +10,9 @@ import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import StorageService from '../utils/StorageService';
 import AdsFullScreen from './AdsFullScreen';
+import { useUserStore } from '../app/store.zustand.user';
+import ErrorScreen from './ErrorScreen';
+
 
 type RootStackParamList = {};
 
@@ -18,6 +21,9 @@ type Props = NativeStackScreenProps<RootStackParamList>;
 const HomeScreen = ({ route, navigation }: Props) => {
   const buttonStyle = "w-auto p-3 bg-lime-500 rounded bold mt-2";
   const {t, i18n} = useTranslation();
+  const userInfo  = useUserStore((state) => state.user);
+  const token  = useUserStore((state) => state.token);
+  const [showErrorShowMyScore, setshowErrorShowMyScore] = useState<boolean>(false);
 
   const learnHandler = () => {
       navigation.navigate("Learn");
@@ -36,6 +42,18 @@ const HomeScreen = ({ route, navigation }: Props) => {
     }
     getLanguage();
   }, []);
+
+  const showScoreHandler = async () => {
+    if(userInfo && token) {
+      navigation.navigate('ScoreScreen');
+    } else {
+      setshowErrorShowMyScore(true);
+    }
+  };
+
+  const setHideErrorShowMyScoreHandler = () => {
+    setshowErrorShowMyScore(false);
+  }
 
   return (
     <SafeAreaView className="flex-columns items-center w-full h-max">
@@ -72,7 +90,29 @@ const HomeScreen = ({ route, navigation }: Props) => {
                           <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
                       </TouchableOpacity>
                   </View>
+
+
+                  <View className="my-7 border border-stone-400	" />
+
+                  <View>
+                      {showErrorShowMyScore &&
+                        <ErrorScreen 
+                          msg={t("error-use-func-msg")}
+                          closeErrorMsg={setHideErrorShowMyScoreHandler}
+                        />
+                      }
+                      <TouchableOpacity 
+                        className={buttonStyle}
+                        onPress={() => showScoreHandler()}
+                      >
+                          <Text className="text-[#fff] text-xl">
+                            {t("show-my-score")}
+                          </Text>
+                      </TouchableOpacity>
+                  </View>
                 </View>
+
+                
               </ScrollView>
             </View>
 
@@ -85,5 +125,6 @@ const HomeScreen = ({ route, navigation }: Props) => {
     </SafeAreaView>
   )
 }
+
 
 export default HomeScreen

@@ -36,7 +36,6 @@ const SignoutScreen: React.FC = () => {
   useEffect(() => {
 
     if(userInfo && !token) {
-      console.log('check user');
       const userCheck = async () => {
         const url = serverUrl + signupWithGoogleUrl;
 
@@ -58,15 +57,12 @@ const SignoutScreen: React.FC = () => {
     if(token) {
       
     }
-    console.log('serverToken');
-    console.log(token);
   }, [token]);
 
   const googleSignInHandler = async () => {
     const user = await StorageService.getItem(StorageService.USER);
 
     if(!user) {
-      console.log('google sign in');
       googleSignIn(setUser);
     } else {
       setUser(JSON.parse(user));

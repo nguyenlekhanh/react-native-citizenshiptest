@@ -38,6 +38,7 @@ const QuestionOptionsCardScreen = (
   }: ItemProps) => {
 
   const userInfo  = useUserStore((state) => state.user);
+  const token  = useUserStore((state) => state.token);
   const {t} = useTranslation();
   const [refTextColor, setRefTextColor] = useState<string>('#84CC15');
 
@@ -72,22 +73,16 @@ const QuestionOptionsCardScreen = (
       }
 
       //send the answer to server
-      if(userChoiceParam === 1 && userInfo && userInfo?.token) {
+      if(userChoiceParam === 1 && userInfo && token) {
         const data = {
-          token: userInfo.token,
+          token: token,
           question: question,
           isCorrect: item.isCorrect,
           email: userInfo.user.email
-          //TODO
-          //only update one time send one parameter to block when updated
-          //do it for wrong answer and only one time
-          //save the number of times of doing the test, that means when
-          //   openning a test save a test number and save a question that user has answered
-          //
         }
         
         //send to server
-        console.log('send request to server');
+        //console.log('send request to server');
         updateAnswer(data);
         //call to server update score
       }

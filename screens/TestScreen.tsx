@@ -98,7 +98,7 @@ const TestScreen: React.FC = () => {
     if(parsedData) {
       const questionDataServer = JSON.parse(parsedData);
 
-      console.log(randomNumber);
+      //console.log(randomNumber);
       randomNumber.map((item, index) => {
         //if(index<1) {
           tenQuestionsData.push(questionDataServer[item]);

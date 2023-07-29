@@ -1,4 +1,4 @@
-import { serverUrl, test_answer_2008 } from "./variables";
+import { get_answer, serverUrl, test_answer_2008 } from "./variables";
 
 async function fetchData(url, data, type="POST") {
   const token = "Bearer " + data?.token?? '';
@@ -30,10 +30,10 @@ async function fetchData(url, data, type="POST") {
 
 const updateAnswer = async (data) => {
   const url = serverUrl + test_answer_2008;
-  console.log('fetch data from server');
+
   fetchData(url, data)
     .then((response) => {
-      console.log(response);
+      //console.log(response);
       // Process the fetched data here
     })
     .catch((error) => {
@@ -41,4 +41,21 @@ const updateAnswer = async (data) => {
     });
 }
 
-export { updateAnswer, fetchData };
+const getUserScore = async (data) => {
+  const url = serverUrl + get_answer;
+  let responseData = '';
+  return fetchData(url, data);
+    // .then((response) => {
+    //   //console.log(typeof response);
+    //   if(response.result) {
+    //     //console.log(response.result);
+    //     responseData = response.result;
+    //   }
+    //   // Process the fetched data here
+    // })
+    // .catch((error) => {
+    //   // Handle errors if necessary
+    // });
+}
+
+export { updateAnswer, fetchData, getUserScore };

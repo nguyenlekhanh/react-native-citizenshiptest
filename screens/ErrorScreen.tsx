@@ -4,17 +4,21 @@ import React, { useEffect } from 'react'
 type ItemProps = {
   msg: string,
   closeErrorMsg: () => void
+  timeout: number
 };
 
 const ErrorScreen = ({
   msg,
-  closeErrorMsg
+  closeErrorMsg,
+  timeout=5000
 }: ItemProps) => {
 
   useEffect(() => {
-    setTimeout(() => {
-      closeErrorMsg();
-    }, 5000)
+    if(timeout > 0) {
+      setTimeout(() => {
+        closeErrorMsg();
+      }, timeout);
+    }
   }, []);
 
   return (

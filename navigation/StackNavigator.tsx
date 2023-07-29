@@ -5,6 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import LearnScreen from '../screens/LearnScreen';
 import SignoutScreen from '../screens/SignoutScreen';
 import TestScreen from "../screens/TestScreen";
+import ScoreScreen from "../screens/ScoreScreen";
 
 const Stack = createStackNavigator();
 
@@ -46,6 +47,16 @@ const MainStackNavigator = () => {
         <Stack.Screen 
           name="Test" 
           component={TestScreen} 
+          options={{
+            headerRight: () => (
+              <SignoutScreen />
+            ),
+          }}
+        />
+
+        <Stack.Screen 
+          name="ScoreScreen" 
+          component={ScoreScreen} 
           options={{
             headerRight: () => (
               <SignoutScreen />

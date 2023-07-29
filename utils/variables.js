@@ -7,3 +7,4 @@ export const serverUrl = "http://10.0.0.108:10000";
 export const signupWithGoogleUrl = "/user/signupWithGoogle/"; 
 export const learn_2008 = "/civics/learn/2008"; 
 export const test_answer_2008 = "/civics/test/answer/2008"; 
+export const get_answer = "/civics/test/get_answer"; 
