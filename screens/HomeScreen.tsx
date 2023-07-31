@@ -31,6 +31,10 @@ const HomeScreen = ({ route, navigation }: Props) => {
   const testHandler = () => {
     navigation.navigate("Test");
   }
+
+  const smallTalkHandler = () => {
+    navigation.navigate("SmallTalk");
+  }
   
   useEffect(() => {
     const getLanguage = async () => {
@@ -84,6 +88,29 @@ const HomeScreen = ({ route, navigation }: Props) => {
                       >
                           <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
                       </TouchableOpacity>
+                      <View>
+                        {showErrorShowMyScore &&
+                          <ErrorScreen 
+                            msg={t("error-use-func-msg")}
+                            closeErrorMsg={setHideErrorShowMyScoreHandler}
+                          />
+                        }
+                        <TouchableOpacity 
+                          className={buttonStyle}
+                          onPress={() => showScoreHandler()}
+                        >
+                            <Text className="text-[#fff] text-xl">
+                              {t("show-my-score")}
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <TouchableOpacity 
+                        className={buttonStyle}
+                        onPress={() => smallTalkHandler()}
+                      >
+                          <Text className="text-[#fff] text-xl">{t("small-talk")}</Text>
+                      </TouchableOpacity>
                   </View>
 
                   <View className="mt-10">
@@ -98,25 +125,8 @@ const HomeScreen = ({ route, navigation }: Props) => {
                       </TouchableOpacity>
                   </View>
 
-
+                  {/* -------------- */}
                   <View className="my-7 border border-stone-400	" />
-
-                  <View>
-                      {showErrorShowMyScore &&
-                        <ErrorScreen 
-                          msg={t("error-use-func-msg")}
-                          closeErrorMsg={setHideErrorShowMyScoreHandler}
-                        />
-                      }
-                      <TouchableOpacity 
-                        className={buttonStyle}
-                        onPress={() => showScoreHandler()}
-                      >
-                          <Text className="text-[#fff] text-xl">
-                            {t("show-my-score")}
-                          </Text>
-                      </TouchableOpacity>
-                  </View>
 
                   <View
                     className="w-full items-end mt-5"

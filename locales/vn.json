@@ -3,9 +3,9 @@
   "sign-in-with-google": "Đăng nhập Google",
   "sign-in-with-guess": "Đăng nhập khách",
   "sign-out": "Thoát",
-  "learn100questions": "Học 100 câu hỏi 2008",
+  "learn100questions": "100 CÂU HỎI KIẾN THỨC CÔNG DÂN",
   "learn128questions": "Học 128 câu hỏi 2020",
-  "Doing-a-test": "Làm bài test",
+  "Doing-a-test": "Kiểm tra 10 câu hỏi ngẫu nhiên",
   "show-translate": "Song ngữ",
   "change-font-size": "Phông chữ" ,
   "show-answer": "Đáp án",
@@ -17,5 +17,6 @@
   "send": "Gửi",
   "your-name": "Tên của bạn",
   "subject": "Chủ đề",
-  "your-message": "Nội dung"
+  "your-message": "Nội dung",
+  "small-talk": "Các câu hỏi xã giao"
 }

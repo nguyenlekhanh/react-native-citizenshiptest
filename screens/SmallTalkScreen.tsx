@@ -1,0 +1,136 @@
+import { View, Text, ActivityIndicator, TouchableOpacity   } from 'react-native'
+import React, { useRef, useState, useEffect } from 'react'
+import AdsScreen from './AdsScreen';
+import { useTranslation } from 'react-i18next';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import data from "../data/small_talk.json";
+import { FlatList, ScrollView } from 'react-native-gesture-handler';
+import {
+  MinusIcon, PlusIcon
+} from 'react-native-heroicons/outline';
+import ScrollToTopScreen from './ScrollToTopScreen';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import CheckBox from '../components/CheckBox';
+import ParseGroupItemScreen from './ParseGroupItemScreen';
+
+type RootStackParamList = {};
+
+type Props = NativeStackScreenProps<RootStackParamList>;
+
+const SmallTalkScreen = ({ route, navigation }: Props) => {
+
+  const listRef = useRef(null);
+  const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
+  const {t} = useTranslation();
+
+  const [jsonData, setJsonData] = useState('');
+
+  const [toggleTranslate, setToggleTranslate] = useState<boolean>(false)
+  const [fontsize, setFontsize] = useState<number>(0);
+  let defaultPrimaryFontSize = 20;
+  let defaultSubSizeNumber = 20;
+  const [primaryFontSize, setPrimaryFontSize] = useState<number>(20);
+  const [subFontSize, setSubFontSize] = useState<number>(18);
+
+  const changeFontsizeHandler = (action:number) => {
+    
+    if(action === 1) {
+      if(fontsize < 30) {
+        setFontsize((prev) => prev = prev + 1);
+      }
+    } else if(action === 2) {
+      if(fontsize > 0) {
+        setFontsize((prev) => prev = prev - 1);
+      }
+    } else {
+      setFontsize(0);
+    }
+    setPrimaryFontSize(defaultPrimaryFontSize + fontsize);
+    setSubFontSize(defaultSubSizeNumber + fontsize);
+  }
+
+  useEffect(() => {
+    //setIsLoadingData(true);
+    if(!jsonData) {
+      //console.log(jsonData);
+      //console.log('=================');
+      setTimeout(() => {
+        if(data && data?.questions) {
+          setJsonData(data.questions);
+        }
+      }, 1);
+    } else {
+      setIsLoadingData(false);
+    }
+  }, [jsonData]);
+
+  const scrollToTopHandler = () => {
+    listRef.current.scrollToOffset({ offset: 0, animated: true });
+  }
+
+  const toggleTranslateHandler = () => {
+    setToggleTranslate(!toggleTranslate);
+  }
+
+  return (
+    <SafeAreaView className="flex-columns items-center w-full h-max">
+      <View className="w-full h-[89%] mt-2">
+        {isLoadingData &&
+          <ActivityIndicator
+            animating = {isLoadingData}
+            color = '#bc2b78'
+            size = "large"/>
+        }
+        {jsonData && jsonData?.length &&
+          <View className="m-2">
+            <View className="absolute top-0 left-0 w-full">
+              <View className="flex-row justify-between	">
+                <View className="flex-row">
+                </View>
+                <View className="flex-row">
+                  <TouchableOpacity
+                    onPress={() => changeFontsizeHandler(0)}
+                  >
+                    <Text className="text-xl text-blue-700">{t("change-font-size")} &nbsp;</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    onPress={() => changeFontsizeHandler(1)}
+                  >
+                    <PlusIcon size={25} color="blue" />
+                  </TouchableOpacity>
+                  <Text>&nbsp;&nbsp;&nbsp;</Text>
+                  <TouchableOpacity
+                    onPress={() => changeFontsizeHandler(2)}
+                  >
+                    <MinusIcon size={25} color="blue" />
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+            
+            <FlatList
+              className="mt-10"
+              ref={listRef}
+              data={jsonData}
+              renderItem={({item, index}) => <ParseGroupItemScreen 
+                                          group={item}
+                                          toggleTranslate={toggleTranslate}
+                                          primaryFontSize={primaryFontSize}
+                                          subFontSize={subFontSize}
+                                      />
+                              }
+              keyExtractor={(item, index) => index.toString()}
+            />
+            
+            <ScrollToTopScreen ref={listRef}/>
+          </View>
+        }
+      </View>
+
+      <AdsScreen />
+    </SafeAreaView>
+  )
+}
+
+
+export default SmallTalkScreen

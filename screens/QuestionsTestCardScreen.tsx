@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Sound from 'react-native-sound';
 import { PlayIcon, StopIcon } from 'react-native-heroicons/solid';
-import cls from "classnames";
 import QuestionOptionsCardScreen from './QuestionOptionCardScreen';
 import { useTranslation } from 'react-i18next';
 
