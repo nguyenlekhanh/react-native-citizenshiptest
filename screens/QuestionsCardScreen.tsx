@@ -35,7 +35,9 @@ const QuestionsCardScreen = (
 
     // Specify how to clean up after this effect:
     return () => {
-      audio.stop();
+      if(audio) {
+        audio.stop();
+      }
     };
   }, []);
 

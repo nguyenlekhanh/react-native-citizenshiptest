@@ -2,8 +2,6 @@ import { View, Text, TextInput, SafeAreaView, Button } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import AdsScreen from './AdsScreen';
 import { TouchableOpacity } from 'react-native';
-import languagekeys from '../localization/languagekeys';
-import LanguageUtils from '../utils/LanguageUtils';
 import LanguageScreen from './Language';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useTranslation } from 'react-i18next';
@@ -24,6 +22,7 @@ const HomeScreen = ({ route, navigation }: Props) => {
   const userInfo  = useUserStore((state) => state.user);
   const token  = useUserStore((state) => state.token);
   const [showErrorShowMyScore, setshowErrorShowMyScore] = useState<boolean>(false);
+  const [showErrorContact, setshowErrorContact] = useState<boolean>(false);
 
   const learnHandler = () => {
       navigation.navigate("Learn");
@@ -56,7 +55,11 @@ const HomeScreen = ({ route, navigation }: Props) => {
   }
 
   const showContactScreenHandler = () => {
-    navigation.navigate('Contact');
+    if(userInfo && token) {
+      navigation.navigate('Contact');
+    } else {
+      setshowErrorContact(true);
+    }
   }
 
   return (
@@ -118,6 +121,13 @@ const HomeScreen = ({ route, navigation }: Props) => {
                   <View
                     className="w-full items-end mt-5"
                   >
+                    {showErrorContact &&
+                      <ErrorScreen 
+                        msg={t("error-use-func-msg")}
+                        closeErrorMsg={setshowErrorContact}
+                      />
+                    }
+                    
                     <TouchableOpacity
                       onPress={() => showContactScreenHandler()}
                     >

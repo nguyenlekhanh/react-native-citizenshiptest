@@ -24,6 +24,7 @@ const ContactScreen = ({ route, navigation }: Props) => {
   const [messageError, setMessageError] = useState<string>('black');
 
   const userInfo = useUserStore((state) => state.user);
+  const token = useUserStore((state) => state.token);
   const [modalVisible, setModalVisible] = useState(false);
 
   const submitFormHandler = () => {
@@ -61,6 +62,7 @@ const ContactScreen = ({ route, navigation }: Props) => {
         name: name,
         subject: subject,
         message: message,
+        token: token,
         email: ''
       }
 
