@@ -84,8 +84,8 @@ const ParseItemScreen = (
             </TouchableOpacity>
           }
         </Text>
-        <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
-        <Text className="underline">Answer</Text>: {question.Answer}
+        <Text style={{fontSize: primaryFontSize, color: '#198754'}}>
+          <Text className="underline">Answer</Text>: {question.Answer}
         </Text>
 
         {/* <View>
