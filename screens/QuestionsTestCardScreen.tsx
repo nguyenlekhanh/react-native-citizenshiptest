@@ -9,9 +9,9 @@ import { useTranslation } from 'react-i18next';
 type ItemProps = {
   count: number,
   question: string,
-  question_vn: string,
+  translate_question: string,
   answer: string,
-  answer_vn: string,
+  translate_answer: string,
   voice: string,
   toggleTranslate: boolean,
   primaryFontSize: number,
@@ -24,7 +24,7 @@ let audio:Sound;
 
 const QuestionsTestCardScreen = (
   {
-    count, question, question_vn, answer, answer_vn, voice,
+    count, question, translate_question, answer, translate_answer, voice,
     toggleTranslate, primaryFontSize, subFontSize, optionsChoice,
     updateRightWrongAnswer
   }: ItemProps) => {
@@ -115,7 +115,7 @@ const QuestionsTestCardScreen = (
         </Text>
         {toggleTranslate && 
           <Text style={{fontSize: subFontSize}}>
-            ({question_vn})
+            {translate_question}
           </Text>
         }
       </View>
@@ -159,7 +159,7 @@ const QuestionsTestCardScreen = (
       }
       {showAnswer && toggleTranslate ? (
         <Text style={{fontSize: subFontSize}}>
-          {typeof answer_vn == "string" ? answer_vn : JSON.stringify(answer_vn, null, 2)}
+          {typeof translate_answer == "string" ? translate_answer : JSON.stringify(translate_answer, null, 2)}
         </Text>
         ) : (<Text></Text>)
       }

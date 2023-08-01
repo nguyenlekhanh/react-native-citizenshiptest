@@ -8,9 +8,9 @@ import cls from "classnames";
 type ItemProps = {
   count: number,
   question: string,
-  question_vn: string,
+  translate_question: string,
   answer: string,
-  answer_vn: string,
+  translate_answer: string,
   voice: string,
   toggleTranslate: boolean,
   primaryFontSize: number,
@@ -21,7 +21,7 @@ let audio:Sound;
 
 const QuestionsCardScreen = (
   {
-    count, question, question_vn, answer, answer_vn, voice,
+    count, question, translate_question, answer, translate_answer, voice,
     toggleTranslate, primaryFontSize, subFontSize
   }: ItemProps) => {
 
@@ -99,7 +99,7 @@ const QuestionsCardScreen = (
         </Text>
         {toggleTranslate && 
           <Text style={{fontSize: subFontSize}}>
-            ({question_vn})
+            {translate_question ?? translate_question}
           </Text>
         }
       </View>
@@ -110,7 +110,7 @@ const QuestionsCardScreen = (
 
       {toggleTranslate && 
         <Text style={{fontSize: subFontSize}}>
-          {typeof answer_vn == "string" ? answer_vn : JSON.stringify(answer_vn, null, 2)}
+          {typeof translate_answer == "string" ? translate_answer : JSON.stringify(translate_answer, null, 2)}
         </Text>
       }
     </View>

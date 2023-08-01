@@ -8,6 +8,7 @@ import TestScreen from "../screens/TestScreen";
 import ScoreScreen from "../screens/ScoreScreen";
 import ContactScreen from "../screens/ContactScreen";
 import SmallTalkScreen from "../screens/SmallTalkScreen";
+import ReadingScreen from "../screens/ReadingScreen";
 
 const Stack = createStackNavigator();
 
@@ -79,6 +80,16 @@ const MainStackNavigator = () => {
         <Stack.Screen 
           name="SmallTalk" 
           component={SmallTalkScreen} 
+          options={{
+            headerRight: () => (
+              <SignoutScreen />
+            ),
+          }}
+        />
+
+        <Stack.Screen 
+          name="Reading" 
+          component={ReadingScreen} 
           options={{
             headerRight: () => (
               <SignoutScreen />

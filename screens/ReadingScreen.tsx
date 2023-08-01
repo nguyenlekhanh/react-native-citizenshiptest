@@ -1,32 +1,29 @@
-import { View, Text, ActivityIndicator, TouchableOpacity } from 'react-native'
-import React, { useEffect, useRef, useState } from 'react'
+import { View, Text, ActivityIndicator, TouchableOpacity   } from 'react-native'
+import React, { useRef, useState, useEffect } from 'react'
+import AdsScreen from './AdsScreen';
+import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { FlatList } from 'react-native-gesture-handler';
-import data from "../data/civics_test_2008.json";
-import { useDataStore } from '../app/store.zustand.data';
-import QuestionsCardScreen from './QuestionsCardScreen';
-
+import data from "../data/reading.json";
+import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import {
   MinusIcon, PlusIcon
 } from 'react-native-heroicons/outline';
 import ScrollToTopScreen from './ScrollToTopScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import AdsScreen from './AdsScreen';
-import CheckBox from '../components/CheckBox';
-import { useTranslation } from 'react-i18next';
-import StorageService from '../utils/StorageService';
+import ParseGroupItemScreen from './ParseGroupItemScreen';
+import ReadingScreenParseItem from './ReadingScreenParseItem';
 
 type RootStackParamList = {};
 
 type Props = NativeStackScreenProps<RootStackParamList>;
 
-const LearnScreen = ({ route, navigation }: Props) => {
+const ReadingScreen = ({ route, navigation }: Props) => {
+
   const listRef = useRef(null);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
   const {t} = useTranslation();
 
-  const jsonData = useDataStore((state) => state.data);
-  const setJsonData = useDataStore((state) => state.setData);
+  const [jsonData, setJsonData] = useState('');
 
   const [toggleTranslate, setToggleTranslate] = useState<boolean>(false)
   const [fontsize, setFontsize] = useState<number>(0);
@@ -34,11 +31,6 @@ const LearnScreen = ({ route, navigation }: Props) => {
   let defaultSubSizeNumber = 20;
   const [primaryFontSize, setPrimaryFontSize] = useState<number>(20);
   const [subFontSize, setSubFontSize] = useState<number>(18);
-
-  const defaultTranslateQuestionTxt = 'question_';
-  const defaultTranslateAnswerTxt = 'answer_';
-  const [traslateQuestionLn, setTraslateQuestionLn] = useState('');
-  const [translateAnswerLn, setTranslateAnswerLn] = useState('');
 
   const changeFontsizeHandler = (action:number) => {
     
@@ -58,28 +50,13 @@ const LearnScreen = ({ route, navigation }: Props) => {
   }
 
   useEffect(() => {
-
-    const getLanguage = async () => {
-      const language = await StorageService.getItem(StorageService.APP_LANGUAGE);
-      if(language && language?.language) {
-        setTraslateQuestionLn(defaultTranslateQuestionTxt + "" + language.language);
-        setTranslateAnswerLn(defaultTranslateAnswerTxt + "" + language.language);
-      }
-    }
-    getLanguage();
-
-  }, []);
-
-  
-  useEffect(() => {
     setIsLoadingData(true);
     if(!jsonData) {
       setTimeout(() => {
-        const parsedData = JSON.stringify(data.questions);
-          if(parsedData) {
-            setJsonData(JSON.parse(parsedData));
-            setIsLoadingData(false);
-          }
+        if(data && data?.questions) {
+          setJsonData(data.questions);
+          setIsLoadingData(false);
+        }
       }, 1);
     } else {
       setIsLoadingData(false);
@@ -111,19 +88,10 @@ const LearnScreen = ({ route, navigation }: Props) => {
             <View className="absolute top-0 left-0 w-full">
               <View className="flex-row justify-between	">
                 <View className="flex-row">
-                  <TouchableOpacity
-                    onPress={() => toggleTranslateHandler()}
-                    className="flex-row"
-                  >
-                    <Text className="text-xl text-blue-700">{t("show-translate")}</Text>
-                    <CheckBox 
-                      toggleTranslate={toggleTranslate}
-                    />
-                  </TouchableOpacity>
                 </View>
                 <View className="flex-row">
                   <TouchableOpacity
-                    onPress={() => changeFontsizeHandler(1)}
+                    onPress={() => changeFontsizeHandler(0)}
                   >
                     <Text className="text-xl text-blue-700">{t("change-font-size")} &nbsp;</Text>
                   </TouchableOpacity>
@@ -141,20 +109,16 @@ const LearnScreen = ({ route, navigation }: Props) => {
                 </View>
               </View>
             </View>
+            
             <FlatList
               className="mt-10"
               ref={listRef}
               data={jsonData}
-              renderItem={({item, index}) => <QuestionsCardScreen 
-                                          count={index}
-                                          question={item.question}
-                                          translate_question={item[traslateQuestionLn]}
-                                          answer={item.answer}
-                                          translate_answer={item[translateAnswerLn]}
-                                          voice={item.voice}
-                                          toggleTranslate={toggleTranslate}
-                                          primaryFontSize={primaryFontSize}
-                                          subFontSize={subFontSize}
+              renderItem={({item, index}) => <ReadingScreenParseItem 
+                                                count={index}
+                                                question={item}
+                                                primaryFontSize={primaryFontSize}
+                                                subFontSize={subFontSize}
                                       />
                               }
               keyExtractor={(item, index) => index.toString()}
@@ -170,4 +134,5 @@ const LearnScreen = ({ route, navigation }: Props) => {
   )
 }
 
-export default LearnScreen
+
+export default ReadingScreen

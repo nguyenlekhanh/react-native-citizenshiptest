@@ -35,6 +35,10 @@ const HomeScreen = ({ route, navigation }: Props) => {
   const smallTalkHandler = () => {
     navigation.navigate("SmallTalk");
   }
+
+  const readingScreenHandler = () => {
+    navigation.navigate("Reading");
+  }  
   
   useEffect(() => {
     const getLanguage = async () => {
@@ -107,10 +111,17 @@ const HomeScreen = ({ route, navigation }: Props) => {
 
                     <TouchableOpacity 
                         className={buttonStyle}
+                        onPress={() => readingScreenHandler()}
+                      >
+                          <Text className="text-[#fff] text-xl">{t("reading-screen")}</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity 
+                        className={buttonStyle}
                         onPress={() => smallTalkHandler()}
                       >
                           <Text className="text-[#fff] text-xl">{t("small-talk")}</Text>
-                      </TouchableOpacity>
+                    </TouchableOpacity>
                   </View>
 
                   <View className="mt-10">

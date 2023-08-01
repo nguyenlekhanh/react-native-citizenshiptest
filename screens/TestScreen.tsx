@@ -23,6 +23,7 @@ type RootStackParamList = {};
 type Props = NativeStackScreenProps<RootStackParamList>;
 
 import Fireworks from 'react-native-fireworks';
+import StorageService from '../utils/StorageService';
 
 const TestScreen: React.FC = () => {
   const listRef = useRef(null);
@@ -114,9 +115,28 @@ const TestScreen: React.FC = () => {
       setRandomQuestionData(tenQuestionsData);
     }
   }
+  
+  const defaultTranslateQuestionTxt = 'question_';
+  const defaultTranslateAnswerTxt = 'answer_';
+  const [traslateQuestionLn, setTraslateQuestionLn] = useState('');
+  const [translateAnswerLn, setTranslateAnswerLn] = useState('');
+
+  useEffect(() => {
+
+    const getLanguage = async () => {
+      const language = await StorageService.getItem(StorageService.APP_LANGUAGE);
+
+      if(language && language?.language) {
+        setTraslateQuestionLn(defaultTranslateQuestionTxt + "" + language.language);
+        setTranslateAnswerLn(defaultTranslateAnswerTxt + "" + language.language);
+      }
+    }
+    getLanguage();
+
+  }, []);
 
   const tenQuestionsData: any[] = [];
-  
+
   useEffect(() => {
     setIsLoadingData(true);
     if(!jsonData) {
@@ -145,10 +165,13 @@ const TestScreen: React.FC = () => {
     <SafeAreaView className="flex-columns items-center w-full h-max">
       <View className="w-full h-[89%] mt-2">
         {isLoadingData &&
-          <ActivityIndicator
-            animating = {isLoadingData}
-            color = '#bc2b78'
-            size = "large"/>
+          <View>
+            <Text>Loading </Text>
+            <ActivityIndicator
+              animating = {isLoadingData}
+              color = '#bc2b78'
+              size = "large"/>
+          </View>
         }
         {randomQuestionData &&
           <View className="m-2">
@@ -193,9 +216,9 @@ const TestScreen: React.FC = () => {
                 renderItem={({item, index}) => <QuestionsTestCardScreen 
                                             count={index}
                                             question={item?.question}
-                                            question_vn={item?.question_vn}
+                                            translate_question={item[traslateQuestionLn]}
                                             answer={item?.answer}
-                                            answer_vn={item?.answer_vn}
+                                            translate_answer={item[translateAnswerLn]}
                                             voice={item?.voice}
                                             toggleTranslate={toggleTranslate}
                                             primaryFontSize={primaryFontSize}

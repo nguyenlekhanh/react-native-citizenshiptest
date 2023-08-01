@@ -20,7 +20,7 @@ type ItemProps = {
   userChoiceParam:number,
   setChoseTrueAnswerHandler: () => void,
   choseTrueAnswer: boolean,
-  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => {}
+  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => void
 };
 
 const QuestionOptionsCardScreen = (

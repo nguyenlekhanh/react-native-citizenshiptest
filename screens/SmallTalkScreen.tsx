@@ -10,7 +10,6 @@ import {
 } from 'react-native-heroicons/outline';
 import ScrollToTopScreen from './ScrollToTopScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import CheckBox from '../components/CheckBox';
 import ParseGroupItemScreen from './ParseGroupItemScreen';
 
 type RootStackParamList = {};
@@ -50,13 +49,12 @@ const SmallTalkScreen = ({ route, navigation }: Props) => {
   }
 
   useEffect(() => {
-    //setIsLoadingData(true);
+    setIsLoadingData(true);
     if(!jsonData) {
-      //console.log(jsonData);
-      //console.log('=================');
       setTimeout(() => {
         if(data && data?.questions) {
           setJsonData(data.questions);
+          setIsLoadingData(false);
         }
       }, 1);
     } else {
@@ -76,10 +74,13 @@ const SmallTalkScreen = ({ route, navigation }: Props) => {
     <SafeAreaView className="flex-columns items-center w-full h-max">
       <View className="w-full h-[89%] mt-2">
         {isLoadingData &&
-          <ActivityIndicator
-            animating = {isLoadingData}
-            color = '#bc2b78'
-            size = "large"/>
+          <View>
+            <Text>Loading </Text>
+            <ActivityIndicator
+              animating = {isLoadingData}
+              color = '#bc2b78'
+              size = "large"/>
+          </View>
         }
         {jsonData && jsonData?.length &&
           <View className="m-2">
