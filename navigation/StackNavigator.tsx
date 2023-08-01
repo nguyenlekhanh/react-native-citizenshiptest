@@ -9,6 +9,7 @@ import ScoreScreen from "../screens/ScoreScreen";
 import ContactScreen from "../screens/ContactScreen";
 import SmallTalkScreen from "../screens/SmallTalkScreen";
 import ReadingScreen from "../screens/ReadingScreen";
+import Learn2020Screen from "../screens/Learn2020Screen";
 
 const Stack = createStackNavigator();
 
@@ -96,6 +97,17 @@ const MainStackNavigator = () => {
             ),
           }}
         />
+
+        <Stack.Screen 
+          name="Learn2020" 
+          component={Learn2020Screen} 
+          options={{
+            headerRight: () => (
+              <SignoutScreen />
+            ),
+          }}
+        />
+
       </Stack.Navigator>
   );
 }

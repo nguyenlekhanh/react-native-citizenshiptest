@@ -105,12 +105,12 @@ const QuestionsCardScreen = (
       </View>
 
       <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
-        <Text className="underline">Answer</Text>: {typeof answer == "string" ? answer : JSON.stringify(answer, null, 2)}
+        <Text className="underline">Answer</Text>: {typeof answer == "string" ? JSON.stringify(answer.split(","), null, 2) : JSON.stringify(answer, null, 2)}
       </Text>
 
       {toggleTranslate && 
         <Text style={{fontSize: subFontSize}}>
-          {typeof translate_answer == "string" ? translate_answer : JSON.stringify(translate_answer, null, 2)}
+          {typeof translate_answer == "string" ? JSON.stringify(translate_answer.split(","), null, 2) : JSON.stringify(translate_answer, null, 2)}
         </Text>
       }
     </View>

@@ -10,7 +10,8 @@ import StorageService from '../utils/StorageService';
 import AdsFullScreen from './AdsFullScreen';
 import { useUserStore } from '../app/store.zustand.user';
 import ErrorScreen from './ErrorScreen';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
+  
 
 type RootStackParamList = {};
 
@@ -23,10 +24,14 @@ const HomeScreen = ({ route, navigation }: Props) => {
   const token  = useUserStore((state) => state.token);
   const [showErrorShowMyScore, setshowErrorShowMyScore] = useState<boolean>(false);
   const [showErrorContact, setshowErrorContact] = useState<boolean>(false);
-
+  
   const learnHandler = () => {
       navigation.navigate("Learn");
   }
+
+  const learn2020Handler = () => {
+    navigation.navigate("Learn2020");
+}
 
   const testHandler = () => {
     navigation.navigate("Test");
@@ -84,13 +89,26 @@ const HomeScreen = ({ route, navigation }: Props) => {
                         className={buttonStyle}
                         onPress={() => learnHandler()}
                       >
-                          <Text className="text-[#fff] text-xl">{t("learn100questions")}</Text>
+                          <View className="flex-row">
+                            <Text className="text-[#fff] text-xl">{t("learn100questions")}</Text>
+                            <View className="ml-auto justify-center">
+                              <Icon name="chevron-right" size={20} color="white"/>
+                            </View>
+                          </View>
                       </TouchableOpacity>
                       <TouchableOpacity 
                         className={buttonStyle}
                         onPress={() => testHandler()}
+                        style={{
+                          backgroundColor:"#FF5949"
+                        }}
                       >
-                          <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
+                          <View className="flex-row">
+                            <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
+                            <View className="ml-auto justify-center">
+                              <Icon name="chevron-right" size={20} color="white"/>
+                            </View>
+                          </View>
                       </TouchableOpacity>
                       <View>
                         {showErrorShowMyScore &&
@@ -102,25 +120,46 @@ const HomeScreen = ({ route, navigation }: Props) => {
                         <TouchableOpacity 
                           className={buttonStyle}
                           onPress={() => showScoreHandler()}
+                          style={{
+                            backgroundColor:"#EFAF4D"
+                          }}
                         >
+                          <View className="flex-row">
                             <Text className="text-[#fff] text-xl">
                               {t("show-my-score")}
                             </Text>
+                            <View className="ml-auto justify-center">
+                              <Icon name="chevron-right" size={20} color="white"/>
+                            </View>
+                          </View>
                         </TouchableOpacity>
                     </View>
 
                     <TouchableOpacity 
                         className={buttonStyle}
                         onPress={() => readingScreenHandler()}
+                        style={{
+                          backgroundColor:"#2F26D9"
+                        }}
                       >
+                        <View className="flex-row">
                           <Text className="text-[#fff] text-xl">{t("reading-screen")}</Text>
+                          <View className="ml-auto justify-center">
+                            <Icon name="chevron-right" size={20} color="white"/>
+                          </View>
+                        </View>
                     </TouchableOpacity>
 
                     <TouchableOpacity 
                         className={buttonStyle}
                         onPress={() => smallTalkHandler()}
                       >
+                        <View className="flex-row">
                           <Text className="text-[#fff] text-xl">{t("small-talk")}</Text>
+                          <View className="ml-auto justify-center">
+                            <Icon name="chevron-right" size={20} color="white"/>
+                          </View>
+                        </View>
                     </TouchableOpacity>
                   </View>
 
@@ -128,11 +167,18 @@ const HomeScreen = ({ route, navigation }: Props) => {
                     <Text className="bold text-2xl">2020</Text>
                   </View>
                   <View>
-                      <TouchableOpacity className={buttonStyle}>
+                      <TouchableOpacity className={buttonStyle}
+                        onPress={() => learn2020Handler()}
+                        style={{
+                          backgroundColor:"#EFAF4D"
+                        }}
+                      >
+                        <View className="flex-row">
                           <Text className="text-[#fff] text-xl">{t("learn128questions")}</Text>
-                      </TouchableOpacity>
-                      <TouchableOpacity className={buttonStyle}>
-                          <Text className="text-[#fff] text-xl">{t("Doing-a-test")}</Text>
+                          <View className="ml-auto justify-center">
+                            <Icon name="chevron-right" size={20} color="white"/>
+                          </View>
+                        </View>
                       </TouchableOpacity>
                   </View>
 

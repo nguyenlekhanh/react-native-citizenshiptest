@@ -143,7 +143,7 @@ const QuestionsTestCardScreen = (
                             }
             keyExtractor={(item, index) => index.toString()}
           />
-        : (<View><Text>No Data</Text></View>)}
+        : (<View><Text>Check Answer</Text></View>)}
         </View>
       </View>
 
