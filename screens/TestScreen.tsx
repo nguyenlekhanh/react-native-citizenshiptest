@@ -24,8 +24,10 @@ type Props = NativeStackScreenProps<RootStackParamList>;
 
 import Fireworks from 'react-native-fireworks';
 import StorageService from '../utils/StorageService';
+import AdsFullScreen from './AdsFullScreen';
 
-const TestScreen: React.FC = () => {
+const TestScreen = ({ route, navigation }: Props) => {
+  const {showFullAds} = route.params;
   const listRef = useRef(null);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
   const {t} = useTranslation();
@@ -239,6 +241,7 @@ const TestScreen: React.FC = () => {
       </View>
 
       <AdsScreen />
+      <AdsFullScreen showFullAds={showFullAds}/>
       {finishTest && <Fireworks />}
     </SafeAreaView>
   )

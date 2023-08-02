@@ -11,7 +11,7 @@ import AdsFullScreen from './AdsFullScreen';
 import { useUserStore } from '../app/store.zustand.user';
 import ErrorScreen from './ErrorScreen';
 import Icon from 'react-native-vector-icons/FontAwesome';
-  
+import { useAppTimerContext } from '../components/AppTimerProvider'; 
 
 type RootStackParamList = {};
 
@@ -24,25 +24,40 @@ const HomeScreen = ({ route, navigation }: Props) => {
   const token  = useUserStore((state) => state.token);
   const [showErrorShowMyScore, setshowErrorShowMyScore] = useState<boolean>(false);
   const [showErrorContact, setshowErrorContact] = useState<boolean>(false);
+  const { timeSpent, setTimeSpent } = useAppTimerContext();
+
+  const checkPlayingFullAds = async () => {
+    let showFullAds = false;
+    if(timeSpent >= 600) {
+      showFullAds = true;
+      setTimeSpent(prevTimeSpend => 1);
+    }
+    return showFullAds;
+  }
   
-  const learnHandler = () => {
-      navigation.navigate("Learn");
+  const learnHandler = async () => {
+    const showFullAds = await checkPlayingFullAds();
+    navigation.navigate("Learn", {showFullAds: showFullAds});
   }
 
-  const learn2020Handler = () => {
-    navigation.navigate("Learn2020");
+  const learn2020Handler = async () => {
+    const showFullAds = await checkPlayingFullAds();
+    navigation.navigate("Learn2020", {showFullAds: showFullAds});
 }
 
-  const testHandler = () => {
-    navigation.navigate("Test");
+  const testHandler = async () => {
+    const showFullAds = await checkPlayingFullAds();
+    navigation.navigate("Test", {showFullAds: showFullAds});
   }
 
-  const smallTalkHandler = () => {
-    navigation.navigate("SmallTalk");
+  const smallTalkHandler = async () => {
+    const showFullAds = await checkPlayingFullAds();
+    navigation.navigate("SmallTalk", {showFullAds: showFullAds});
   }
 
-  const readingScreenHandler = () => {
-    navigation.navigate("Reading");
+  const readingScreenHandler = async () => {
+    const showFullAds = await checkPlayingFullAds();
+    navigation.navigate("Reading", {showFullAds: showFullAds});
   }  
   
   useEffect(() => {
@@ -57,7 +72,8 @@ const HomeScreen = ({ route, navigation }: Props) => {
 
   const showScoreHandler = async () => {
     if(userInfo && token) {
-      navigation.navigate('ScoreScreen');
+      const showFullAds = await checkPlayingFullAds();
+      navigation.navigate('ScoreScreen', {showFullAds: showFullAds});
     } else {
       setshowErrorShowMyScore(true);
     }
@@ -67,9 +83,10 @@ const HomeScreen = ({ route, navigation }: Props) => {
     setshowErrorShowMyScore(false);
   }
 
-  const showContactScreenHandler = () => {
+  const showContactScreenHandler = async () => {
     if(userInfo && token) {
-      navigation.navigate('Contact');
+      const showFullAds = await checkPlayingFullAds();
+      navigation.navigate('Contact', {showFullAds: showFullAds});
     } else {
       setshowErrorContact(true);
     }

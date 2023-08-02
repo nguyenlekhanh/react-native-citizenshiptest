@@ -7,6 +7,8 @@ import { useTranslation } from 'react-i18next';
 import { FlatList } from 'react-native-gesture-handler';
 import UserAnswerCardScreen from './UserAnswerCardScreen';
 import AdsScreen from './AdsScreen';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import AdsFullScreen from './AdsFullScreen';
 
 type responseDataProp = {
   "_id": string,
@@ -16,7 +18,12 @@ type responseDataProp = {
   "createdAt": string,
 }
 
-const ScoreScreen: React.FC = () => {
+type RootStackParamList = {};
+
+type Props = NativeStackScreenProps<RootStackParamList>;
+
+const ScoreScreen = ({ route, navigation }: Props) => {
+  const {showFullAds} = route.params;
   const userInfo  = useUserStore((state) => state.user);
   const token  = useUserStore((state) => state.token);
   const [showErrorShowMyScore, setshowErrorShowMyScore] = useState<boolean>(false);
@@ -109,6 +116,7 @@ const ScoreScreen: React.FC = () => {
       </View>
 
       <AdsScreen />
+      <AdsFullScreen showFullAds={showFullAds}/>
     </SafeAreaView>
   )
 }

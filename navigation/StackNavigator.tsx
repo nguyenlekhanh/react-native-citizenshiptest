@@ -10,6 +10,7 @@ import ContactScreen from "../screens/ContactScreen";
 import SmallTalkScreen from "../screens/SmallTalkScreen";
 import ReadingScreen from "../screens/ReadingScreen";
 import Learn2020Screen from "../screens/Learn2020Screen";
+import ShowFullAdsScreen from "../screens/ShowFullAdsScreen";
 
 const Stack = createStackNavigator();
 
@@ -101,6 +102,16 @@ const MainStackNavigator = () => {
         <Stack.Screen 
           name="Learn2020" 
           component={Learn2020Screen} 
+          options={{
+            headerRight: () => (
+              <SignoutScreen />
+            ),
+          }}
+        />
+
+        <Stack.Screen 
+          name="fullads" 
+          component={ShowFullAdsScreen} 
           options={{
             headerRight: () => (
               <SignoutScreen />

@@ -15,12 +15,14 @@ import AdsScreen from './AdsScreen';
 import CheckBox from '../components/CheckBox';
 import { useTranslation } from 'react-i18next';
 import StorageService from '../utils/StorageService';
+import AdsFullScreen from './AdsFullScreen';
 
 type RootStackParamList = {};
 
 type Props = NativeStackScreenProps<RootStackParamList>;
 
 const Learn2020Screen = ({ route, navigation }: Props) => {
+  const {showFullAds} = route.params;
   const listRef = useRef(null);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
   const {t} = useTranslation();
@@ -166,6 +168,7 @@ const Learn2020Screen = ({ route, navigation }: Props) => {
       </View>
 
       <AdsScreen />
+      <AdsFullScreen showFullAds={showFullAds}/>
     </SafeAreaView>
   )
 }

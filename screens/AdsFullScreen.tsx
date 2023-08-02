@@ -9,20 +9,24 @@ const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
   keywords: ['fashion', 'clothing'],
 });
 
-const AdsFullScreen: React.FC = () => {
+type ItemProps = {
+  showFullAds: boolean
+};
+
+const AdsFullScreen = ({showFullAds} : ItemProps) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const unsubscribe = interstitial.addAdEventListener(AdEventType.LOADED, () => {
       setLoaded(true);
+      if(showFullAds) {
+        interstitial.show();
+      }
     });
 
     // Start loading the interstitial straight away
     interstitial.load();
 
-    // setTimeout(() => {
-    //   interstitial.show();
-    // }, 1000);
     // Unsubscribe from events on unmount
     return unsubscribe;
   }, []);
@@ -33,12 +37,7 @@ const AdsFullScreen: React.FC = () => {
   }
 
   return (
-    <Button
-      title="Show Interstitial"
-      onPress={() => {
-        interstitial.show();
-      }}
-    />
+    <></>
   );
 }
 

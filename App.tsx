@@ -22,13 +22,16 @@ import {MainStackNavigator} from "./navigation/StackNavigator"
 // import DrawerNavigator from "./navigation/DrawerNavigator";
 import Toast from 'react-native-toast-message';
 import { toastConfig } from './configs/toastConfig';
+import AppTimerProvider from './components/AppTimerProvider';
 
 function App(): JSX.Element {
   return (
     <>
-      <NavigationContainer>
-        <MainStackNavigator />
-      </NavigationContainer>
+      <AppTimerProvider>
+        <NavigationContainer>
+          <MainStackNavigator />
+        </NavigationContainer>
+      </AppTimerProvider>
       <Toast config={toastConfig} />
     </>
   );

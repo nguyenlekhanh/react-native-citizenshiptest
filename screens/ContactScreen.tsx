@@ -6,12 +6,14 @@ import { useTranslation } from 'react-i18next';
 import { useUserStore } from '../app/store.zustand.user';
 import { submitFeedback } from '../utils/updateData';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import AdsFullScreen from './AdsFullScreen';
 
 type RootStackParamList = {};
 
 type Props = NativeStackScreenProps<RootStackParamList>;
 
 const ContactScreen = ({ route, navigation }: Props) => {
+  const {showFullAds} = route.params;
   const {t} = useTranslation();
   const nameRef = useRef<TextInput>(null);
   const subjectRef = useRef<TextInput>(null);
@@ -143,7 +145,9 @@ const ContactScreen = ({ route, navigation }: Props) => {
           </View>
         </View>
       </View>
+
       <AdsScreen />
+      <AdsFullScreen showFullAds={showFullAds}/>
     </SafeAreaView>
   )
 }

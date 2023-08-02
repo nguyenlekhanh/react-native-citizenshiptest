@@ -12,13 +12,14 @@ import ScrollToTopScreen from './ScrollToTopScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ParseGroupItemScreen from './ParseGroupItemScreen';
 import ReadingScreenParseItem from './ReadingScreenParseItem';
+import AdsFullScreen from './AdsFullScreen';
 
 type RootStackParamList = {};
 
 type Props = NativeStackScreenProps<RootStackParamList>;
 
 const ReadingScreen = ({ route, navigation }: Props) => {
-
+  const {showFullAds} = route.params;
   const listRef = useRef(null);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
   const {t} = useTranslation();
@@ -130,6 +131,7 @@ const ReadingScreen = ({ route, navigation }: Props) => {
       </View>
 
       <AdsScreen />
+      <AdsFullScreen showFullAds={showFullAds}/>
     </SafeAreaView>
   )
 }
