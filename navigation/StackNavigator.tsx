@@ -42,81 +42,41 @@ const MainStackNavigator = () => {
         <Stack.Screen 
           name="Learn" 
           component={LearnScreen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
         <Stack.Screen 
           name="Test" 
           component={TestScreen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
         <Stack.Screen 
           name="ScoreScreen" 
           component={ScoreScreen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
         <Stack.Screen 
           name="Contact" 
           component={ContactScreen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
         <Stack.Screen 
           name="SmallTalk" 
           component={SmallTalkScreen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
         <Stack.Screen 
           name="Reading" 
           component={ReadingScreen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
         <Stack.Screen 
           name="Learn2020" 
           component={Learn2020Screen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
         <Stack.Screen 
           name="fullads" 
           component={ShowFullAdsScreen} 
-          options={{
-            headerRight: () => (
-              <SignoutScreen />
-            ),
-          }}
         />
 
       </Stack.Navigator>

@@ -53,11 +53,11 @@ const SignoutScreen: React.FC = () => {
   }, [userInfo]);
 
 
-  useEffect(() => {
-    if(token) {
+  // useEffect(() => {
+  //   if(token) {
       
-    }
-  }, [token]);
+  //   }
+  // }, [token]);
 
   const googleSignInHandler = async () => {
     const user = await StorageService.getItem(StorageService.USER);
