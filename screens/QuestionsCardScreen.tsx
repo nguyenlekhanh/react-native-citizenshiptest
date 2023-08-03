@@ -104,7 +104,7 @@ const QuestionsCardScreen = (
         }
       </View>
 
-      <Text style={{fontSize: primaryFontSize, color: '#0000FF'}}>
+      <Text style={{fontSize: primaryFontSize, color: '#198754'}}>
         <Text className="underline">Answer</Text>: {typeof answer == "string" ? JSON.stringify(answer.split(","), null, 2) : JSON.stringify(answer, null, 2)}
       </Text>
 

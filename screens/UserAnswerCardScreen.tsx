@@ -27,10 +27,10 @@ const UserAnswerCardScreen= ({
   return (
     <View className="flex-row w-full mt-2">
       <View className={rowStyle}>
-        <View className="basis-8/12 justify-center	">
+        <View className="basis-7/12">
           <Text className={fontSize}>• {item.question}</Text>
         </View>
-        <View className="">
+        <View className="px-1">
           <Text className={fontSize}>
             {item.isCorrect ? <CheckIcon size={25} color="green"/> : <XMarkIcon size={25} color="red"/>}</Text>
           <Text></Text>
