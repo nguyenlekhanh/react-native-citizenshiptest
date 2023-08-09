@@ -21,7 +21,7 @@ const UserAnswerCardScreen= ({
   item,
   index
 }: ItemType) => {
-  const fontSize = "text-xl";
+  const fontSize = "text-xl font-bold color-blue-700";
   const colorOdd = index % 2 ? 'bg-slate-300' : ''
   const rowStyle = "px-2 py-2 flex-row w-full " + colorOdd;
   return (
@@ -32,7 +32,7 @@ const UserAnswerCardScreen= ({
         </View>
         <View className="px-1">
           <Text className={fontSize}>
-            {item.isCorrect ? <CheckIcon size={25} color="green"/> : <XMarkIcon size={25} color="red"/>}</Text>
+            {item.isCorrect ? <CheckIcon size={25} color="blue"/> : <XMarkIcon size={25} color="blue"/>}</Text>
           <Text></Text>
         </View>
         <View className="basis-auto">

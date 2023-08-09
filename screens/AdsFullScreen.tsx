@@ -2,7 +2,7 @@ import { View, Text, Button } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
 
-const adUnitId = __DEV__ ? TestIds.INTERSTITIAL : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy';
+const adUnitId = __DEV__ ? TestIds.INTERSTITIAL : 'xxx';
 
 const interstitial = InterstitialAd.createForAdRequest(adUnitId, {
   requestNonPersonalizedAdsOnly: true,
