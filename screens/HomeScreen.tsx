@@ -203,7 +203,7 @@ const HomeScreen = ({ route, navigation }: Props) => {
                   <View className="my-7 border border-stone-400	" />
 
                   <View
-                    className="w-full items-end mt-5"
+                    className="w-full items-end mb-11"
                   >
                     {showErrorContact &&
                       <ErrorScreen 
@@ -226,7 +226,7 @@ const HomeScreen = ({ route, navigation }: Props) => {
               </ScrollView>
             </View>
 
-            <View className="absolute bottom-5 mr-4">
+            <View className="absolute bottom-5 mr-2">
               <LanguageScreen />
             </View>
         </View>
