@@ -1,9 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+import { bannerAds } from '../utils/variables';
 
 //banner ads
-const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-7745252561449149/7860457612';
+const adUnitId = __DEV__ ? TestIds.BANNER : bannerAds;
 
 const AdsScreen: React.FC = () => {
   return (
