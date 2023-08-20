@@ -21,7 +21,7 @@ const UserAnswerCardScreen= ({
   item,
   index
 }: ItemType) => {
-  const fontSize = "text-xl font-bold color-blue-700";
+  const fontSize = "text-xl color-blue-700";
   const colorOdd = index % 2 ? 'bg-slate-300' : ''
   const rowStyle = "px-2 py-2 flex-row w-full " + colorOdd;
   return (

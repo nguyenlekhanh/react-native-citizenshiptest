@@ -16,6 +16,7 @@ import CheckBox from '../components/CheckBox';
 import { useTranslation } from 'react-i18next';
 import StorageService from '../utils/StorageService';
 import AdsFullScreen from './AdsFullScreen';
+import ForQuestionScreen from './settings/ForQuestionScreen';
 
 type RootStackParamList = {};
 
@@ -110,7 +111,7 @@ const LearnScreen = ({ route, navigation }: Props) => {
         }
         {jsonData && jsonData?.length &&
           <View className="m-2">
-            <View className="absolute top-0 left-0 w-full">
+            {/* <View className="absolute top-0 left-0 w-full">
               <View className="flex-row justify-between	">
                 <View className="flex-row">
                   <TouchableOpacity
@@ -142,9 +143,9 @@ const LearnScreen = ({ route, navigation }: Props) => {
                   </TouchableOpacity>
                 </View>
               </View>
-            </View>
+            </View> */}
             <FlatList
-              className="mt-10"
+              className=""
               ref={listRef}
               data={jsonData}
               renderItem={({item, index}) => <QuestionsCardScreen 
@@ -163,6 +164,10 @@ const LearnScreen = ({ route, navigation }: Props) => {
             />
             
             <ScrollToTopScreen ref={listRef}/>
+            <ForQuestionScreen 
+              changeFontsizeHandler={changeFontsizeHandler} 
+              toggleTranslateHandler={toggleTranslateHandler}
+            />
           </View>
         }
       </View>

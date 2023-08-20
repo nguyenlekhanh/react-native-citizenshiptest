@@ -67,7 +67,7 @@ const ParseItemScreen = (
   return (
     <View className="bg-[#fff] mb-8 p-1">
       <View className="mb-3">
-        <Text style={{fontSize: primaryFontSize, color: '#0000FF'}} className="font-bold">
+        <Text style={{fontSize: primaryFontSize, color: '#0000FF'}} className="">
           <Text className="underline">Question {count+1}</Text>: {question.Question} &nbsp;
           {question.voice &&
             <TouchableOpacity

@@ -25,6 +25,7 @@ type Props = NativeStackScreenProps<RootStackParamList>;
 import Fireworks from 'react-native-fireworks';
 import StorageService from '../utils/StorageService';
 import AdsFullScreen from './AdsFullScreen';
+import ForQuestionScreen from './settings/ForQuestionScreen';
 
 const TestScreen = ({ route, navigation }: Props) => {
   const {showFullAds} = route.params;
@@ -177,7 +178,7 @@ const TestScreen = ({ route, navigation }: Props) => {
         }
         {randomQuestionData &&
           <View className="m-2">
-            <View className="absolute top-0 left-0 w-full">
+            {/* <View className="absolute top-0 left-0 w-full">
               <View className="flex-row justify-between	">
                 <View className="flex-row">
                   <TouchableOpacity
@@ -209,10 +210,10 @@ const TestScreen = ({ route, navigation }: Props) => {
                   </TouchableOpacity>
                 </View>
               </View>
-            </View>
+            </View> */}
             {randomQuestionData &&
               <FlatList
-                className="mt-10"
+                className=""
                 ref={listRef}
                 data={randomQuestionData}
                 renderItem={({item, index}) => <QuestionsTestCardScreen 
@@ -233,8 +234,15 @@ const TestScreen = ({ route, navigation }: Props) => {
               />
             }
 
-            {randomQuestionData &&
-              <ScrollToTopScreen ref={listRef}/>
+            {randomQuestionData && (
+                <>
+                  <ScrollToTopScreen ref={listRef}/>
+                  <ForQuestionScreen 
+                    changeFontsizeHandler={changeFontsizeHandler} 
+                    toggleTranslateHandler={toggleTranslateHandler}
+                  />
+                </>
+              )
             }
           </View>
         }

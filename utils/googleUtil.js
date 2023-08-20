@@ -6,13 +6,14 @@ import {
 } from '@react-native-google-signin/google-signin';
 
 import {
-    googleAndroidClientId,
+    googleAndroidClientIdDevelopment,
+    googleAndroidClientIdProduction,
     googleIosClientId
   } from './variables';
 import StorageService from './StorageService';
 
 GoogleSignin.configure({
-    androidClientId: {googleAndroidClientId},
+    androidClientId: __DEV__ ? googleAndroidClientIdDevelopment : googleAndroidClientIdProduction,
     iosClientId: {googleIosClientId},
 });
 
@@ -22,11 +23,15 @@ const saveGoogleUserToStore = async (googleUserInfo) => {
 
 export const googleSignIn = async (setUser) => {
     //Another to sign in
-    await GoogleSignin.hasPlayServices();
-    const googleUserInfo = await GoogleSignin.signIn();
-    if(googleUserInfo) {
-        await StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
-        setUser(googleUserInfo);
+    try {
+        await GoogleSignin.hasPlayServices();
+        const googleUserInfo = await GoogleSignin.signIn();
+        if(googleUserInfo) {
+            await StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
+            setUser(googleUserInfo);
+        }
+    } catch (error) {
+        console.log(error);
     }
 
     // GoogleSignin.hasPlayServices().then((hasPlayService) => {
