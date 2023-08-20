@@ -14,7 +14,7 @@ import StorageService from './StorageService';
 
 GoogleSignin.configure({
     androidClientId: __DEV__ ? googleAndroidClientIdDevelopment : googleAndroidClientIdProduction,
-    iosClientId: {googleIosClientId},
+    iosClientId: googleIosClientId,
 });
 
 const saveGoogleUserToStore = async (googleUserInfo) => {
