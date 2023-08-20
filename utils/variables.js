@@ -4,7 +4,7 @@ export const googleAndroidClientIdDevelopment="544736289646-mdln26sv4jkd1hctd22t
 export const googleIosClientId="941001352428-3jvqfq4mjbfa3me4bsglsc1qff81474q.apps.googleusercontent.com";
 export const googleWebClientId="941001352428-ekedip2lb1eovghgq98dtn5mq1fc6l4i.apps.googleusercontent.com";
 
-export const version = "1.5"; 
+export const version = "1.6"; 
 export const serverUrl = __DEV__ ? "https://civics-test-nextjs-6hx9kdy0b-nguyenlekhanh811-gmailcom.vercel.app" : "https://civics-test-nextjs-6hx9kdy0b-nguyenlekhanh811-gmailcom.vercel.app"; 
 export const signupWithGoogleUrl = "/api/user/signupWithGoogle/"; 
 export const learn_2008 = "/civics/learn/2008"; 
