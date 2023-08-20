@@ -64,6 +64,16 @@ const ParseItemScreen = (
     audio.release();    
   }
 
+  useEffect(() => {
+
+    // Specify how to clean up after this effect:
+    return () => {
+      if(audio) {
+        audio.stop();
+      }
+    };
+  }, []);
+  
   return (
     <View className="bg-[#fff] mb-8 p-1">
       <View className="mb-3">

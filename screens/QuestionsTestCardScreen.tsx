@@ -93,6 +93,16 @@ const QuestionsTestCardScreen = (
     audio.release();    
   }
 
+  useEffect(() => {
+
+    // Specify how to clean up after this effect:
+    return () => {
+      if(audio) {
+        audio.stop();
+      }
+    };
+  }, []);
+  
   return (
     <View className="bg-[#fff] mb-8 p-1 border border-green-500	rounded-lg border-2	">
       <View className="mb-3">

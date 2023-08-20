@@ -33,6 +33,12 @@ const ReadingScreenParseItem = (
       }
     }
     getLanguage();
+
+    return () => {
+      if(audio) {
+        audio.stop();
+      }
+    };
   }, []);
 
   const pauseAudio = () => {
