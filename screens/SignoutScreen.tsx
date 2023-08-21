@@ -86,15 +86,12 @@ const SignoutScreen: React.FC = () => {
     )
   } else {
     return (
-      <>
         <TouchableOpacity onPress={() => googleSignInHandler()}
-          className=""
+          className="mr-2"
         >
-          <Image source={require('../assests/imgs/google.png')} 
-            className="mt-0 mr-2"
+          <Icon name="file-import" size={25} color="#D07F8B"
           />
         </TouchableOpacity>
-      </>
     );
   }
 }
