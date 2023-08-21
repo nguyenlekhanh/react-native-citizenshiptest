@@ -10,7 +10,7 @@ import StorageService from '../utils/StorageService';
 import AdsFullScreen from './AdsFullScreen';
 import { useUserStore } from '../app/store.zustand.user';
 import ErrorScreen from './ErrorScreen';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import { useAppTimerContext } from '../components/AppTimerProvider'; 
 
 type RootStackParamList = {};

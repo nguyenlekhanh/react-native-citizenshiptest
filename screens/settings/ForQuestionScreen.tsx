@@ -1,5 +1,5 @@
 import { View, Text } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   Cog8ToothIcon
 } from 'react-native-heroicons/solid';
@@ -11,6 +11,8 @@ import {
   MagnifyingGlassMinusIcon,
   LanguageIcon
 } from 'react-native-heroicons/outline';
+import StorageService from '../../utils/StorageService';
+import { EN_LANGUAGE } from '../../utils/variables';
 
 
 type ItemProps = {
@@ -27,6 +29,18 @@ const ForQuestionScreen = (
 
 ) => {
   const [showHideSetting, setShowHideSetting] = useState(false);
+
+  const [language, setLanguage] = useState(EN_LANGUAGE);
+
+  useEffect(() => {
+    
+    const getLanguage = async () => {
+      const storageLanguage:any = await StorageService.getItem(StorageService.APP_LANGUAGE);
+      setLanguage(storageLanguage.language);
+    }
+    getLanguage();
+    
+  }, []);
 
   const showHideSettingHandler = () => {
     setShowHideSetting(!showHideSetting)
@@ -63,12 +77,14 @@ const ForQuestionScreen = (
         >
           <MagnifyingGlassMinusIcon size={35} color="green" />
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => toggleTranslateHandler()}
-          className="ml-2"
-        >
-          <LanguageIcon size={35} color="green" />
-        </TouchableOpacity>
+        {language !== EN_LANGUAGE &&
+          <TouchableOpacity
+            onPress={() => toggleTranslateHandler()}
+            className="ml-2"
+          >
+            <LanguageIcon size={35} color="green" />
+          </TouchableOpacity>
+        }
       </View>
     </View>
   )

@@ -1,5 +1,7 @@
 import { Platform } from 'react-native';
 
+export const EN_LANGUAGE = 'en';
+
 export const googleExpoClientId="941001352428-fbo21fnfabg5ruslf6giufujlea2kvu1.apps.googleusercontent.com";
 export const googleAndroidClientIdProduction="941001352428-5o71fbh7klqrlb0r0hft6emk4t7h31o6.apps.googleusercontent.com";
 export const googleAndroidClientIdDevelopment="544736289646-mdln26sv4jkd1hctd22t0ra7rmktsqo7.apps.googleusercontent.com";
