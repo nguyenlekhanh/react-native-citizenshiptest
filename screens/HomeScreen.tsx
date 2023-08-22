@@ -81,17 +81,18 @@ const HomeScreen = ({ route, navigation }: Props) => {
     }
     getLanguage();
     
-    VersionCheck.needUpdate({
-      currentVersion: VersionCheck.getCurrentVersion(),
-      latestVersion: VersionCheck.getCurrentVersion()
-    }).then((res:any) => {
-      if(res.isNeeded) {
-        const isAndroid = Platform.OS === 'ios' ? false : true;
-        if(isAndroid) {
-          setModalVisible(true);
+    const isAndroid = Platform.OS === 'ios' ? false : true;
+
+    if(isAndroid) {
+      VersionCheck.needUpdate()
+      .then(async res => {
+        if (res.isNeeded) {
+          if(isAndroid) {
+            setModalVisible(true);
+          }
         }
-      }
-    })
+      });
+    }
     
   }, []);
 
