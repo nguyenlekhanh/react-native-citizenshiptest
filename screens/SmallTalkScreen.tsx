@@ -73,7 +73,7 @@ const SmallTalkScreen = ({ route, navigation }: Props) => {
   }
 
   return (
-    <SafeAreaView className="flex-columns items-center w-full h-max">
+    <View className="flex-columns items-center w-full h-max">
       <View className="w-full h-[89%] mt-2">
         {isLoadingData &&
           <View>
@@ -136,7 +136,7 @@ const SmallTalkScreen = ({ route, navigation }: Props) => {
 
       <AdsScreen />
       <AdsFullScreen showFullAds={showFullAds}/>
-    </SafeAreaView>
+    </View>
   )
 }
 
