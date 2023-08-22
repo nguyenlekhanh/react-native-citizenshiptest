@@ -1,4 +1,4 @@
-import { View, Text, TextInput, SafeAreaView, Button } from 'react-native'
+import { View, Text, TextInput, SafeAreaView, Button, Platform } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import AdsScreen from './AdsScreen';
 import { TouchableOpacity } from 'react-native';
@@ -12,6 +12,8 @@ import { useUserStore } from '../app/store.zustand.user';
 import ErrorScreen from './ErrorScreen';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { useAppTimerContext } from '../components/AppTimerProvider'; 
+import VersionCheck from "react-native-version-check";
+import ModalUpdateApp from '../components/ModalUpdateApp';
 
 type RootStackParamList = {};
 
@@ -25,6 +27,16 @@ const HomeScreen = ({ route, navigation }: Props) => {
   const [showErrorShowMyScore, setshowErrorShowMyScore] = useState<boolean>(false);
   const [showErrorContact, setshowErrorContact] = useState<boolean>(false);
   const { timeSpent, setTimeSpent } = useAppTimerContext();
+
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const setModalVisibileHandler = (showHide: boolean) => {
+    if(showHide) {
+      setModalVisible(true);
+    } else {
+      setModalVisible(false);
+    }
+  }
 
   const checkPlayingFullAds = async () => {
     let showFullAds = false;
@@ -68,6 +80,19 @@ const HomeScreen = ({ route, navigation }: Props) => {
       }
     }
     getLanguage();
+    
+    VersionCheck.needUpdate({
+      currentVersion: VersionCheck.getCurrentVersion(),
+      latestVersion: VersionCheck.getCurrentVersion()
+    }).then((res:any) => {
+      if(res.isNeeded) {
+        const isAndroid = Platform.OS === 'ios' ? false : true;
+        if(isAndroid) {
+          setModalVisible(true);
+        }
+      }
+    })
+    
   }, []);
 
   const showScoreHandler = async () => {
@@ -232,6 +257,11 @@ const HomeScreen = ({ route, navigation }: Props) => {
         </View>
 
         <AdsScreen />
+        <ModalUpdateApp
+          title={"We have a new update. Please press the 'Update' button to update the app!"}
+          modalVisible={modalVisible}
+          setModalVisibileHandler={setModalVisibileHandler}
+        />
     </SafeAreaView>
   )
 }
