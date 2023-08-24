@@ -52,16 +52,25 @@ const MainStackNavigator = () => {
         <Stack.Screen 
           name="ScoreScreen" 
           component={ScoreScreen} 
+          options={{
+            headerTitle: "Score Screen"
+          }}
         />
 
         <Stack.Screen 
           name="Contact" 
           component={ContactScreen} 
+          options={{
+            headerTitle: "Contact"
+          }}
         />
 
         <Stack.Screen 
           name="SmallTalk" 
           component={SmallTalkScreen} 
+          options={{
+            headerTitle: "Small Talk"
+          }}
         />
 
         <Stack.Screen 
@@ -72,6 +81,9 @@ const MainStackNavigator = () => {
         <Stack.Screen 
           name="Learn2020" 
           component={Learn2020Screen} 
+          options={{
+            headerTitle: "Learn 2020"
+          }}
         />
 
         <Stack.Screen 
