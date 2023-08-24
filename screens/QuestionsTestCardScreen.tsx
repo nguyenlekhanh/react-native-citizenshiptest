@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, AppState } from 'react-native'
 import React, { useState, useEffect, memo } from 'react'
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Sound from 'react-native-sound';
@@ -6,6 +6,7 @@ import { PlayIcon, StopIcon } from 'react-native-heroicons/solid';
 import QuestionOptionsCardScreen from './QuestionOptionCardScreen';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
+import { appStateUnfocus } from '../utils/libs';
 
 type ItemProps = {
   count: number,
@@ -65,9 +66,11 @@ const QuestionsTestCardScreen = (
   }
 
   const stopAudio = () => {
-    audio.stop();
-    setIsPlayingAudio(false);
-    stopPreviousPlayingAudioHandler();
+    if(audio && audio.isPlaying()) {
+      audio.stop();
+      setIsPlayingAudio(false);
+      stopPreviousPlayingAudioHandler();
+    }
   }
 
   const playingAudio = (url: string) => {
@@ -112,9 +115,12 @@ const QuestionsTestCardScreen = (
   }
 
   useEffect(() => {
+    const subscription = appStateUnfocus(AppState, stopAudio);
 
     // Specify how to clean up after this effect:
     return () => {
+      subscription.remove();
+
       if(audio && audio.isPlaying() && !navigation.isFocused()) {
         audio.stop();
       }

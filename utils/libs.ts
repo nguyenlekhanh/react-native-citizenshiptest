@@ -68,11 +68,23 @@ const stopPreviousPlayingAudioHandler = (setPreviousPlayingAudioParam: React.Dis
   }
 }
 
+const appStateUnfocus = (AppState:any, callback: () => void) => {
+  return AppState.addEventListener('change', nextAppState => {
+    if (
+      AppState.currentState.match(/inactive|background/) &&
+      nextAppState === 'background'
+    ) {
+      callback();
+    }
+  });
+}
+
 export { 
   getRandomNumbersArray, 
   playingAudio, 
   pauseAudio, 
   setPreviousPlayingAudioHandler,
-  stopPreviousPlayingAudioHandler
+  stopPreviousPlayingAudioHandler,
+  appStateUnfocus
 }
 
