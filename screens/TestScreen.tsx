@@ -14,7 +14,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import AdsScreen from './AdsScreen';
 import CheckBox from '../components/CheckBox';
 import { useTranslation } from 'react-i18next';
-import { getRandomNumbersArray } from '../utils/libs';
+import { getRandomNumbersArray, 
+          setPreviousPlayingAudioHandler, 
+          stopPreviousPlayingAudioHandler
+      } from '../utils/libs';
 import QuestionsTestCardScreen from './QuestionsTestCardScreen';
 import Toast from 'react-native-toast-message';
 
@@ -228,6 +231,8 @@ const TestScreen = ({ route, navigation }: Props) => {
                                             subFontSize={subFontSize}
                                             optionsChoice={item?.options}
                                             updateRightWrongAnswer={updateRightWrongAnswer}
+                                            setPreviousPlayingAudioHandler={setPreviousPlayingAudioHandler}
+                                            stopPreviousPlayingAudioHandler={stopPreviousPlayingAudioHandler}
                                         />
                                 }
                 keyExtractor={(item, index) => index.toString()}

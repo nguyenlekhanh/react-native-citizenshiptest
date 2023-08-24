@@ -1,10 +1,11 @@
 import { View, Text, TouchableOpacity } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Sound from 'react-native-sound';
 import { PlayIcon, StopIcon } from 'react-native-heroicons/solid';
 import QuestionOptionsCardScreen from './QuestionOptionCardScreen';
 import { useTranslation } from 'react-i18next';
+import { useNavigation } from '@react-navigation/native';
 
 type ItemProps = {
   count: number,
@@ -17,7 +18,9 @@ type ItemProps = {
   primaryFontSize: number,
   subFontSize: number,
   optionsChoice: [],
-  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => void
+  updateRightWrongAnswer: (questionAnswered: number, answer: boolean) => void,
+  setPreviousPlayingAudioHandler: (value: React.Dispatch<React.SetStateAction<boolean>>) => void,
+  stopPreviousPlayingAudioHandler: () => void
 };
 
 let audio:Sound;
@@ -26,8 +29,12 @@ const QuestionsTestCardScreen = (
   {
     count, question, translate_question, answer, translate_answer, voice,
     toggleTranslate, primaryFontSize, subFontSize, optionsChoice,
-    updateRightWrongAnswer
+    updateRightWrongAnswer,
+    setPreviousPlayingAudioHandler, stopPreviousPlayingAudioHandler
   }: ItemProps) => {
+
+  const navigation = useNavigation();
+  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   const {t} = useTranslation();
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
@@ -53,14 +60,20 @@ const QuestionsTestCardScreen = (
 
   const pauseAudio = () => {
     if(audio) {
-      audio.stop();
+      stopAudio();
     }
+  }
+
+  const stopAudio = () => {
+    audio.stop();
+    setIsPlayingAudio(false);
+    stopPreviousPlayingAudioHandler();
   }
 
   const playingAudio = (url: string) => {
     if(audio){
-      if(audio.isPlaying()){
-        audio.stop();
+      if(audio.isPlaying()) {
+        stopAudio();
       }
     }
     Sound.setCategory('Playback');
@@ -81,10 +94,15 @@ const QuestionsTestCardScreen = (
         //     audio.getNumberOfChannels(),
         // );
 
+        setIsPlayingAudio(true);
+        setPreviousPlayingAudioHandler(setIsPlayingAudio);
+
         audio.play(success => {
           if (success) {
+            setIsPlayingAudio(false);
             console.log('successfully finished playing');
           } else {
+            setIsPlayingAudio(false);
             console.log('playback failed due to audio decoding errors');
           }
         });
@@ -97,7 +115,7 @@ const QuestionsTestCardScreen = (
 
     // Specify how to clean up after this effect:
     return () => {
-      if(audio) {
+      if(audio && audio.isPlaying() && !navigation.isFocused()) {
         audio.stop();
       }
     };
@@ -110,20 +128,23 @@ const QuestionsTestCardScreen = (
           <Text className="underline">Question {count+1}</Text>: {question}
         </Text>
         <Text>
-          {voice &&
-            <TouchableOpacity
-              onPress={() => playingAudio(voice)}
-            >
-              <PlayIcon size={20} color="blue"/>
-            </TouchableOpacity>
-          }&nbsp;&nbsp;
-          {voice &&
-            <TouchableOpacity
-              onPress={() => pauseAudio()}
-            >
-              <StopIcon size={20} color="blue"/>
-            </TouchableOpacity>
-          }
+          {voice && (
+            <>
+              {isPlayingAudio ? ( 
+                <TouchableOpacity
+                  onPress={() => pauseAudio()}
+                >
+                  <StopIcon size={20} color="blue"/>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                  onPress={() => playingAudio(voice)}
+                >
+                  <PlayIcon size={20} color="blue"/>
+                </TouchableOpacity>
+              )}
+            </>
+          )}
         </Text>
         {toggleTranslate && 
           <Text style={{fontSize: subFontSize}}>
@@ -179,4 +200,12 @@ const QuestionsTestCardScreen = (
   )
 }
 
-export default QuestionsTestCardScreen
+function areItemsEqual(prevItem: ItemProps, nextItem: ItemProps) {
+  return Object.keys(prevItem).every(key => {
+      return prevItem[key as keyof ItemProps] === nextItem[key as keyof ItemProps]
+  })
+}
+
+const MemoizedCartLineItem = memo<typeof QuestionsTestCardScreen>(QuestionsTestCardScreen, areItemsEqual)
+
+export default MemoizedCartLineItem

@@ -58,6 +58,21 @@ const playingAudio = (audio:Sound, url: string) => {
   audio.release();    
 }
 
+let setPreviousPlayingAudio: React.Dispatch<React.SetStateAction<boolean>> | null = null;
+const setPreviousPlayingAudioHandler = (setPreviousPlayingAudioParam: React.Dispatch<React.SetStateAction<boolean>>) => {
+  setPreviousPlayingAudio = setPreviousPlayingAudioParam;
+}
+const stopPreviousPlayingAudioHandler = (setPreviousPlayingAudioParam: React.Dispatch<React.SetStateAction<boolean>>) => {
+  if(setPreviousPlayingAudio !== null) {
+    setPreviousPlayingAudio(false);
+  }
+}
 
-export { getRandomNumbersArray, playingAudio, pauseAudio }
+export { 
+  getRandomNumbersArray, 
+  playingAudio, 
+  pauseAudio, 
+  setPreviousPlayingAudioHandler,
+  stopPreviousPlayingAudioHandler
+}
 

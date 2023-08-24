@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import ParseItemScreen from './ParseItemScreen';
 import { FlatList } from 'react-native-gesture-handler';
+import { setPreviousPlayingAudioHandler, stopPreviousPlayingAudioHandler } from '../utils/libs';
 
 type ItemProps = {
   group: any,
@@ -34,6 +35,8 @@ const ParseGroupItemScreen = (
                                               question={item}
                                               primaryFontSize={primaryFontSize}
                                               subFontSize={subFontSize}
+                                              setPreviousPlayingAudioHandler={setPreviousPlayingAudioHandler}
+                                              stopPreviousPlayingAudioHandler={stopPreviousPlayingAudioHandler}
                                             />
                             }
             keyExtractor={(item, index) => index.toString()}

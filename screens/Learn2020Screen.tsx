@@ -17,6 +17,7 @@ import { useTranslation } from 'react-i18next';
 import StorageService from '../utils/StorageService';
 import AdsFullScreen from './AdsFullScreen';
 import ForQuestionScreen from './settings/ForQuestionScreen';
+import { setPreviousPlayingAudioHandler, stopPreviousPlayingAudioHandler } from '../utils/libs';
 
 type RootStackParamList = {};
 
@@ -158,6 +159,8 @@ const Learn2020Screen = ({ route, navigation }: Props) => {
                                           toggleTranslate={toggleTranslate}
                                           primaryFontSize={primaryFontSize}
                                           subFontSize={subFontSize}
+                                          setPreviousPlayingAudioHandler={setPreviousPlayingAudioHandler}
+                                          stopPreviousPlayingAudioHandler={stopPreviousPlayingAudioHandler}
                                       />
                               }
               keyExtractor={(item, index) => index.toString()}

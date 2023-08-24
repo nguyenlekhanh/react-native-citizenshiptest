@@ -1,9 +1,10 @@
 import { View, Text, TouchableOpacity } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import Sound from 'react-native-sound';
 import { PlayIcon, StopIcon } from 'react-native-heroicons/solid';
 import cls from "classnames";
+import { useNavigation } from '@react-navigation/native';
 
 type ItemProps = {
   count: number,
@@ -14,7 +15,9 @@ type ItemProps = {
   voice: string,
   toggleTranslate: boolean,
   primaryFontSize: number,
-  subFontSize: number
+  subFontSize: number,
+  setPreviousPlayingAudioHandler: (value: React.Dispatch<React.SetStateAction<boolean>>) => void,
+  stopPreviousPlayingAudioHandler: () => void
 };
 
 let audio:Sound;
@@ -22,29 +25,38 @@ let audio:Sound;
 const QuestionsCardScreen = (
   {
     count, question, translate_question, answer, translate_answer, voice,
-    toggleTranslate, primaryFontSize, subFontSize
+    toggleTranslate, primaryFontSize, subFontSize,
+    setPreviousPlayingAudioHandler, stopPreviousPlayingAudioHandler
   }: ItemProps) => {
+
+  const navigation = useNavigation();
+  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   const pauseAudio = () => {
     if(audio) {
-      audio.stop();
+      stopAudio();
     }
   }
 
   useEffect(() => {
-
     // Specify how to clean up after this effect:
     return () => {
-      if(audio) {
-        audio.stop();
+      if(audio && audio.isPlaying() && !navigation.isFocused()) {
+        stopAudio();
       }
     };
   }, []);
 
+  const stopAudio = () => {
+    audio.stop();
+    setIsPlayingAudio(false);
+    stopPreviousPlayingAudioHandler();
+  }
+
   const playingAudio = (url: string) => {
     if(audio){
-      if(audio.isPlaying()){
-        audio.stop();
+      if(audio.isPlaying()) {
+        stopAudio();
       }
     }
     Sound.setCategory('Playback');
@@ -65,10 +77,14 @@ const QuestionsCardScreen = (
         //     audio.getNumberOfChannels(),
         // );
 
+        setIsPlayingAudio(true);
+        setPreviousPlayingAudioHandler(setIsPlayingAudio);
         audio.play(success => {
           if (success) {
+            setIsPlayingAudio(false);
             console.log('successfully finished playing');
           } else {
+            setIsPlayingAudio(false);
             console.log('playback failed due to audio decoding errors');
           }
         });
@@ -84,20 +100,23 @@ const QuestionsCardScreen = (
           <Text className="underline">Question {count+1}</Text>: {question}
         </Text>
         <Text>
-          {voice &&
-              <TouchableOpacity
-                onPress={() => playingAudio(voice)}
-              >
-                <PlayIcon size={20} color="blue"/>
-              </TouchableOpacity>
-          }&nbsp;&nbsp;
-          {voice &&
-            <TouchableOpacity
-              onPress={() => pauseAudio()}
-            >
-              <StopIcon size={20} color="blue"/>
-            </TouchableOpacity>
-          }
+          {voice && (
+            <>
+              {isPlayingAudio ? ( 
+                <TouchableOpacity
+                  onPress={() => pauseAudio()}
+                >
+                  <StopIcon size={20} color="blue"/>
+                </TouchableOpacity>
+              ) : (
+                <TouchableOpacity
+                  onPress={() => playingAudio(voice)}
+                >
+                  <PlayIcon size={20} color="blue"/>
+                </TouchableOpacity>
+              )}
+            </>
+          )}
         </Text>
         {toggleTranslate && 
           <Text style={{fontSize: subFontSize}}>
@@ -119,4 +138,12 @@ const QuestionsCardScreen = (
   )
 }
 
-export default QuestionsCardScreen
+function areItemsEqual(prevItem: ItemProps, nextItem: ItemProps) {
+  return Object.keys(prevItem).every(key => {
+      return prevItem[key as keyof ItemProps] === nextItem[key as keyof ItemProps]
+  })
+}
+
+const MemoizedCartLineItem = memo<typeof QuestionsCardScreen>(QuestionsCardScreen, areItemsEqual)
+
+export default MemoizedCartLineItem

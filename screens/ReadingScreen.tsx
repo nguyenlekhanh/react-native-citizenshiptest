@@ -14,6 +14,7 @@ import ParseGroupItemScreen from './ParseGroupItemScreen';
 import ReadingScreenParseItem from './ReadingScreenParseItem';
 import AdsFullScreen from './AdsFullScreen';
 import ForQuestionScreen from './settings/ForQuestionScreen';
+import { setPreviousPlayingAudioHandler, stopPreviousPlayingAudioHandler } from '../utils/libs';
 
 type RootStackParamList = {};
 
@@ -87,30 +88,6 @@ const ReadingScreen = ({ route, navigation }: Props) => {
         }
         {jsonData && jsonData?.length &&
           <View className="m-2">
-            {/* <View className="absolute top-0 left-0 w-full">
-              <View className="flex-row justify-between	">
-                <View className="flex-row">
-                </View>
-                <View className="flex-row">
-                  <TouchableOpacity
-                    onPress={() => changeFontsizeHandler(0)}
-                  >
-                    <Text className="text-xl text-blue-700">{t("change-font-size")} &nbsp;</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                    onPress={() => changeFontsizeHandler(1)}
-                  >
-                    <PlusIcon size={25} color="blue" />
-                  </TouchableOpacity>
-                  <Text>&nbsp;&nbsp;&nbsp;</Text>
-                  <TouchableOpacity
-                    onPress={() => changeFontsizeHandler(2)}
-                  >
-                    <MinusIcon size={25} color="blue" />
-                  </TouchableOpacity>
-                </View>
-              </View>
-            </View> */}
             
             <FlatList
               className=""
@@ -121,6 +98,8 @@ const ReadingScreen = ({ route, navigation }: Props) => {
                                                 question={item}
                                                 primaryFontSize={primaryFontSize}
                                                 subFontSize={subFontSize}
+                                                setPreviousPlayingAudioHandler={setPreviousPlayingAudioHandler}
+                                                stopPreviousPlayingAudioHandler={stopPreviousPlayingAudioHandler}
                                       />
                               }
               keyExtractor={(item, index) => index.toString()}
