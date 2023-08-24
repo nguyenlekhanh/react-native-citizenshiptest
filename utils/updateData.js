@@ -45,17 +45,6 @@ const getUserScore = async (data) => {
   const url = serverUrl + get_answer;
   let responseData = '';
   return fetchData(url, data);
-    // .then((response) => {
-    //   //console.log(typeof response);
-    //   if(response.result) {
-    //     //console.log(response.result);
-    //     responseData = response.result;
-    //   }
-    //   // Process the fetched data here
-    // })
-    // .catch((error) => {
-    //   // Handle errors if necessary
-    // });
 }
 
 const submitFeedback = (data) => {
