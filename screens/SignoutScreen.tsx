@@ -9,6 +9,8 @@ import { serverUrl, signupWithGoogleUrl } from '../utils/variables';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { fetchData } from '../utils/updateData';
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import ModalContainer from '../components/ModalContainer';
+import SignInView from '../components/SignInView';
 
 const SignoutScreen: React.FC = () => {
   const navigation = useNavigation();
@@ -18,6 +20,16 @@ const SignoutScreen: React.FC = () => {
   const token = useUserStore((state) => state.token);
   const setToken  = useUserStore((state) => state.setToken);
   const {t} = useTranslation();
+
+  const [modalSignInVisible, setModalSignInVisible] = useState(false);
+
+  const setModalSignInVisibileHandler = (showHide: boolean) => {
+    if(showHide) {
+      setModalSignInVisible(true);
+    } else {
+      setModalSignInVisible(false);
+    }
+  }
 
   useEffect(() => {
     const getUser = async () => {
@@ -73,6 +85,7 @@ const SignoutScreen: React.FC = () => {
   const removeUser = () => {
     setToken('');
     googleSignOut(setUser);
+    setModalSignInVisible(false);
   }
 
   if(userInfo || token) {
@@ -86,12 +99,23 @@ const SignoutScreen: React.FC = () => {
     )
   } else {
     return (
-        <TouchableOpacity onPress={() => googleSignInHandler()}
+      <View className="max-h-8">
+        <TouchableOpacity onPress={() => setModalSignInVisible(true)}
           className="mr-2"
         >
           <Icon name="file-import" size={25} color="#D07F8B"
           />
         </TouchableOpacity>
+        <ModalContainer
+            modalVisible={modalSignInVisible}
+            setModalVisibileHandler={setModalSignInVisibileHandler}
+          >
+            <SignInView 
+              title={"Please proceed with signing in:"}
+              setModalVisibileHandler={setModalSignInVisibileHandler}
+            />
+          </ModalContainer>
+      </View>
     );
   }
 }

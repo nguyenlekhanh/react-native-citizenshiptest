@@ -13,11 +13,13 @@ import ErrorScreen from './ErrorScreen';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { useAppTimerContext } from '../components/AppTimerProvider'; 
 import VersionCheck from "react-native-version-check";
-import ModalUpdateApp from '../components/ModalUpdateApp';
 
 import {
   requestTrackingPermission
 } from 'react-native-tracking-transparency';
+
+import ModalContainer from '../components/ModalContainer';
+import UpdateAppView from '../components/UpdateAppView';
 
 type RootStackParamList = {};
 
@@ -265,11 +267,20 @@ const HomeScreen = ({ route, navigation }: Props) => {
         </View>
 
         <AdsScreen />
-        <ModalUpdateApp
+        {/* <ModalUpdateApp
           title={"We have a new update. Please press the 'Update' button to update the app!"}
           modalVisible={modalVisible}
           setModalVisibileHandler={setModalVisibileHandler}
-        />
+        /> */}
+        <ModalContainer
+          modalVisible={modalVisible}
+          setModalVisibileHandler={setModalVisibileHandler}
+        >
+          <UpdateAppView 
+            title={"We have a new update. Please press the 'Update' button to update the app!"}
+            setModalVisibileHandler={setModalVisibileHandler}
+          />
+        </ModalContainer>
     </View>
   )
 }

@@ -21,9 +21,9 @@ const ContactScreen = ({ route, navigation }: Props) => {
   const [name, setName] = useState<string>('');
   const [subject, setSubject] = useState<string>('');
   const [message, setMessage] = useState<string>('');
-  const [nameError, setNameError] = useState<string>('black');
-  const [subjectError, setSubjectError] = useState<string>('black');
-  const [messageError, setMessageError] = useState<string>('black');
+  const [nameError, setNameError] = useState<string>('#ccc');
+  const [subjectError, setSubjectError] = useState<string>('#ccc');
+  const [messageError, setMessageError] = useState<string>('#ccc');
 
   const userInfo = useUserStore((state) => state.user);
   const token = useUserStore((state) => state.token);
@@ -104,7 +104,7 @@ const ContactScreen = ({ route, navigation }: Props) => {
       <View className="mt-2 w-full h-[89%] justify-center">
         <View className="h-[95%] mx-2">
           <View className="flex-row w-full justify-between">
-            <Text className="pt-3 text-2xl font-bold">{t("contact")}</Text>
+            <Text className="pt-3 text-2xl font-bold ">{t("contact")}</Text>
             <Button event={() => submitFormHandler()}/>
           </View>
           <View className="mt-3">
