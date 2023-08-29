@@ -1,4 +1,4 @@
-import { View, Text, TextInput, SafeAreaView, Button, Platform } from 'react-native'
+import { View, Text, TextInput, SafeAreaView, Button, Platform, Alert } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import AdsScreen from './AdsScreen';
 import { TouchableOpacity } from 'react-native';
@@ -14,6 +14,10 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 import { useAppTimerContext } from '../components/AppTimerProvider'; 
 import VersionCheck from "react-native-version-check";
 import ModalUpdateApp from '../components/ModalUpdateApp';
+
+import {
+  requestTrackingPermission
+} from 'react-native-tracking-transparency';
 
 type RootStackParamList = {};
 
@@ -93,7 +97,10 @@ const HomeScreen = ({ route, navigation }: Props) => {
         }
       });
     }
-    
+    const requestTrackingHandler = async() => {
+      const trackingStatus = await requestTrackingPermission();
+    }
+    requestTrackingHandler();
   }, []);
 
   const showScoreHandler = async () => {
