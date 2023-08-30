@@ -1,10 +1,12 @@
 import { View, Text, Modal, StyleSheet, Pressable, 
         Linking
       } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import StorageService from '../utils/StorageService'
 import { googleSignIn } from '../utils/googleUtil'
 import { useUserStore } from '../app/store.zustand.user'
+import { appleAuth } from '@invertase/react-native-apple-authentication';
+import { onAppleButtonPress } from '../utils/libs'
 
 type PropsType = {
   title: string,
@@ -27,6 +29,25 @@ const SignInView = ({
     }
   }
 
+  const appleLoginHandler = async () => {
+    const user = await StorageService.getItem(StorageService.USER);
+
+    if(!user) {
+      onAppleButtonPress(setUser);
+    } else {
+      setUser(JSON.parse(user));
+    }
+    
+  }
+
+  useEffect(() => {
+    // onCredentialRevoked returns a function that will remove the event listener. useEffect will call this function when the component unmounts
+    return appleAuth.onCredentialRevoked(async () => {
+      console.warn('If this function executes, User Credentials have been Revoked');
+    });
+  }, []); // passing in an empty array as the second argument ensures this is only ran once when component mounts initially.
+
+  
   return (
     <View style={styles.centeredView}>
       <View style={styles.modalView}>
@@ -48,7 +69,7 @@ const SignInView = ({
         <View className="flex-row gap-3">
           <Pressable
             style={[styles.button, styles.buttonClose]}
-            onPress={() => {}}>
+            onPress={() => appleLoginHandler()}>
             <Text style={styles.textStyle}
               className="text-xl"
             >

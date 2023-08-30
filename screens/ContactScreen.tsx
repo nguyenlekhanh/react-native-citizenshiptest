@@ -109,7 +109,7 @@ const ContactScreen = ({ route, navigation }: Props) => {
           </View>
           <View className="mt-3">
             <Text 
-              className="text-2xl font-bold"
+              className="text-lg font-bold"
             >{t("your-name")}</Text>
             <TextInput className="text-xl"
               style={{borderWidth: 1, borderColor: `${nameError}`}}
@@ -120,7 +120,7 @@ const ContactScreen = ({ route, navigation }: Props) => {
           </View>
           <View className="mt-3">
             <Text 
-              className="text-2xl font-bold"
+              className="text-lg font-bold"
             >{t("subject")}</Text>
             <TextInput className="text-xl"
               style={{borderWidth: 1, borderColor: `${subjectError}`}}
@@ -130,7 +130,7 @@ const ContactScreen = ({ route, navigation }: Props) => {
             />
           </View>
           <View className="mt-3 mb-3">
-            <Text className="text-2xl font-bold">{t("your-message")}</Text>
+            <Text className="text-lg font-bold">{t("your-message")}</Text>
             <TextInput 
               ref={messageRef}
               value={message}
