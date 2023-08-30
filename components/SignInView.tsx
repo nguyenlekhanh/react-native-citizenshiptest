@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 import StorageService from '../utils/StorageService'
 import { googleSignIn } from '../utils/googleUtil'
 import { useUserStore } from '../app/store.zustand.user'
-import AppleLoginButton from './AppleLoginButton'
+import LoginButton from './LoginButton'
 
 // import { appleAuth } from '@invertase/react-native-apple-authentication';
 // import { onAppleButtonPress } from '../utils/libs'
@@ -30,15 +30,6 @@ const SignInView = ({
       setUser(JSON.parse(user));
     }
   }
-
-  if(Platform.OS === 'ios') {
-    useEffect(() => {
-      // onCredentialRevoked returns a function that will remove the event listener. useEffect will call this function when the component unmounts
-      return appleAuth.onCredentialRevoked(async () => {
-        console.warn('If this function executes, User Credentials have been Revoked');
-      });
-    }, []); // passing in an empty array as the second argument ensures this is only ran once when component mounts initially.
-  }
   
   return (
     <View style={styles.centeredView}>
@@ -58,19 +49,10 @@ const SignInView = ({
           {title}
         </Text>
         
-        <View className="flex-row gap-3">
+        <View className="flex-row gap-3 ">
           {Platform.OS === 'ios' &&
-            <AppleLoginButton />
+            <LoginButton />
           }
-          <Pressable
-            style={[styles.button, styles.buttonClose]}
-            onPress={() => googleSignInHandler(false)}>
-            <Text style={styles.textStyle}
-              className="text-xl"
-            >
-              Google
-            </Text>
-          </Pressable>
         </View>
       </View>
     </View>

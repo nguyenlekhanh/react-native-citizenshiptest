@@ -1,6 +1,7 @@
 import Sound from "react-native-sound";
 import { appleAuth } from '@invertase/react-native-apple-authentication';
 import { LOGIN_TYPE } from "./variables";
+import StorageService from "./StorageService";
 
 function getRandomNumbersArray(numberOfItems: number): number[] {
   const randomNumbers: number[] = [];
@@ -99,11 +100,23 @@ const onAppleButtonPress = async (setUser: any) => {
     if (credentialState === appleAuth.State.AUTHORIZED) {
       // user is authenticated
       //console.log(appleAuthRequestResponse);
+      let appleEmail = appleAuthRequestResponse.email ? appleAuthRequestResponse.email : "";
+
+      if(appleEmail) {
+        await StorageService.saveItem(StorageService.APPLE_EMAIL, appleEmail);
+      } else {
+        appleEmail = await StorageService.getItem(StorageService.APPLE_EMAIL);
+      }
+
+      console.log("appleemail");
+      console.log(appleEmail);
+
       const appleUserData = {
         "idToken": appleAuthRequestResponse.identityToken,
+        "nonce": appleAuthRequestResponse.nonce,
         "loginType": LOGIN_TYPE.APPLE,
         "user": {
-          "email": appleAuthRequestResponse.email ? appleAuthRequestResponse.email : "",
+          "email": appleEmail,
           "firstName": appleAuthRequestResponse?.fullName?.familyName ? appleAuthRequestResponse.fullName.familyName : "",
           "lastName": appleAuthRequestResponse?.fullName?.givenName ? appleAuthRequestResponse.fullName.givenName : "",
           "name": "",
@@ -111,6 +124,7 @@ const onAppleButtonPress = async (setUser: any) => {
           "imageUrl": ""
         }
       }
+      
       setUser(appleUserData);
     }
   } catch (error) {

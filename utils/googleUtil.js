@@ -32,6 +32,7 @@ export const googleSignIn = async (setUser) => {
             const googleToken = await GoogleSignin.getTokens();
             let userData = {
                 "idToken": googleToken.accessToken,
+                "nonce": "",
                 "loginType": LOGIN_TYPE.GOOGLE,
                 "user": {
                   "email": googleUserInfo?.user?.email ? googleUserInfo.user.email : "",

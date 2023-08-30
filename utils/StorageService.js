@@ -3,7 +3,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 const StorageKeys = {
     APP_LANGUAGE: 'APP_LANGUAGE',
     USER: '@user',
-    SHOW_FULL_ADD: 'SHOW_FULL_ADD'
+    SHOW_FULL_ADD: 'SHOW_FULL_ADD',
+    APPLE_EMAIL: 'APPLE_EMAIL'
 }
 
 async function getItem(key) {

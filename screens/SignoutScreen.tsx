@@ -98,7 +98,7 @@ const SignoutScreen: React.FC = () => {
       </TouchableOpacity>
     )
   } else {
-    if(Platform === 'ios') {
+    if(Platform.OS === 'ios') {
       return (
         <View className="max-h-8">
           <TouchableOpacity onPress={() => setModalSignInVisible(true)}
