@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image, Platform } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { useUserStore } from '../app/store.zustand.user';
 import { useNavigation } from '@react-navigation/native';
@@ -98,25 +98,36 @@ const SignoutScreen: React.FC = () => {
       </TouchableOpacity>
     )
   } else {
-    return (
-      <View className="max-h-8">
-        <TouchableOpacity onPress={() => setModalSignInVisible(true)}
-          className="mr-2"
-        >
+    if(Platform === 'ios') {
+      return (
+        <View className="max-h-8">
+          <TouchableOpacity onPress={() => setModalSignInVisible(true)}
+            className="mr-2"
+          >
+            <Icon name="file-import" size={25} color="#D07F8B"
+            />
+          </TouchableOpacity>
+          <ModalContainer
+              modalVisible={modalSignInVisible}
+              setModalVisibileHandler={setModalSignInVisibileHandler}
+            >
+              <SignInView 
+                title={"Please proceed with signing in:"}
+                setModalVisibileHandler={setModalSignInVisibileHandler}
+              />
+            </ModalContainer>
+        </View>
+      );
+    } else {
+      return (
+        <TouchableOpacity onPress={() => googleSignInHandler()}
+            className="mr-2"
+          >
           <Icon name="file-import" size={25} color="#D07F8B"
           />
         </TouchableOpacity>
-        <ModalContainer
-            modalVisible={modalSignInVisible}
-            setModalVisibileHandler={setModalSignInVisibileHandler}
-          >
-            <SignInView 
-              title={"Please proceed with signing in:"}
-              setModalVisibileHandler={setModalSignInVisibileHandler}
-            />
-          </ModalContainer>
-      </View>
-    );
+      )
+    }
   }
 }
 

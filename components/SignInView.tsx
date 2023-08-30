@@ -1,12 +1,14 @@
 import { View, Text, Modal, StyleSheet, Pressable, 
-        Linking
+        Linking, Platform
       } from 'react-native'
 import React, { useEffect } from 'react'
 import StorageService from '../utils/StorageService'
 import { googleSignIn } from '../utils/googleUtil'
 import { useUserStore } from '../app/store.zustand.user'
-import { appleAuth } from '@invertase/react-native-apple-authentication';
-import { onAppleButtonPress } from '../utils/libs'
+import AppleLoginButton from './AppleLoginButton'
+
+// import { appleAuth } from '@invertase/react-native-apple-authentication';
+// import { onAppleButtonPress } from '../utils/libs'
 
 type PropsType = {
   title: string,
@@ -29,24 +31,14 @@ const SignInView = ({
     }
   }
 
-  const appleLoginHandler = async () => {
-    const user = await StorageService.getItem(StorageService.USER);
-
-    if(!user) {
-      onAppleButtonPress(setUser);
-    } else {
-      setUser(JSON.parse(user));
-    }
-    
+  if(Platform.OS === 'ios') {
+    useEffect(() => {
+      // onCredentialRevoked returns a function that will remove the event listener. useEffect will call this function when the component unmounts
+      return appleAuth.onCredentialRevoked(async () => {
+        console.warn('If this function executes, User Credentials have been Revoked');
+      });
+    }, []); // passing in an empty array as the second argument ensures this is only ran once when component mounts initially.
   }
-
-  useEffect(() => {
-    // onCredentialRevoked returns a function that will remove the event listener. useEffect will call this function when the component unmounts
-    return appleAuth.onCredentialRevoked(async () => {
-      console.warn('If this function executes, User Credentials have been Revoked');
-    });
-  }, []); // passing in an empty array as the second argument ensures this is only ran once when component mounts initially.
-
   
   return (
     <View style={styles.centeredView}>
@@ -67,15 +59,9 @@ const SignInView = ({
         </Text>
         
         <View className="flex-row gap-3">
-          <Pressable
-            style={[styles.button, styles.buttonClose]}
-            onPress={() => appleLoginHandler()}>
-            <Text style={styles.textStyle}
-              className="text-xl"
-            >
-              Apple
-            </Text>
-          </Pressable>
+          {Platform.OS === 'ios' &&
+            <AppleLoginButton />
+          }
           <Pressable
             style={[styles.button, styles.buttonClose]}
             onPress={() => googleSignInHandler(false)}>
