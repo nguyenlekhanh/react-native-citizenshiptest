@@ -1,5 +1,6 @@
 import Sound from "react-native-sound";
 import { appleAuth } from '@invertase/react-native-apple-authentication';
+import { LOGIN_TYPE } from "./variables";
 
 function getRandomNumbersArray(numberOfItems: number): number[] {
   const randomNumbers: number[] = [];
@@ -100,6 +101,7 @@ const onAppleButtonPress = async (setUser: any) => {
       //console.log(appleAuthRequestResponse);
       const appleUserData = {
         "idToken": appleAuthRequestResponse.identityToken,
+        "loginType": LOGIN_TYPE.APPLE,
         "user": {
           "email": appleAuthRequestResponse.email ? appleAuthRequestResponse.email : "",
           "firstName": appleAuthRequestResponse?.fullName?.familyName ? appleAuthRequestResponse.fullName.familyName : "",

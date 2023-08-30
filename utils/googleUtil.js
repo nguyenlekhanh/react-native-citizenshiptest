@@ -8,7 +8,8 @@ import {
 import {
     googleAndroidClientIdDevelopment,
     googleAndroidClientIdProduction,
-    googleIosClientId
+    googleIosClientId,
+    LOGIN_TYPE
   } from './variables';
 import StorageService from './StorageService';
 
@@ -28,7 +29,20 @@ export const googleSignIn = async (setUser) => {
         const googleUserInfo = await GoogleSignin.signIn();
         if(googleUserInfo) {
             await StorageService.saveItem(StorageService.USER, JSON.stringify(googleUserInfo));
-            setUser(googleUserInfo);
+            const googleToken = await GoogleSignin.getTokens();
+            let userData = {
+                "idToken": googleToken.accessToken,
+                "loginType": LOGIN_TYPE.GOOGLE,
+                "user": {
+                  "email": googleUserInfo?.user?.email ? googleUserInfo.user.email : "",
+                  "firstName": googleUserInfo?.user?.familyName ? googleUserInfo.user.familyName : "",
+                  "lastName": googleUserInfo?.user?.givenName ? googleUserInfo.user.givenName : "",
+                  "name": googleUserInfo?.user?.name ? googleUserInfo.user.name : "",
+                  "googleId": googleUserInfo?.user?.id ? googleUserInfo.user.id : "",
+                  "imageUrl": googleUserInfo?.user?.photo ? googleUserInfo.user.photo : ""
+                }
+              };
+            setUser(userData);
         }
     } catch (error) {
         console.log(error);
