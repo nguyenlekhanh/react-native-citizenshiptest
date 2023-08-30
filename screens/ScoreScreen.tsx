@@ -70,7 +70,7 @@ const ScoreScreen = ({ route, navigation }: Props) => {
 
   return (
     <View className="flex-columns items-center w-full h-max">
-      <View className="w-full h-[89%]">
+      <View className="w-full h-[100%]">
         {showErrorShowMyScore &&
           <ErrorScreen 
             msg={t("error-use-func-msg")}
@@ -115,7 +115,7 @@ const ScoreScreen = ({ route, navigation }: Props) => {
         }
       </View>
 
-      <AdsScreen />
+      {/* <AdsScreen /> */}
       <AdsFullScreen showFullAds={showFullAds}/>
     </View>
   )

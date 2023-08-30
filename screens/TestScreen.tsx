@@ -169,7 +169,7 @@ const TestScreen = ({ route, navigation }: Props) => {
 
   return (
     <View className="flex-columns items-center w-full h-max">
-      <View className="w-full h-[89%] mt-2">
+      <View className="w-full h-[100%] mt-2">
         {isLoadingData &&
           <View>
             <Text>Loading </Text>
