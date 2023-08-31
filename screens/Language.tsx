@@ -22,11 +22,11 @@ const LanguageScreen: React.FC = () => {
         <TouchableOpacity onPress={() => changeLng("vn")}>
           <Text className="bold text-xl text-blue-700 mr-5">VN</Text>
         </TouchableOpacity>
-        <Text className="bold text-xl text-blue-700">|</Text>
+        <Text className="bold text-xl text-blue-700"></Text>
         <TouchableOpacity onPress={() => changeLng("es")}>
           <Text className="bold text-xl text-blue-700 ml-5 mr-5">ES</Text>
         </TouchableOpacity>
-        <Text className="bold text-xl text-blue-700">|</Text>
+        <Text className="bold text-xl text-blue-700"></Text>
         <TouchableOpacity className="ml-2" onPress={() => changeLng("en")}>
           <Text className="bold text-xl text-blue-700 ml-4">EN</Text>
         </TouchableOpacity>

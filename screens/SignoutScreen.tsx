@@ -61,6 +61,8 @@ const SignoutScreen: React.FC = () => {
           });
       }
       userCheck();
+    } else if(!userInfo) {
+      setModalSignInVisible(false);
     }
 
   }, [userInfo]);

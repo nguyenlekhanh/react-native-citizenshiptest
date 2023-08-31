@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TextInput, Keyboard, Modal, Pressable, Alert, StyleSheet  } from 'react-native'
+import { View, Text, SafeAreaView, TextInput, Keyboard, Modal, Pressable, Alert, StyleSheet, ActivityIndicator  } from 'react-native'
 import React, { useEffect, useRef, useState } from 'react'
 import AdsScreen from './AdsScreen';
 import { useTranslation } from 'react-i18next';
@@ -21,6 +21,8 @@ const AccountScreen = ({ route, navigation }: Props) => {
   const token = useUserStore((state) => state.token);
   const setToken  = useUserStore((state) => state.setToken);
 
+  const [isLoadingData, setIsLoadingData] = useState<boolean>(false);
+  
   const removeUser = () => {
     setToken('');
     setUser('');
@@ -40,42 +42,54 @@ const AccountScreen = ({ route, navigation }: Props) => {
     //console.log(data);
     removeUser();
     //send to server
+    setIsLoadingData(true);
     deleteAccount(data)
       .then((response) => {
         Alert.alert('Success', 'Your account has been deleted successfully.', [
           {text: 'OK', onPress: () => navigation.navigate('Home')},
         ]);
+        setIsLoadingData(false);
       })
       .catch((error) => {
         Alert.alert('Error', 'Something when wrong, try again later', [
           {text: 'OK', onPress: () => navigation.navigate('Home')},
         ]);
+        setIsLoadingData(false);
       });
       
-    navigation.navigate("Home");
   }
 
   return (
     <View className="w-full h-max">
-      <View className="m-2 mt-5 flex-column items-center">
-        <TouchableOpacity
-          onPress={() => sigoutHandler()}
-        >
-          <Text className="text-lg color-blue-500 underline">
-            {t("SignOut")}
-          </Text>
-        </TouchableOpacity>
+      {isLoadingData &&
+        <View className="absolute top-1 right-1">
+          <ActivityIndicator
+            animating = {isLoadingData}
+            color = '#bc2b78'
+            size = "large"/>
+        </View>
+      }
 
-        <TouchableOpacity
-          className="mt-3"
-          onPress={() => deleteAccountHandler()}
-        >
-          <Text className="text-lg color-blue-500 underline">
-            {t("DeleteAccount")}
-          </Text>
-        </TouchableOpacity>
-      </View>
+      {userInfo && (
+        <View className="m-2 mt-5 flex-column items-center">
+          <TouchableOpacity
+            onPress={() => sigoutHandler()}
+          >
+            <Text className="text-lg color-blue-500 underline">
+              {t("SignOut")}
+            </Text>
+          </TouchableOpacity>
 
+          <TouchableOpacity
+            className="mt-3"
+            onPress={() => deleteAccountHandler()}
+          >
+            <Text className="text-lg color-blue-500 underline">
+              {t("DeleteAccount")}
+            </Text>
+          </TouchableOpacity>
+        </View>
+      )}
       <AdsScreen />
       <AdsFullScreen showFullAds={showFullAds}/>
     </View>
