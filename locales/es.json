@@ -18,5 +18,8 @@
   "subject": "Asunto",
   "your-message": "Tu mensaje",
   "small-talk": "Conversación casual",
-  "reading-screen": "Prueba de lectura"
+  "reading-screen": "Prueba de lectura",
+  "account": "Cuenta",
+  "SignOut": "desconectar",
+  "DeleteAccount": "Borrar cuenta"
 }

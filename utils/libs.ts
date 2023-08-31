@@ -102,14 +102,16 @@ const onAppleButtonPress = async (setUser: any) => {
       //console.log(appleAuthRequestResponse);
       let appleEmail = appleAuthRequestResponse.email ? appleAuthRequestResponse.email : "";
 
-      if(appleEmail) {
-        await StorageService.saveItem(StorageService.APPLE_EMAIL, appleEmail);
-      } else {
-        appleEmail = await StorageService.getItem(StorageService.APPLE_EMAIL);
-      }
+      // if(appleEmail) {
+      //   await StorageService.saveItem(StorageService.APPLE_EMAIL, appleEmail);
+      // } else {
+      //   appleEmail = await StorageService.getItem(StorageService.APPLE_EMAIL);
+      // }
 
-      console.log("appleemail");
-      console.log(appleEmail);
+      if(!appleEmail) {
+        //get id if apple user doesn't want to share their email
+        appleEmail = appleAuthRequestResponse.user ? appleAuthRequestResponse.user : "";
+      }
 
       const appleUserData = {
         "idToken": appleAuthRequestResponse.identityToken,

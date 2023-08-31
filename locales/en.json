@@ -18,5 +18,8 @@
   "subject": "Subject",
   "your-message": "Your Message",
   "small-talk": "Small Talk",
-  "reading-screen": "Reading Test"
+  "reading-screen": "Reading Test",
+  "account": "Account",
+  "SignOut": "Sign Out",
+  "DeleteAccount": "Delete Account"
 }

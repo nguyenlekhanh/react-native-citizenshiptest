@@ -25,6 +25,7 @@ export const learn_2008 = "/civics/learn/2008";
 export const test_answer_2008 = "/api/civics/test/answer/2008"; 
 export const get_answer = "/api/civics/test/get_answer"; 
 export const submit_feedback_url = "/api/contact/feedback"; 
+export const delete_account_url = "/api/user/delete"; 
 
 export const LOGIN_TYPE = {
 	GOOGLE: 1,

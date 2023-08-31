@@ -11,6 +11,7 @@ import SmallTalkScreen from "../screens/SmallTalkScreen";
 import ReadingScreen from "../screens/ReadingScreen";
 import Learn2020Screen from "../screens/Learn2020Screen";
 import ShowFullAdsScreen from "../screens/ShowFullAdsScreen";
+import AccountScreen from "../screens/AccountScreen";
 
 const Stack = createStackNavigator();
 
@@ -83,6 +84,14 @@ const MainStackNavigator = () => {
           component={Learn2020Screen} 
           options={{
             headerTitle: "Learn 2020"
+          }}
+        />
+
+        <Stack.Screen 
+          name="Account" 
+          component={AccountScreen} 
+          options={{
+            headerTitle: "Account"
           }}
         />
 

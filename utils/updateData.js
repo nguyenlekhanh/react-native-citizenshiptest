@@ -1,4 +1,4 @@
-import { get_answer, serverUrl, submit_feedback_url, test_answer_2008 } from "./variables";
+import { delete_account_url, get_answer, serverUrl, submit_feedback_url, test_answer_2008 } from "./variables";
 
 async function fetchData(url, data, type="POST") {
   const token = "Bearer " + data?.token?? '';
@@ -49,10 +49,15 @@ const getUserScore = async (data) => {
 
 const submitFeedback = (data) => {
   const url = serverUrl + submit_feedback_url;
-  let responseData = '';
+  return fetchData(url, data);
+}
+
+const deleteAccount = (data) => {
+  const url = serverUrl + delete_account_url;
   return fetchData(url, data);
 }
 
 export { 
-  updateAnswer, fetchData, getUserScore, submitFeedback
+  updateAnswer, fetchData, getUserScore, submitFeedback,
+  deleteAccount
 };

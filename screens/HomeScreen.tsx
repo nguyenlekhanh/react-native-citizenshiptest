@@ -126,6 +126,13 @@ const HomeScreen = ({ route, navigation }: Props) => {
       setshowErrorContact(true);
     }
   }
+  
+  const showAccountScreenHandler = async () => {
+    if(userInfo) {
+      const showFullAds = await checkPlayingFullAds();
+      navigation.navigate('Account', {showFullAds: showFullAds});
+    }
+  }
 
   return (
     <View className="flex-columns items-center w-full h-max">
@@ -254,7 +261,36 @@ const HomeScreen = ({ route, navigation }: Props) => {
                         className="text-xl bold underline text-blue-700"
                       >{t("contact")}</Text>
                     </TouchableOpacity>
+
+                    {/* {userInfo && (
+                      <TouchableOpacity
+                        onPress={() => showAccountScreenHandler()}
+                        className="mt-4"
+                      >
+                        <Text 
+                          className="text-xl bold underline text-blue-700"
+                        >
+                          {t("account")}
+                        </Text>
+                      </TouchableOpacity>
+                    )} */}
+
+                    {userInfo ? (
+                      <TouchableOpacity
+                        onPress={() => showAccountScreenHandler()}
+                        className="mt-4"
+                      >
+                        <Text 
+                          className="text-xl bold underline text-blue-700"
+                        >
+                          {t("account")}
+                        </Text>
+                      </TouchableOpacity>
+                    ) : (
+                      <></>
+                    )} 
                   </View>
+                  
                 </View>
 
                 
