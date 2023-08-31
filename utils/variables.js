@@ -17,9 +17,9 @@ export const interstitialAdAdsIos="ca-app-pub-7745252561449149/6520020436";
 export const interstitialAdAdsAndroid="ca-app-pub-7745252561449149/7302371643";
 export const interstitialAds = Platform.OS === 'ios' ? interstitialAdAdsIos : interstitialAdAdsAndroid
 
-export const version = "1.8"; 
+export const version = "1.7"; 
 //export const serverUrl = __DEV__ ? "http://10.0.0.108:3000" : "https://civics-test-nextjs-6hx9kdy0b-nguyenlekhanh811-gmailcom.vercel.app"; 
-export const serverUrl = __DEV__ ? "https://civics-test-nextjs-6hx9kdy0b-nguyenlekhanh811-gmailcom.vercel.app" : "https://civics-test-nextjs-6hx9kdy0b-nguyenlekhanh811-gmailcom.vercel.app"; 
+export const serverUrl = __DEV__ ? "https://civics-test-nextjs.vercel.app" : "https://civics-test-nextjs.vercel.app"; 
 export const signupWithGoogleUrl = "/api/user/signup/"; 
 export const learn_2008 = "/civics/learn/2008"; 
 export const test_answer_2008 = "/api/civics/test/answer/2008"; 
