@@ -1,0 +1,238 @@
+{
+  "title": "Vocabulary in Part 12 of the N-400 application",
+  "questions": [
+    {
+      "question": "claimed",
+      "explanation": "lied (about being a citizen)",
+      "explanation_vn": "nói dối (về việc là một công dân)",
+      "explanation_es": "Mintió (sobre ser ciudadana)"
+    },
+    {
+        "question": "registered",
+        "explanation": "signed up",
+        "explanation_vn": "đăng ký",
+        "explanation_es": "registrado"
+    },
+    {
+        "question": "voted",
+        "explanation": "picked a leader",
+        "explanation_vn": "bỏ phiếu",
+        "explanation_es": "votó"
+    },
+    {
+        "question": "hereditary title",
+        "explanation": "like a prince or princess",
+        "explanation_vn": "tựa hạng thừa kế",
+        "explanation_es": "título hereditario"
+    },
+    {
+        "question": "legally incompetent",
+        "explanation": "“crazy”* (mentally ill)",
+        "explanation_vn": "không có khả năng hợp pháp",
+        "explanation_es": "legalmente incompetente"
+    },
+    {
+        "question": "owe",
+        "explanation": "not paid yet",
+        "explanation_vn": "nợ",
+        "explanation_es": "debe"
+    },
+    {
+        "question": "filed",
+        "explanation": "sent the form",
+        "explanation_vn": "nộp đơn",
+        "explanation_es": "presentó el formulario"
+    },
+    {
+        "question": "called yourself a non-resident on tax return",
+        "explanation": "lied on a tax form",
+        "explanation_vn": "nói dối trên biểu mẫu thuế",
+        "explanation_es": "mintió en un formulario de impuestos"
+    },
+    {
+        "question": "organization, association, fund, foundation, party, club, society",
+        "explanation": "a group",
+        "explanation_vn": "một nhóm",
+        "explanation_es": "un grupo"
+    },
+    {
+        "question": "\nA. Communist \nB. totalitarian \nC. terrorist",
+        "explanation": "\nA. like Karl Marx (Pol Pot, Chairman Mao, or Ho Chi Minh) \nB. like Stalin (or Mussolini, or Hitler, or Chairman Mao) \nC. like Al Qaeda (killers)",
+        "explanation_vn": "\nA. giống như Karl Marx (Pol Pot, Chủ tịch Mao, hoặc Hồ Chí Minh) \nB. giống như Stalin (hoặc Mussolini, hoặc Hitler, hoặc Chủ tịch Mao) \nC. giống như Al Qaeda (kẻ giết người)",
+        "explanation_es": "\nA. como Karl Marx (Pol Pot, Chairman Mao, o Ho Chi Minh) \nB. como Stalin (o Mussolini, o Hitler, o Chairman Mao) \nC. como Al Qaeda (asesinos)"
+    },
+    {
+        "question": "\nadvocated \noverthrow",
+        "explanation": "\nworked for \nget rid of",
+        "explanation_vn": "\nlàm việc cho \nloại bỏ",
+        "explanation_es": "\ntrabajó para \neliminar"
+    },
+    {
+        "question": "persecuted",
+        "explanation": "hurt someone (or bullied someone)",
+        "explanation_vn": "gây thương tổn cho ai đó (hoặc bắt nạt ai đó)",
+        "explanation_es": "lastimó a alguien (o acosó a alguien)"
+    },
+    {
+        "question": "Nazi",
+        "explanation": "Hitler",
+        "explanation_vn": "Hitler",
+        "explanation_es": "Hitler"
+    },
+    {
+        "question": "\nA. genocide \nB. torture \nC. killing \nD. forcing sexual contact \nE. practice their religion",
+        "explanation": "\nA. killing many people \nB. hurt people \nC. murder \nD. rape \nE. go to church (or temple or mosque)",
+        "explanation_vn": "\nA. giết nhiều người \nB. gây thương tổn cho người khác \nC. sát hại \nD. hiếp dâm \nE. thực hành tôn giáo của họ",
+        "explanation_es": "\nA. matar a mucha gente \nB. hacer daño a las personas \nC. asesinato \nD. violación \nE. ir a la iglesia (o templo o mezquita)"
+    },
+    {
+        "question": "military, paramilitary, self-defense, or vigilante unit, rebel or guerilla group, militia, insurgent organization",
+        "explanation": "army (people who fight with guns and bombs)",
+        "explanation_vn": "quân đội (những người chiến đấu bằng súng và bom)",
+        "explanation_es": "ejército (personas que luchan con armas y bombas)"
+    },
+    {
+        "question": "prison, detention facility, labor camp",
+        "explanation": "a kind of jail",
+        "explanation_vn": "loại tù",
+        "explanation_es": "un tipo de cárcel"
+    },
+    {
+        "question": "weapons",
+        "explanation": "guns and bombs",
+        "explanation_vn": "vũ khí (súng và bom)",
+        "explanation_es": "armas (pistolas y bombas)"
+    },
+    {
+        "question": "provide (weapons)",
+        "explanation": "give",
+        "explanation_vn": "cung cấp (vũ khí)",
+        "explanation_es": "proporcionar (armas)"
+    },
+    {
+        "question": "\nmilitary or paramilitary training \nweapons training \narmed force",
+        "explanation": "\nlearn to be a fighter \nlearn to use guns or bombs \narmy",
+        "explanation_vn": "\nđào tạo quân sự hoặc paramilitary \nđào tạo về vũ khí \nlực lượng vũ trang",
+        "explanation_es": "\nentrenamiento militar o paramilitar \nentrenamiento en armas \nfuerza armada"
+    },
+    {
+        "question": "recruit, enlist, conscript (a person under 15) ",
+        "explanation": "make a child carry a gun",
+        "explanation_vn": "tuyển mộ, nhập ngũ, bắt ép (người dưới 15 tuổi)",
+        "explanation_es": "reclutar, alistar, reclutar por obligación (a una persona menor de 15 años)"
+    },
+    {
+        "question": "combat",
+        "explanation": "fight in an army",
+        "explanation_vn": "chiến đấu trong quân đội",
+        "explanation_es": "combatir en un ejército"
+    },
+    {
+        "question": "committed a crime or offense",
+        "explanation": "do something that is against the law",
+        "explanation_vn": "phạm tội hoặc vi phạm",
+        "explanation_es": "cometer un delito o una infracción"
+    },
+    {
+        "question": "arrested, cited, or detained ",
+        "explanation": "have problems with police",
+        "explanation_vn": "bị bắt giữ, bị trích lục, hoặc bị giữ lại",
+        "explanation_es": "ser arrestado, citado o detenido"
+    },
+    {
+        "question": "charged with committing a crime",
+        "explanation": "when you have to go to court",
+        "explanation_vn": "bị buộc tội phạm",
+        "explanation_es": "acusado de cometer un delito"
+    },
+    {
+        "question": "convicted",
+        "explanation": "the judge says you did a bad thing",
+        "explanation_vn": "bị kết án",
+        "explanation_es": "condenado"
+    },
+    {
+        "question": "alternative sentencing, rehabilitative program, deferred prosecution, withheld adjudication",
+        "explanation": "you do a bad thing, but you don’t go to jail ",
+        "explanation_vn": "bản án thay thế, chương trình tái hòa nhập, trì hoãn truy tố, trì hoãn xem xét tòa án",
+        "explanation_es": "sentencia alternativa, programa de rehabilitación, enjuiciamiento diferido, adjudicación retenida"
+    },
+    {
+        "question": "\nsuspended sentence, probation \nparole",
+        "explanation": "\nyou do a bad thing, but you don’t go to jail \nleave jail early",
+        "explanation_vn": "\nán treo, quản chế \nrời tù sớm",
+        "explanation_es": "\ncondena suspendida, libertad condicional \nsales de la cárcel antes de tiempo"
+    },
+    {
+      "question": "\nA. habitual drunkard \nB. prostitute \nC procured a prostitute \nD. smuggled controlled substances \nE. [married to more than one person] \nF. obtain (a benefit) \nG. enter the US illegally \nH. gambled/gambling \nI. alimony \nJ. misrepresentation to obtain public benefits",
+      "explanation": "\nA. Drink too much alcohol \nB. Engages in sexual activity for money or payment. \nC. Arranged or provided a prostitute to someone else. \nD. Illegally transported or imported substances that are controlled or regulated by law, often referring to drugs or narcotics. \nE. Legally married to more than one person at the same time, which is typically illegal in most places. \nF. Acquire or receive a benefit, often through legal means. \nG. Enter the United States without proper authorization or legal documentation, violating immigration laws. \nH. Engaging in games of chance, often involving betting or wagering money. \nI. Financial support paid by one spouse to another after a divorce or separation. \nJ. Providing false or misleading information to fraudulently receive public assistance or benefits.",
+      "explanation_vn": "\nA. Người nghiện rượu thường xuyên \nB. Người bán dâm \nC. Sắp xếp hoặc cung cấp một người bán dâm cho người khác \nD. Vận chuyển hoặc nhập khẩu trái phép các chất được kiểm soát hoặc quy định bởi luật pháp, thường đề cập đến ma túy hoặc chất gây nghiện. \nE. Kết hôn hợp pháp với nhiều người cùng một lúc, thường là việc bất hợp pháp ở hầu hết các nơi. \nF. Nhận được lợi ích, thường thông qua các phương tiện hợp pháp. \nG. Nhập cảnh vào Hoa Kỳ mà không có sự cho phép hoặc tài liệu hợp pháp, vi phạm luật di trú. \nH. Tham gia các trò chơi may rủi, thường liên quan đến việc đặt cược hoặc đánh tiền. \nI. Hỗ trợ tài chính được trả bởi một người vợ hoặc chồng cho người còn lại sau khi ly dị hoặc chia tay. \nJ. Cung cấp thông tin sai lệch để nhận trợ cấp hoặc quyền lợi công cộng một cách gian lận.",
+      "explanation_es": "\nA. Persona que bebe alcohol en exceso habitualmente. \nB. Persona que se dedica a la actividad sexual a cambio de dinero o pago. \nC. Organizó o proporcionó a una prostituta a otra persona. \nD. Transportó o importó ilegalmente sustancias controladas o reguladas por la ley, a menudo haciendo referencia a drogas o estupefacientes. \nE. Casado legalmente con más de una persona al mismo tiempo, lo cual suele ser ilegal en la mayoría de los lugares. \nF. Adquirir o recibir un beneficio, a menudo a través de medios legales. \nG. Ingresar a los Estados Unidos sin la debida autorización o documentación legal, violando las leyes de inmigración. \nH. Participar en juegos de azar, a menudo involucra apuestas o juegos de dinero. \nI. Apoyo financiero pagado por un cónyuge a otro después de un divorcio o separación. \nJ. Proporcionar información falsa o engañosa para recibir fraudulentamente asistencia pública o beneficios."
+    },
+    {
+        "question": "give information that is fraudulent or misleading",
+        "explanation": "tell lies",
+        "explanation_vn": "cung cấp thông tin gian lận hoặc gây hiểu lầm",
+        "explanation_es": "dar información fraudulenta o engañosa"
+    },
+    {
+        "question": "give documentation that is fraudulent or misleading",
+        "explanation": "tell lies on paper (sign something that’s not true)",
+        "explanation_vn": "cung cấp tài liệu gian lận hoặc gây hiểu lầm",
+        "explanation_es": "dar documentación fraudulenta o engañosa (firmar algo que no es cierto)"
+    },
+    {
+        "question": "removed, excluded, deported",
+        "explanation": "a judge says you have to leave the U.S.",
+        "explanation_vn": "bị trục xuất, bị loại trừ, bị đuổi ra khỏi Hoa Kỳ",
+        "explanation_es": "expulsado, excluido, deportado \nun juez dice que debes salir de EE. UU."
+    },
+    {
+        "question": "pending against you",
+        "explanation": "waiting for you",
+        "explanation_vn": "đang chờ đợi bạn",
+        "explanation_es": "pendiente en tu contra"
+    },
+    {
+        "question": "armed forces",
+        "explanation": "army",
+        "explanation_vn": "lực lượng vũ trang",
+        "explanation_es": "fuerzas armadas"
+    },
+    {
+        "question": "court-martialed, administratively separated, disciplined",
+        "explanation": "when a soldier does something wrong",
+        "explanation_vn": "bị tòa án quân sự xử lý, tách ra quản lý hành chính, bị kỷ luật",
+        "explanation_es": "tribunal marcial, separación administrativa, disciplinado \ncuando un soldado hace algo mal"
+    },
+    {
+        "question": "discharged",
+        "explanation": "kicked out ",
+        "explanation_vn": "bị đuổi ra",
+        "explanation_es": "dado de baja"
+    },
+    {
+        "question": "drafted",
+        "explanation": "the law says you have to join the army",
+        "explanation_vn": "bị nhập ngũ",
+        "explanation_es": "el derecho dice que debes unirte al ejército"
+    },
+    {
+        "question": "exemption",
+        "explanation": "a reason for not joining the army",
+        "explanation_vn": "sự miễn trừ",
+        "explanation_es": "exención"
+    },
+    {
+        "question": "deserted",
+        "explanation": "leave the army without permission",
+        "explanation_vn": "bỏ trốn khỏi quân đội mà không được phép",
+        "explanation_es": "desertado"
+    },
+    {
+        "question": "selective service",
+        "explanation": "if the U.S. needs soldiers, your name is on a list",
+        "explanation_vn": "dịch vụ tuyển chọn",
+        "explanation_es": "servicio selectivo"
+    }
+]}

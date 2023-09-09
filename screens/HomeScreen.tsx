@@ -78,6 +78,11 @@ const HomeScreen = ({ route, navigation }: Props) => {
     navigation.navigate("Reading", {showFullAds: showFullAds});
   }  
   
+  const n400Handler = async () => {
+    const showFullAds = await checkPlayingFullAds();
+    navigation.navigate("N400Part12", {showFullAds: showFullAds});
+  }
+
   useEffect(() => {
     const getLanguage = async () => {
       const language = await StorageService.getItem(StorageService.APP_LANGUAGE);
@@ -132,6 +137,10 @@ const HomeScreen = ({ route, navigation }: Props) => {
       const showFullAds = await checkPlayingFullAds();
       navigation.navigate('Account', {showFullAds: showFullAds});
     }
+  }
+
+  const voiceHandler = () => {
+    // tts.speak("Hello World");
   }
 
   return (
@@ -220,6 +229,18 @@ const HomeScreen = ({ route, navigation }: Props) => {
                           </View>
                         </View>
                     </TouchableOpacity>
+
+                    <TouchableOpacity 
+                        className={buttonStyle}
+                        onPress={() => n400Handler()}
+                      >
+                        <View className="flex-row">
+                          <Text className="text-[#fff] text-xl">{t("n400-vocab")}</Text>
+                          <View className="ml-auto justify-center">
+                            <Icon name="chevron-right" size={20} color="white"/>
+                          </View>
+                        </View>
+                    </TouchableOpacity>
                   </View>
 
                   <View className="mt-10">
@@ -292,7 +313,6 @@ const HomeScreen = ({ route, navigation }: Props) => {
                   </View>
                   
                 </View>
-
                 
               </ScrollView>
             </View>
@@ -302,7 +322,7 @@ const HomeScreen = ({ route, navigation }: Props) => {
             </View>
         </View>
 
-        <AdsScreen />
+        {/* <AdsScreen /> */}
         {/* <ModalUpdateApp
           title={"We have a new update. Please press the 'Update' button to update the app!"}
           modalVisible={modalVisible}

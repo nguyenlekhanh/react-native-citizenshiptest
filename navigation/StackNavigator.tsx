@@ -12,6 +12,7 @@ import ReadingScreen from "../screens/ReadingScreen";
 import Learn2020Screen from "../screens/Learn2020Screen";
 import ShowFullAdsScreen from "../screens/ShowFullAdsScreen";
 import AccountScreen from "../screens/AccountScreen";
+import N400Screen from "../screens/N400Screen";
 
 const Stack = createStackNavigator();
 
@@ -84,6 +85,14 @@ const MainStackNavigator = () => {
           component={Learn2020Screen} 
           options={{
             headerTitle: "Learn 2020"
+          }}
+        />
+
+        <Stack.Screen 
+          name="N400Part12" 
+          component={N400Screen} 
+          options={{
+            headerTitle: "N400 Vocabulary"
           }}
         />
 

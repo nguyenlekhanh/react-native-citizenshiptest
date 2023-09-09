@@ -29,8 +29,8 @@ const Learn2020Screen = ({ route, navigation }: Props) => {
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
   const {t} = useTranslation();
 
-  const jsonData = useDataStore((state) => state.data);
-  const setJsonData = useDataStore((state) => state.setData);
+  const jsonData = useDataStore((state) => state.data2020);
+  const setJsonData = useDataStore((state) => state.setData2020);
 
   const [toggleTranslate, setToggleTranslate] = useState<boolean>(false)
   const [fontsize, setFontsize] = useState<number>(0);
@@ -77,13 +77,15 @@ const Learn2020Screen = ({ route, navigation }: Props) => {
   
   useEffect(() => {
     setIsLoadingData(true);
+
     if(!jsonData) {
       setTimeout(() => {
         const parsedData = JSON.stringify(data.questions);
-          if(parsedData) {
-            setJsonData(JSON.parse(parsedData));
-            setIsLoadingData(false);
-          }
+
+        if(parsedData) {
+          setJsonData(JSON.parse(parsedData));
+          setIsLoadingData(false);
+        }
       }, 1);
     } else {
       setIsLoadingData(false);
@@ -100,7 +102,7 @@ const Learn2020Screen = ({ route, navigation }: Props) => {
 
   return (
     <View className="flex-columns items-center w-full h-max">
-      <View className="w-full h-[100%] mt-2">
+      <View className="w-full h-[89%] mt-2">
         {isLoadingData &&
           <View>
             <Text>Loading </Text>

@@ -3,24 +3,23 @@ import React, { useRef, useState, useEffect } from 'react'
 import AdsScreen from './AdsScreen';
 import { useTranslation } from 'react-i18next';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import data from "../data/reading.json";
+import data from "../data/vocabularyN400.json";
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import {
   MinusIcon, PlusIcon
 } from 'react-native-heroicons/outline';
 import ScrollToTopScreen from './ScrollToTopScreen';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import ParseGroupItemScreen from './ParseGroupItemScreen';
-import ReadingScreenParseItem from './ReadingScreenParseItem';
+import N400ScreenParseItem from './N400ScreenParseItem';
 import AdsFullScreen from './AdsFullScreen';
 import ForQuestionScreen from './settings/ForQuestionScreen';
 import { setPreviousPlayingAudioHandler, stopPreviousPlayingAudioHandler } from '../utils/libs';
+import StorageService from '../utils/StorageService';
 
 type RootStackParamList = {};
 
 type Props = NativeStackScreenProps<RootStackParamList>;
 
-const ReadingScreen = ({ route, navigation }: Props) => {
+const N400Screen = ({ route, navigation }: Props) => {
   const {showFullAds} = route.params;
   const listRef = useRef(null);
   const [isLoadingData, setIsLoadingData] = useState<boolean>(true);
@@ -34,6 +33,8 @@ const ReadingScreen = ({ route, navigation }: Props) => {
   let defaultSubSizeNumber = 20;
   const [primaryFontSize, setPrimaryFontSize] = useState<number>(20);
   const [subFontSize, setSubFontSize] = useState<number>(18);
+  const defaultTranslateExplanationTxt = 'explanation_';
+  const [translateExplanationLn, setTranslateExplanationLn] = useState('');
 
   const changeFontsizeHandler = (action:number) => {
     
@@ -51,6 +52,19 @@ const ReadingScreen = ({ route, navigation }: Props) => {
     setPrimaryFontSize(defaultPrimaryFontSize + fontsize);
     setSubFontSize(defaultSubSizeNumber + fontsize);
   }
+  
+  useEffect(() => {
+
+    const getLanguage = async () => {
+      const language = await StorageService.getItem(StorageService.APP_LANGUAGE);
+      if(language && language?.language) {
+        // setTraslateQuestionLn(defaultTranslateQuestionTxt + "" + language.language);
+        setTranslateExplanationLn(defaultTranslateExplanationTxt + "" + language.language);
+      }
+    }
+    getLanguage();
+
+  }, []);
 
   useEffect(() => {
     setIsLoadingData(true);
@@ -93,11 +107,13 @@ const ReadingScreen = ({ route, navigation }: Props) => {
               className=""
               ref={listRef}
               data={jsonData}
-              renderItem={({item, index}) => <ReadingScreenParseItem 
+              renderItem={({item, index}) => <N400ScreenParseItem 
                                                 count={index}
                                                 question={item}
                                                 primaryFontSize={primaryFontSize}
                                                 subFontSize={subFontSize}
+                                                toggleTranslate={toggleTranslate}
+                                                translate_explanation={item[translateExplanationLn]}
                                                 setPreviousPlayingAudioHandler={setPreviousPlayingAudioHandler}
                                                 stopPreviousPlayingAudioHandler={stopPreviousPlayingAudioHandler}
                                       />
@@ -121,4 +137,4 @@ const ReadingScreen = ({ route, navigation }: Props) => {
 }
 
 
-export default ReadingScreen
+export default N400Screen

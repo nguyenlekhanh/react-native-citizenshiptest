@@ -1,0 +1,237 @@
+{
+  "questions": [
+    {
+      "question": "claimed",
+      "explaination": "lied (about being a citizen)",
+      "explaination_vn": "nói dối (về việc là một công dân)",
+      "explaination_es": "Mintió (sobre ser ciudadana)"
+    },
+    {
+      "question": "registered",
+      "explaination": "signed up",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "voted",
+      "explaination": "picked a leader",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "hereditary title",
+      "explaination": "like a prince or princess",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "legally incompetent",
+      "explaination": "“crazy”* (mentally ill)",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "owe",
+      "explaination": "not paid yet",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "filed",
+      "explaination": "sent the form",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "called yourself a non-resident on tax return",
+      "explaination": "lied on a tax form",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "organization, association, fund, foundation, party, club, society",
+      "explaination": "a group",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "A. Communist \nB. totalitarian \nC. terrorist",
+      "explaination": "like Karl Marx (Pol Pot, Chairman Mao, or Ho Chi Minh) \nlike Stalin (or Mussolini, or Hitler, or Chairman Mao) \nlike Al Qaeda (killers)",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "advocated \noverthrow",
+      "explaination": "worked for \nget rid of",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "persecuted",
+      "explaination": "hurt someone (or bullied someone)",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "Nazi",
+      "explaination": "Hitler",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "A. genocide \nB. torture \nC. killing \nD. forcing sexual contact \nE. practice their religion ",
+      "explaination": "killing many people \nhurt people \nmurder \nrape \ngo to church (or temple or mosque)",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "military, paramilitary, self-defense, or vigilante unit, rebel or guerilla group, militia, insurgent organization",
+      "explaination": "army (people who fight with guns and bombs)",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "prison, detention facility, labor camp",
+      "explaination": "a kind of jail",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "weapons",
+      "explaination": "guns and bombs",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "provide (weapons)",
+      "explaination": "give",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "military or paramilitary training \nweapons training \narmed force",
+      "explaination": "learn to be a fighter \nlearn to use guns or bombs \narmy",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "recruit, enlist, conscript (a person under 15) ",
+      "explaination": "make a child carry a gun",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "combat",
+      "explaination": "fight in an army",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "committed a crime or offense",
+      "explaination": "do something that is against the law",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "arrested, cited, or detained ",
+      "explaination": "have problems with police",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "charged with committing a crime",
+      "explaination": "when you have to go to court",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "convicted",
+      "explaination": "the judge says you did a bad thing",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "alternative sentencing, rehabilitative program, deferred prosecution, withheld adjudication",
+      "explaination": "you do a bad thing, but you don’t go to jail ",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "suspended sentence, probation \n",
+      "explaination": "you do a bad thing, but you don’t go to jail \nleave jail early",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "A. habitual drunkard \nB. prostitute \nprocured a prostitute \nC. smuggled controlled substances \nD. [married to more than one person] \nE. obtain (a benefit) \nF. enter the US illegally \nG. gambled/gambling \nH. alimony \nI. misrepresentation to obtain public benefits",
+      "explaination": "drink too much (alcohol) \nsomeone who gets paid for sex \npaid someone for sex \ndrug runner \n \nfraud \ncome here with no visa \nlike playing cards for money (or making bets) \nmoney you have to pay an ex-wife or ex-husband \nfraud",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "give information that is fraudulent or misleading",
+      "explaination": "tell lies",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "give documentation that is fraudulent or misleading",
+      "explaination": "tell lies on paper (sign something that’s not true)",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "removed, excluded, deported",
+      "explaination": "a judge says you have to leave the U.S.",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "pending against you",
+      "explaination": "waiting for you",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "armed forces",
+      "explaination": "army",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "court-martialed, administratively separated, disciplined",
+      "explaination": "when a soldier does something wrong",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "discharged",
+      "explaination": "kicked out ",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "drafted",
+      "explaination": "the law says you have to join the army",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "exemption",
+      "explaination": "a reason for not joining the army",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "deserted",
+      "explaination": "leave the army without permission",
+      "explaination_vn": "",
+      "explaination_es": ""
+    },
+    {
+      "question": "selective service",
+      "explaination": "if the U.S. needs soldiers, your name is on a list",
+      "explaination_vn": "",
+      "explaination_es": ""
+    }
+]}
