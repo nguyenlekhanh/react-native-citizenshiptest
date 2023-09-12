@@ -155,7 +155,10 @@ const N400ScreenParseItem = (
           </View>
         }
         {toggleTranslate && 
-          <Text style={{fontSize: primaryFontSize}}>
+          <Text
+            className="mt-1" 
+            style={{fontSize: primaryFontSize, color: '#198754'}}
+          >
             {question[ln]}
           </Text>
         }
@@ -165,7 +168,7 @@ const N400ScreenParseItem = (
         >
           <Text 
             className="underline"
-            style={{fontSize: 18}}
+            style={{fontSize: 18, color: '#198754'}}
           >
             {!showTranslate ? "Show translate" : "Hide translate"}
           </Text>
