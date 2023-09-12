@@ -275,13 +275,13 @@ const HomeScreen = ({ route, navigation }: Props) => {
                       />
                     }
                     
-                    <TouchableOpacity
+                    {/* <TouchableOpacity
                       onPress={() => showContactScreenHandler()}
                     >
                       <Text 
                         className="text-xl bold underline text-blue-700"
                       >{t("contact")}</Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
 
                     {/* {userInfo && (
                       <TouchableOpacity
