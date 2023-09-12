@@ -2,237 +2,1168 @@
   "title": "Vocabulary in Part 12 of the N-400 application",
   "questions": [
     {
-      "question": "claimed",
-      "explanation": "lied (about being a citizen)",
-      "explanation_vn": "nói dối (về việc là một công dân)",
-      "explanation_es": "Mintió (sobre ser ciudadana)"
+      "question": "1. Have you EVER claimed to be a U.S. citizen (in writing or any other way)?",
+      "question_vn": "1. Bạn có bao giờ tự nhận là một công dân Hoa Kỳ? (bằng văn bản hoặc bất kỳ cách nào khác)?",
+      "question_es": "1. ¿Alguna vez has afirmado ser ciudadano de los Estados Unidos (por escrito o de alguna otra manera)?",
+      "words": [
+        {
+            "word": "claimed",
+            "explanation": "to say that something is true, but you cannot prove it."
+        },
+        {
+            "word": "citizen",
+            "explanation": "a person who is a member and has the legal right to belong to a particular country"
+        }
+      ]
     },
     {
-        "question": "registered",
-        "explanation": "signed up",
-        "explanation_vn": "đăng ký",
-        "explanation_es": "registrado"
+      "question": "2. Have you EVER registered to vote in any Federal, state, or local election in the United States?",
+      "question_vn": "2. Bạn có bao giờ ghi danh bỏ phiếu trong bất kỳ cuộc bầu cử Liên Bang, Tiểu Bang hoặc địa phương tại Hoa Kỳ?",
+      "question_es": "2. ¿Alguna vez te has registrado para votar en alguna elección federal, estatal o local en los Estados Unidos?",
+      "words": [
+        {
+            "word": "register",
+            "explanation": "to enroll, especially to vote"
+        },
+        {
+            "word": "vote",
+            "explanation": "to elect a new leader"
+        },
+        {
+            "word": "election",
+            "explanation": "the process of choosing a person or a group of people for a position, especially a political position, by voting"
+        }
+      ]
     },
     {
-        "question": "voted",
-        "explanation": "picked a leader",
-        "explanation_vn": "bỏ phiếu",
-        "explanation_es": "votó"
+      "question": "3. Have you EVER voted in any Federal, state, or local election in the United States?",
+      "question_vn": "3. Bạn có bao giờ bỏ phiếu trong bất kỳ cuộc bầu cử Liên Bang, Tiểu Bang hoặc địa phương tại Hoa Kỳ?",
+      "question_es": "3. ¿Alguna vez has votado en alguna elección federal, estatal o local en los Estados Unidos?",
+      "words": [
+      ]
     },
     {
-        "question": "hereditary title",
-        "explanation": "like a prince or princess",
-        "explanation_vn": "tựa hạng thừa kế",
-        "explanation_es": "título hereditario"
+      "question": "4a. Do you now have, or did you EVER have, a hereditary title or an order of nobility in any foreign country?",
+      "question_vn": "4a. Bạn hiện có, hoặc có bao giờ có, danh hiệu hoặc tước hiệu ở nước ngoài không?",
+      "question_es": "4a. ¿Tienes actualmente, o alguna vez tuviste, un título hereditario o un título de nobleza en algún país extranjero?",
+      "words": [
+        {
+            "word": "hereditary title",
+            "explanation": "an inherited title is for people who are descended from nobility"
+        },
+        {
+            "word": "nobility",
+            "explanation": "people of high social position"
+        }
+      ]
     },
     {
-        "question": "legally incompetent",
-        "explanation": "“crazy”* (mentally ill)",
-        "explanation_vn": "không có khả năng hợp pháp",
-        "explanation_es": "legalmente incompetente"
+      "question": "4b. If you answered “Yes,” are you willing to give up any inherited titles or orders of nobility that you have in a foreign country at your naturalization ceremony?",
+      "question_vn": "4b. Nếu bạn trả lời “Có”, bạn có sẵn sàng từ bỏ bất cứ chức vụ hoặc giai cấp quý tộc mà bạn có ở một quốc gia khác tại buổi lễ tuyên thệ nhập tịch không?",
+      "question_es": "4b. Si respondiste 'Sí', ¿estás dispuesto a renunciar a cualquier título heredado o título de nobleza que tengas en un país extranjero en tu ceremonia de naturalización?",
+      "words": [
+        {
+            "word": "Give up",
+            "explanation": "to renounce something"
+        },
+        {
+            "word": "Naturalization",
+            "explanation": "the process of making somebody who was not born in a particular country a citizen of that country"
+        }
+      ]
     },
     {
-        "question": "owe",
-        "explanation": "not paid yet",
-        "explanation_vn": "nợ",
-        "explanation_es": "debe"
+      "question": "5. Have you EVER been declared legally incompetent or been confined to a mental institution?",
+      "question_vn": "5. Bạn có bao giờ được pháp lý công nhận không đủ năng lực hoặc từng bị quản chế trong một bệnh viện tâm thần?",
+      "question_es": "5. ¿Alguna vez has sido declarado legalmente incompetente o has estado confinado en una institución mental?",
+      "words": [
+        {
+            "word": "Legally Incompetent",
+            "explanation": "a people who cannot take care of themselves. A lawyer, doctor, or family member must make decisions for them"
+        },
+        {
+            "word": "Confine",
+            "explanation": "to keep somebody in a place"
+        },
+        {
+            "word": "Mental institution",
+            "explanation": "a hospital for people with mental problems"
+        }
+      ]
     },
     {
-        "question": "filed",
-        "explanation": "sent the form",
-        "explanation_vn": "nộp đơn",
-        "explanation_es": "presentó el formulario"
+      "question": "6. Do you owe any overdue Federal, state, or local taxes?",
+      "question_vn": "6. Bạn có thiếu thuế quá hạn của bất kỳ Liên Bang, Tiểu Bang, hoặc địa phương?",
+      "question_es": "6. ¿Debes algún impuesto federal, estatal o local vencido?",
+      "words": [
+        {
+            "word": "Owe",
+            "explanation": "to have a debt / not yet paid"
+        },
+        {
+            "word": "Overdue",
+            "explanation": "not paid on time"
+        },
+        {
+            "word": "Tax",
+            "explanation": "money that you have to pay to the government so that it can pay for public services"
+        }
+      ]
     },
     {
-        "question": "called yourself a non-resident on tax return",
-        "explanation": "lied on a tax form",
-        "explanation_vn": "nói dối trên biểu mẫu thuế",
-        "explanation_es": "mintió en un formulario de impuestos"
+      "question": "7A. Have you EVER not filed a Federal, state, or local tax return since you became a lawful permanent resident?",
+      "question_vn": "7A. Bạn có bao giờ không nộp đơn khai thuế Liên Bang, Tiểu Bang, hoặc địa phương kể từ khi bạn trở thành thường trú nhân hợp pháp?",
+      "question_es": "7A. ¿Alguna vez no has presentado una declaración de impuestos federales, estatales o locales desde que te convertiste en residente permanente legal?",
+      "words": [
+        {
+            "word": "File",
+            "explanation": "to submit"
+        },
+        {
+            "word": "Tax return",
+            "explanation": "declare your income to the government each year"
+        },
+        {
+            "word": "Lawful",
+            "explanation": "allowed or recognized by law; legal"
+        },
+        {
+            "word": "Permanent resident",
+            "explanation": "a person who has been given the right to live and work in a country for as long as they want (someone who has a U.S. green card)"
+        }
+      ]
     },
     {
-        "question": "organization, association, fund, foundation, party, club, society",
-        "explanation": "a group",
-        "explanation_vn": "một nhóm",
-        "explanation_es": "un grupo"
+      "question": "7B. If you answered “Yes,” did you consider yourself to be a “non-U.S. resident”?",
+      "question_vn": "7B. Nếu bạn trả lời “Có”, có phải bạn đã tự nhận mình “không phải là thường trú Hoa Kỳ”?",
+      "question_es": "7B. Si respondiste 'Sí', ¿te consideraste a ti mismo como 'no residente de los Estados Unidos'?",
+      "words": [
+        {
+            "word": "Non-resident",
+            "explanation": "not a U.S. resident"
+        }
+      ]
     },
     {
-        "question": "\nA. Communist \nB. totalitarian \nC. terrorist",
-        "explanation": "\nA. like Karl Marx (Pol Pot, Chairman Mao, or Ho Chi Minh) \nB. like Stalin (or Mussolini, or Hitler, or Chairman Mao) \nC. like Al Qaeda (killers)",
-        "explanation_vn": "\nA. giống như Karl Marx (Pol Pot, Chủ tịch Mao, hoặc Hồ Chí Minh) \nB. giống như Stalin (hoặc Mussolini, hoặc Hitler, hoặc Chủ tịch Mao) \nC. giống như Al Qaeda (kẻ giết người)",
-        "explanation_es": "\nA. como Karl Marx (Pol Pot, Chairman Mao, o Ho Chi Minh) \nB. como Stalin (o Mussolini, o Hitler, o Chairman Mao) \nC. como Al Qaeda (asesinos)"
+      "question": "8. Have you called yourself a “non-U.S. resident” on a Federal, state, or local tax return since you became a lawful permanent resident?",
+      "question_vn": "8. Bạn có bao giờ tự khai mình “không phải là thường trú Hoa Kỳ” trên hồ sơ thuế Liên Bang, Tiểu Bang, hoặc địa phương kể từ khi bạn trở thành một thường trú nhân?",
+      "question_es": "8. ¿Alguna vez te has considerado a ti mismo como 'no residente de los Estados Unidos' en una declaración de impuestos federales, estatales o locales desde que te convertiste en residente permanente legal?",
+      "words": [
+        {
+            "word": "",
+            "explanation": ""
+        }
+      ]
     },
     {
-        "question": "\nadvocated \noverthrow",
-        "explanation": "\nworked for \nget rid of",
-        "explanation_vn": "\nlàm việc cho \nloại bỏ",
-        "explanation_es": "\ntrabajó para \neliminar"
+      "question": "9A. Have you EVER been a member of, involved in, or in any way associated with, any organization, association, fund, foundation, party, club, society, or similar group in the United States or in any other location in the world?",
+      "question_vn": "9A. Bạn có bao giờ là thành viên của, tham gia vào, hoặc trong bất kỳ cách nào liên quan đến, bất kỳ tổ chức, hiệp hội, quỹ, câu lạc bộ, xã hội, hay một nhóm tương tự ở Hoa Kỳ hoặc ở bất kỳ nơi nào trên thế giới?",
+      "question_es": "9A. ¿Alguna vez has sido miembro, has estado involucrado o has estado de alguna manera asociado con alguna organización, asociación, fondo, fundación, partido, club, sociedad o grupo similar en los Estados Unidos o en cualquier otro lugar del mundo?",
+      "words": [
+        {
+            "word": "Member",
+            "explanation": "a person, animal, or thing that is part of a group"
+        },
+        {
+            "word": "Involve in",
+            "explanation": "to be a part of something"
+        },
+        {
+            "word": "Associated with",
+            "explanation": "connected with something else"
+        },
+        {
+            "word": "Organization",
+            "explanation": "a group of people with a formal structure"
+        },
+        {
+            "word": "Association",
+            "explanation": "a group of people with a particular purpose"
+        }
+      ]
     },
     {
-        "question": "persecuted",
-        "explanation": "hurt someone (or bullied someone)",
-        "explanation_vn": "gây thương tổn cho ai đó (hoặc bắt nạt ai đó)",
-        "explanation_es": "lastimó a alguien (o acosó a alguien)"
+      "question": "9B. If you answered “Yes,” provide the information below. If you need extra space, attach the names of the other groups on additional sheets of paper and provide any evidence to support your answers.",
+      "question_vn": "9B. Nếu “Có”, cung cấp các thông tin dưới đây. Nếu bạn cần thêm chỗ điền, đính kèm tên của các nhóm khác trên một tờ giấy và cung cấp bằng chứng để hỗ trợ câu trả lời của bạn.",
+      "question_es": "9B. Si respondiste 'Sí', proporciona la información a continuación. Si necesitas espacio adicional, adjunta los nombres de los otros grupos en hojas de papel adicionales y proporciona cualquier evidencia para respaldar tus respuestas.",
+      "words": [
+        {
+            "word": "Attach",
+            "explanation": "to fasten or join one thing to another"
+        },
+        {
+            "word": "Provide",
+            "explanation": "to give something to somebody"
+        },
+        {
+            "word": "Evidence",
+            "explanation": "the facts, signs or objects that make you believe that something is true"
+        },
+        {
+            "word": "Support",
+            "explanation": "to help prove something is true"
+        }
+      ]
     },
     {
-        "question": "Nazi",
-        "explanation": "Hitler",
-        "explanation_vn": "Hitler",
-        "explanation_es": "Hitler"
+      "question": "10. Have you EVER been a member of, or in any way associated (either directly or indirectly) with: \nA. The Communist Party? \nB. Any other totalitarian party? \nC. A terrorist organization?",
+      "question_vn": "10. Bạn có bao giờ là thành viên của, hoặc trong bất kỳ cách nào liên quan (trực tiếp hoặc gián tiếp) với: \nA. Đảng Cộng Sản? \nB. Bất kỳ đảng độc tài nào? \nC. Một tổ chức khủng bố?",
+      "question_es": "10. ¿Alguna vez has sido miembro o has estado de alguna manera asociado (ya sea directa o indirectamente) con: \nA. El Partido Comunista? \nB. Cualquier otro partido totalitario? \nC. Una organización terrorista?",
+      "words": [
+        {
+            "word": "Communist",
+            "explanation": "connected with communism"
+        },
+        {
+            "word": "Communism",
+            "explanation": "a government like Cuba"
+        },
+        {
+            "word": "Totalitarian",
+            "explanation": "a government with total power. (a government that controls everything)"
+        },
+        {
+            "word": "A terrorist organization",
+            "explanation": "a group that tries to hurt people like Islamic State"
+        }
+      ]
     },
     {
-        "question": "\nA. genocide \nB. torture \nC. killing \nD. forcing sexual contact \nE. practice their religion",
-        "explanation": "\nA. killing many people \nB. hurt people \nC. murder \nD. rape \nE. go to church (or temple or mosque)",
-        "explanation_vn": "\nA. giết nhiều người \nB. gây thương tổn cho người khác \nC. sát hại \nD. hiếp dâm \nE. thực hành tôn giáo của họ",
-        "explanation_es": "\nA. matar a mucha gente \nB. hacer daño a las personas \nC. asesinato \nD. violación \nE. ir a la iglesia (o templo o mezquita)"
+      "question": "11. Have you EVER advocated (either directly or indirectly) the overthrow of any government by force or violence?",
+      "question_vn": "11. Bạn có bao giờ ủng hộ (trực tiếp hoặc gián tiếp) lật đổ bất kỳ chính phủ nào bằng vũ lực hoặc bạo lực?",
+      "question_es": "11. ¿Alguna vez has abogado (ya sea directa o indirectamente) por el derrocamiento de algún gobierno mediante la fuerza o la violencia?",
+      "words": [
+        {
+            "word": "Advocate",
+            "explanation": "to support something publicly"
+        },
+        {
+            "word": "Overthrow",
+            "explanation": "change the government with violence"
+        },
+        {
+            "word": "Force",
+            "explanation": "violent physical action used to obtain something"
+        },
+        {
+            "word": "Violence",
+            "explanation": "extremely forceful actions that are intended to hurt people or are likely to cause damage"
+        }
+      ]
     },
     {
-        "question": "military, paramilitary, self-defense, or vigilante unit, rebel or guerilla group, militia, insurgent organization",
-        "explanation": "army (people who fight with guns and bombs)",
-        "explanation_vn": "quân đội (những người chiến đấu bằng súng và bom)",
-        "explanation_es": "ejército (personas que luchan con armas y bombas)"
+      "question": "12. Have you EVER persecuted (either directly or indirectly) any person because of race, religion, national origin, membership in a particular social group, or political opinion?",
+      "question_vn": "12. Bạn có bao giờ bức hại (trực tiếp hoặc gián tiếp) người nào vì lý do chủng tộc, tôn giáo, nguồn gốc xuất xứ, là thành viên trong một nhóm xã hội cụ thể, hoặc quan điểm chính trị?",
+      "question_es": "12. ¿Alguna vez has perseguido (ya sea directa o indirectamente) a alguna persona debido a su raza, religión, origen nacional, pertenencia a un grupo social específico u opinión política?",
+      "words": [
+        {
+            "word": "Persecute",
+            "explanation": "to hurt someone because of religion or group"
+        },
+        {
+            "word": "Race",
+            "explanation": "one of the main groups that humans can be divided into according to their physical differences, for example the colour of their skin; the fact of belonging to one of these groups"
+        },
+        {
+            "word": "Religion",
+            "explanation": "Like Hindu, Buda, Catholic."
+        },
+        {
+            "word": "National",
+            "explanation": "connected with a particular nation; shared by a whole nation"
+        },
+        {
+            "word": "Origin",
+            "explanation": "a person’s social and family background"
+        },
+        {
+            "word": "Membership",
+            "explanation": "the state of being a member of a group, a club, an organization, etc."
+        },
+        {
+            "word": "Political",
+            "explanation": "connected with the state, government or public affairs"
+        },
+        {
+            "word": "Opinion",
+            "explanation": "the beliefs or views of a group of people"
+        }
+      ]
     },
     {
-        "question": "prison, detention facility, labor camp",
-        "explanation": "a kind of jail",
-        "explanation_vn": "loại tù",
-        "explanation_es": "un tipo de cárcel"
+      "question": "13. Between March 23, 1933 and May 8, 1945, did you work for or associate in any way (either directly or indirectly) with: \nA. The Nazi government of Germany? \nB. Any government in any area occupied by, allied with, or established with the help of the C. Any German, Nazi, or S.S. military unit, paramilitary unit, self-defense unit, vigilante unit, citizen unit, police unit, government agency or office, extermination camp, concentration camp, prisoner of war camp, prison, labor camp, or transit camp?Nazi government of Germany?",
+      "question_vn": "13. Giữa ngày 23 tháng 3, năm 1933, và ngày 8 tháng 5 năm 1945, bạn có làm việc cho hoặc liên hệ bằng bất kỳ cách nào (trực tiếp hoặc gián tiếp) với: \nA. Chính phủ Phát Xít của Đức quốc? \nB: Bất kỳ chính phủ trong khu vực bất kỳ (1) chiếm đóng, (2) liên minh với,hoặc (3) được thành lập với sự giúp đỡ của chính quyền Phát Xít Đức? \nC. Bất kỳ Đức, Phát Xít, hoặc S.S. đơn vị quân đội, đơn vị bán quân sự, đơn vị tự vệ, đơn vị cảnh vệ, đơn vị công dân, đơn vị cảnh sát, cơ quan chính phủ hoặc văn phòng, trại tử hình, trại tập trung, tù nhân của trại chính trị, nhà tù, trại lao động, hoặc trại chuyển tiếp?",
+      "question_es": "13. Entre el 23 de marzo de 1933 y el 8 de mayo de 1945, ¿trabajaste o te asociaste de alguna manera (ya sea directa o indirectamente) con: \nA. El gobierno nazi de Alemania? \nB. Cualquier gobierno en cualquier área ocupada por, aliada con o establecida con la ayuda del gobierno nazi de Alemania? \nC. Cualquier unidad militar alemana, nazi o S.S., unidad paramilitar, unidad de autodefensa, unidad de vigilantes, unidad ciudadana, unidad policial, agencia gubernamental u oficina, campo de exterminio, campo de concentración, campo de prisioneros de guerra, prisión, campo de trabajo o campo de tránsito?",
+      "words": [
+      ]
     },
     {
-        "question": "weapons",
-        "explanation": "guns and bombs",
-        "explanation_vn": "vũ khí (súng và bom)",
-        "explanation_es": "armas (pistolas y bombas)"
+      "question": "A. The Nazi government of Germany?",
+      "question_vn": "Chính phủ Phát Xít của Đức quốc?",
+      "question_es": "A. ¿El gobierno nazi de Alemania?",
+      "words": [
+        {
+            "word": "Nazi",
+            "explanation": "belonging to or connected with the National Socialist party which controlled Germany from 1933 to 1945"
+        }
+      ]
     },
     {
-        "question": "provide (weapons)",
-        "explanation": "give",
-        "explanation_vn": "cung cấp (vũ khí)",
-        "explanation_es": "proporcionar (armas)"
+      "question": "B. Any government in any area occupied by, allied with, or established with the help of the Nazi government of Germany?",
+      "question_vn": "Bất kỳ chính phủ trong khu vực bất kỳ (1) chiếm đóng, (2) liên minh với,hoặc (3) được thành lập với sự giúp đỡ của chính quyền Phát Xít Đức?",
+      "question_es": "B. ¿Cualquier gobierno en cualquier área ocupada por, aliada con o establecida con la ayuda del gobierno nazi de Alemania?",
+      "words": [
+        {
+            "word": "Government",
+            "explanation": "the group of people who are responsible for controlling a country or a state"
+        },
+        {
+            "word": "Occupy",
+            "explanation": "to enter a place in a large group and take control of it, especially by military force"
+        },
+        {
+            "word": "Ally",
+            "explanation": "to give your support to another group or country"
+        },
+        {
+            "word": "Establish",
+            "explanation": "to start or create an organization, a system, etc. that is meant to last for a long time"
+        }
+      ]
     },
     {
-        "question": "\nmilitary or paramilitary training \nweapons training \narmed force",
-        "explanation": "\nlearn to be a fighter \nlearn to use guns or bombs \narmy",
-        "explanation_vn": "\nđào tạo quân sự hoặc paramilitary \nđào tạo về vũ khí \nlực lượng vũ trang",
-        "explanation_es": "\nentrenamiento militar o paramilitar \nentrenamiento en armas \nfuerza armada"
+      "question": "C. Any German, Nazi, or S.S. military unit, paramilitary unit, self-defense unit, vigilante unit, citizen unit, police unit, government agency or office, extermination camp, concentration camp, prisoner of war camp, prison, labor camp, or transit camp?",
+      "question_vn": "Bất kỳ Đức, Phát Xít, hoặc S.S. đơn vị quân đội, đơn vị bán quân sự, đơn vị tự vệ, đơn vị cảnh vệ, đơn vị công dân, đơn vị cảnh sát, cơ quan chính phủ hoặc văn phòng, trại tử hình, trại tập trung, tù nhân của trại chính trị, nhà tù, trại lao động, hoặc trại chuyển tiếp?",
+      "question_es": "C. ¿Cualquier unidad militar alemana, nazi o S.S., unidad paramilitar, unidad de autodefensa, unidad de vigilantes, unidad ciudadana, unidad policial, agencia gubernamental u oficina, campo de exterminio, campo de concentración, campo de prisioneros de guerra, prisión, campo de trabajo o campo de tránsito?",
+      "words": [
+        {
+            "word": "Self-defense",
+            "explanation": "the skill of being able to protect yourself from physical attack without using weapons"
+        },
+        {
+            "word": "Vigilante",
+            "explanation": "a person who is not a police officer, but tries to catch and punish criminals"
+        },
+        {
+            "word": "Extermination",
+            "explanation": "the act of killing all the members of a group of people or animals"
+        },
+        {
+            "word": "Concentration camp",
+            "explanation": "a type of prison, often consisting of a number of buildings inside a fence, where political prisoners, etc. are kept in extremely bad conditions"
+        },
+        {
+            "word": "Prison",
+            "explanation": "a building where people are kept as a punishment for a crime they have committed, or while they are waiting for trial"
+        },
+        {
+            "word": "Labor camp",
+            "explanation": "a place where people are forced to work"
+        },
+        {
+            "word": "Transit",
+            "explanation": "the process of being moved or carried from one place to another"
+        },
+        {
+            "word": "Transit camp",
+            "explanation": "Transit camps were camps where prisoners were briefly detained prior to deportation to other Nazi camps"
+        }
+      ]
     },
     {
-        "question": "recruit, enlist, conscript (a person under 15) ",
-        "explanation": "make a child carry a gun",
-        "explanation_vn": "tuyển mộ, nhập ngũ, bắt ép (người dưới 15 tuổi)",
-        "explanation_es": "reclutar, alistar, reclutar por obligación (a una persona menor de 15 años)"
+      "question": "14. Were you EVER involved in any way with any of the following: \nA. Genocide? \nB. Torture? \nC. Killing, or trying to kill, someone? \nD. Badly hurting, or trying to hurt, a person on purpose? \nE. Forcing, or trying to force, someone to have any kind of sexual contact or relations? \nF. Not letting someone practice his or her religion?",
+      "question_vn": "14. Bạn có bao giờ tham gia bằng bất kỳ cách nào vào bất kỳ những tổ chức sau đây: \nA. Diệt chủng? \nB. Tra tấn? \nC. Giết chóc, hoặc cố tình giết, một người nào đó không? \nD. Làm tổn thương nặng, hoặc cố tình làm tổn thương, một người với mục đích không? \nE. Ép buộc, hoặc cố tình ép buộc, một người nào đó có bất kỳ loại quan hệ tình dục hoặc mối quan hệ khác không? \nF. Không để một người nào đó thực hành tôn giáo của họ không?",
+      "question_es": "14. ¿Alguna vez estuviste involucrado de alguna manera en alguno de los siguientes: \nA. Genocidio? \nB. Tortura? \nC. Matar o intentar matar a alguien? \nD. Herir gravemente o intentar herir a alguien a propósito? \nE. Forzar o intentar forzar a alguien a tener cualquier tipo de contacto sexual o relaciones? \nF. Impedir que alguien practique su religión?",
+      "words": [
+        {
+            "word": "Genocide",
+            "explanation": "to kill a whole nation or race"
+        },
+        {
+            "word": "Torture",
+            "explanation": "to hurt someone for information"
+        },
+        {
+            "word": "Kill",
+            "explanation": "to make somebody die"
+        },
+        {
+            "word": "Hurt",
+            "explanation": "to make somebody do something that they do not want to do"
+        },
+        {
+            "word": "Force",
+            "explanation": "to cause physical pain to somebody/yourself; to injure somebody/yourself"
+        },
+        {
+            "word": "Sexual",
+            "explanation": "connected with the physical activity of sex"
+        },
+        {
+            "word": "Practice",
+            "explanation": "to do something regularly as part of your normal behavior"
+        }
+      ]
     },
     {
-        "question": "combat",
-        "explanation": "fight in an army",
-        "explanation_vn": "chiến đấu trong quân đội",
-        "explanation_es": "combatir en un ejército"
+      "question": "15. Were you EVER a member of, or did you EVER serve in, help, or otherwise participate in, any of the following groups: \nA. Military unit? \nB. Paramilitary unit (a group of people who act like a military group but are not part of the official military)? \nC. Police unit? \nD. Self-defense unit? \nE. Vigilante unit (a group of people who act like the police, but are not part of the official police)? \nF. Rebel group? \nG. Guerrilla group (a group of people who use weapons against or otherwise physically attack the military, police, government, or other people)? \nH. Militia (an army of people, not part of the official military)? \nI. Insurgent organization (a group that uses weapons and fights against a government)?",
+      "question_vn": "15. Bạn có bao giờ là thành viên của, hoặc phục vụ trong, giúp đỡ, hoặc tham gia vào bất kỳ hoạt động nào của các nhóm dưới đây: \nA. Đơn vị Quân Sự? \nB. Đơn vị Bán Quân Sự (một nhóm người đã hành động như một nhóm quân sự nhưng không phải là một phần của quân đội chính thức)? \nC. Đơn vị Cảnh Sát? \nD. Đơn vị Tự Vệ? \nE. Đơn vị Cảnh Vệ (một nhóm người đã hành động như một cảnh sát nhưng không phải là thành phần của cảnh sát chính thức)? \nF. Nhóm nổi dậy? \nG. Nhóm Du Kích (một nhóm người sử dụng vũ khí chống lại hoặc thể chất tấn công quân đội, cảnh sát, chính phủ, hoặc những người khác)? \nH. Dân Vệ (một đội quân của người dân, không một phần của quân đội chính thức? \nI. Tổ chức Nổi Dậy (một nhóm sử dụng vũ khí và chiến đấu chống lại một chính phủ)?",
+      "question_es": "15. ¿Alguna vez fuiste miembro de, o alguna vez serviste en, ayudaste o participaste de alguna manera en alguno de los siguientes grupos: \nA. Unidad militar? \nB. Unidad paramilitar (un grupo de personas que actúan como un grupo militar pero no forman parte del ejército oficial)? \nC. Unidad policial? \nD. Unidad de autodefensa? \nE. Unidad de vigilantes (un grupo de personas que actúan como la policía, pero no forman parte de la policía oficial)? \nF. Grupo rebelde? \nG. Grupo guerrillero (un grupo de personas que usan armas contra o atacan físicamente al ejército, la policía, el gobierno u otras personas)? \nH. Milicia (un ejército de personas, no parte del ejército oficial)? \nI. Organización insurgente (un grupo que usa armas y lucha contra un gobierno)?",
+      "words": [
+        {
+            "word": "Mititary",
+            "explanation": "connected with soldiers or the armed forces"
+        },
+        {
+            "word": "Unit",
+            "explanation": "a group of people who work or live together, especially for a particular purpose"
+        },
+        {
+            "word": "Police",
+            "explanation": "an official organization whose job is to make people obey the law and to prevent and solve crime"
+        },
+        {
+            "word": "Rebel group",
+            "explanation": "a group of people who fights against the government of their country"
+        },
+        {
+            "word": "Guerrilla",
+            "explanation": "a person who fights the government"
+        }
+      ]
     },
     {
-        "question": "committed a crime or offense",
-        "explanation": "do something that is against the law",
-        "explanation_vn": "phạm tội hoặc vi phạm",
-        "explanation_es": "cometer un delito o una infracción"
+      "question": "16. Were you EVER a worker, volunteer, or soldier, or did you otherwise EVER serve in any of the following: \nA. Prison or jail? \nB. Prison camp? \nC. Detention facility (a place where people are forced to stay)? \nD. Labor camp (a place where people are forced to work)? \nE. Any other place where people were forced to stay?",
+      "question_vn": "16. Bạn có bao giờ là một nhân viên, tình nguyện viên, hay người lính, hoặc bạn có bao giờ phục vụ trong bất kỳ những nơi sau đây: \nA. Nhà tù hoặc trại giam? \nB. Trại tù? \nC. Cơ sở giam giữ (một nơi người dân bị buộc phải ở lại)? \nD. Trại lao động (một nơi người dân buộc phải làm việc)? \nE. Bất cứ nơi nào khác mà mọi người bị buộc phải ở lại?",
+      "question_es": "16. ¿Alguna vez fuiste trabajador, voluntario o soldado, o de alguna otra manera serviste alguna vez en alguno de los siguientes: \nA. Prisión o cárcel? \nB. Campo de prisioneros? \nC. Instalación de detención (un lugar donde se obliga a las personas a quedarse)? \nD. Campo de trabajo (un lugar donde se obliga a las personas a trabajar)? \nE. Cualquier otro lugar donde se obligaba a las personas a quedarse?",
+      "words": [
+        {
+            "word": "Worker",
+            "explanation": "a person who works, especially one who does a particular kind of work"
+        },
+        {
+            "word": "Volunteer",
+            "explanation": "a person who does a job without being paid for it"
+        },
+        {
+            "word": "Soldier",
+            "explanation": "a member of an army, especially one who is not an officer"
+        },
+        {
+            "word": "Otherwise",
+            "explanation": "used to state what the result would be if something did not happen or if the situation were different"
+        },
+        {
+            "word": "Jail",
+            "explanation": "a place where criminals are kept to punish them for their crimes"
+        },
+        {
+            "word": "Prison camp",
+            "explanation": "a place where people are kept in temporary buildings or tents, especially by a government and often for long periods"
+        }
+      ]
     },
     {
-        "question": "arrested, cited, or detained ",
-        "explanation": "have problems with police",
-        "explanation_vn": "bị bắt giữ, bị trích lục, hoặc bị giữ lại",
-        "explanation_es": "ser arrestado, citado o detenido"
+      "question": "17. Were you EVER a part of any group, or did you EVER help any group, unit, or organization that used a weapon against any person, or threatened to do so? \nA. If you answered “Yes,” when you were part of this group, or when you helped this group, did you ever use a weapon against another person? \nB. If you answered “Yes,” when you were part of this group, or when you helped this group, did you ever tell another person that you would use a weapon against that person?",
+      "question_vn": "17. Bạn có bao giờ là một phần của bất kỳ nhóm nào, hoặc có bao giờ giúp đỡ bất kỳ nhóm, đơn vị, tổ chức nào sử dụng một vũ khí chống lại người khác, hoặc đe dọa không? \nA. Nếu “Có” khi bạn là thành viên của nhóm này, hoặc khi bạn giúp nhóm này, có bao giờ bạn sử dụng một vũ khí chống lại người khác không? \nB. Nếu “Có” khi bạn là thành viên của nhóm này, hoặc khi bạn giúp nhóm này, có bao giờ bạn nói với người khác rằng bạn sẽ sử dụng một vũ khí chống lại người đó không?",
+      "question_es": "17. ¿Alguna vez fuiste parte de algún grupo, o ayudaste alguna vez a algún grupo, unidad u organización que utilizara un arma contra otra persona o amenazara con hacerlo? \nA. Si respondiste 'Sí', cuando formabas parte de este grupo o cuando ayudabas a este grupo, ¿alguna vez usaste un arma contra otra persona? \nB. Si respondiste 'Sí', cuando formabas parte de este grupo o cuando ayudabas a este grupo, ¿alguna vez le dijiste a otra persona que usarías un arma contra esa persona?",
+      "words": [
+        {
+            "word": "Weapon",
+            "explanation": "an object such as a knife, gun, bomb, etc. that is used for fighting or attacking somebody"
+        },
+        {
+            "word": "Threaten",
+            "explanation": "to tell someone that you will kill or hurt them"
+        }
+      ]
     },
     {
-        "question": "charged with committing a crime",
-        "explanation": "when you have to go to court",
-        "explanation_vn": "bị buộc tội phạm",
-        "explanation_es": "acusado de cometer un delito"
+      "question": "18. Did you EVER sell, give, or provide weapons to any person, or help another person sell, give, or provide weapons to any person? \nA. If you answered “Yes,” did you know that this person was going to use the weapons against another person? \nB. If you answered “Yes,” did you know that this person was going to sell or give the weapons to someone who was going to use them against another person?",
+      "question_vn": "18. Bạn có bao giờ bán, cho, hoặc cung cấp vũ khí cho bất kỳ người nào, hoặc giúp người khác bán, cho, hoặc cung cấp vũ khí cho bất kỳ người không? \nA. Nếu “Có”, bạn có biết rằng người này sẽ sử dụng vũ khí chống lại người khác không? \nB. Nếu “Có”, bạn có biết rằng người này đã bán hoặc cung cấp vũ khí cho những người sẽ sử dụng chống lại người khác không?",
+      "question_es": "18. ¿Alguna vez vendiste, diste o proporcionaste armas a alguien, o ayudaste a otra persona a vender, dar o proporcionar armas a alguien? \nA. Si respondiste 'Sí', ¿sabías que esta persona iba a usar las armas contra otra persona? \nB. Si respondiste 'Sí', ¿sabías que esta persona iba a vender o dar las armas a alguien que las usaría contra otra persona?",
+      "words": [
+        {
+            "word": "Sell",
+            "explanation": "to give something to somebody in exchange for money"
+        }
+      ]
     },
     {
-        "question": "convicted",
-        "explanation": "the judge says you did a bad thing",
-        "explanation_vn": "bị kết án",
-        "explanation_es": "condenado"
+      "question": "19. Did you EVER receive any type of military, paramilitary (a group of people who act like a military group but are not part of the official military), or weapons training?",
+      "question_vn": "19. Bạn đã bao giờ nhận được bất kỳ loại huấn luyện quân sự, bán quân sự (một nhóm người hoạt động như một nhóm quân sự nhưng không phải là một phần của quân đội chính thức), hoặc đào tạo vũ khí không?",
+      "question_es": "19. ¿Alguna vez recibiste algún tipo de entrenamiento militar, paramilitar (un grupo de personas que actúa como un grupo militar pero no forma parte del ejército oficial), o de armas?",
+      "words": [
+        {
+            "word": "Training",
+            "explanation": "the process of learning the skills you need to do a particular job or activity"
+        }
+      ]
     },
     {
-        "question": "alternative sentencing, rehabilitative program, deferred prosecution, withheld adjudication",
-        "explanation": "you do a bad thing, but you don’t go to jail ",
-        "explanation_vn": "bản án thay thế, chương trình tái hòa nhập, trì hoãn truy tố, trì hoãn xem xét tòa án",
-        "explanation_es": "sentencia alternativa, programa de rehabilitación, enjuiciamiento diferido, adjudicación retenida"
+      "question": "20. Did you EVER recruit (ask), enlist (sign up), conscript (require), or use any person under 15 years of age to serve in or help an armed force or group?",
+      "question_vn": "20. Bạn đã bao giờ tuyển dụng (yêu cầu), đăng lính (ghi danh), cưỡng bách (bắt buộc), hoặc sử dụng bất kỳ người nào dưới 15 tuổi để phục vụ hoặc giúp đỡ một lực lượng vũ trang hoặc một nhóm nào không?",
+      "question_es": "20. ¿Alguna vez reclutaste (pediste), alistaste (te inscribiste), reclutaste por la fuerza (requeriste) o usaste a cualquier persona menor de 15 años para servir o ayudar a una fuerza armada o grupo?",
+      "words": [
+        {
+            "word": "Recruit",
+            "explanation": "to find new people to join a company, an organization, the armed forces, etc."
+        },
+        {
+            "word": "Enlist",
+            "explanation": "to join the armed forces; to make somebody join the armed forces"
+        },
+        {
+            "word": "Conscript",
+            "explanation": "to order somebody by law to join the armed forces"
+        }
+      ]
     },
     {
-        "question": "\nsuspended sentence, probation \nparole",
-        "explanation": "\nyou do a bad thing, but you don’t go to jail \nleave jail early",
-        "explanation_vn": "\nán treo, quản chế \nrời tù sớm",
-        "explanation_es": "\ncondena suspendida, libertad condicional \nsales de la cárcel antes de tiempo"
+      "question": "21. Did you EVER use any person under 15 years of age to do anything that helped or supported people in combat?",
+      "question_vn": "21. Bạn đã bao giờ sử dụng bất kỳ người nào dưới 15 tuổi để làm bất cứ điều gì giúp đỡ hay hỗ trợ người dân trong chiến đấu không?",
+      "question_es": "21. ¿Alguna vez usaste a alguna persona menor de 15 años para hacer algo que ayudara o apoyara a personas en combate?",
+      "words": [
+        {
+            "word": "Combat",
+            "explanation": "fighting or a fight, especially during a time of war"
+        }
+      ]
     },
     {
-      "question": "\nA. habitual drunkard \nB. prostitute \nC procured a prostitute \nD. smuggled controlled substances \nE. [married to more than one person] \nF. obtain (a benefit) \nG. enter the US illegally \nH. gambled/gambling \nI. alimony \nJ. misrepresentation to obtain public benefits",
-      "explanation": "\nA. Drink too much alcohol \nB. Engages in sexual activity for money or payment. \nC. Arranged or provided a prostitute to someone else. \nD. Illegally transported or imported substances that are controlled or regulated by law, often referring to drugs or narcotics. \nE. Legally married to more than one person at the same time, which is typically illegal in most places. \nF. Acquire or receive a benefit, often through legal means. \nG. Enter the United States without proper authorization or legal documentation, violating immigration laws. \nH. Engaging in games of chance, often involving betting or wagering money. \nI. Financial support paid by one spouse to another after a divorce or separation. \nJ. Providing false or misleading information to fraudulently receive public assistance or benefits.",
-      "explanation_vn": "\nA. Người nghiện rượu thường xuyên \nB. Người bán dâm \nC. Sắp xếp hoặc cung cấp một người bán dâm cho người khác \nD. Vận chuyển hoặc nhập khẩu trái phép các chất được kiểm soát hoặc quy định bởi luật pháp, thường đề cập đến ma túy hoặc chất gây nghiện. \nE. Kết hôn hợp pháp với nhiều người cùng một lúc, thường là việc bất hợp pháp ở hầu hết các nơi. \nF. Nhận được lợi ích, thường thông qua các phương tiện hợp pháp. \nG. Nhập cảnh vào Hoa Kỳ mà không có sự cho phép hoặc tài liệu hợp pháp, vi phạm luật di trú. \nH. Tham gia các trò chơi may rủi, thường liên quan đến việc đặt cược hoặc đánh tiền. \nI. Hỗ trợ tài chính được trả bởi một người vợ hoặc chồng cho người còn lại sau khi ly dị hoặc chia tay. \nJ. Cung cấp thông tin sai lệch để nhận trợ cấp hoặc quyền lợi công cộng một cách gian lận.",
-      "explanation_es": "\nA. Persona que bebe alcohol en exceso habitualmente. \nB. Persona que se dedica a la actividad sexual a cambio de dinero o pago. \nC. Organizó o proporcionó a una prostituta a otra persona. \nD. Transportó o importó ilegalmente sustancias controladas o reguladas por la ley, a menudo haciendo referencia a drogas o estupefacientes. \nE. Casado legalmente con más de una persona al mismo tiempo, lo cual suele ser ilegal en la mayoría de los lugares. \nF. Adquirir o recibir un beneficio, a menudo a través de medios legales. \nG. Ingresar a los Estados Unidos sin la debida autorización o documentación legal, violando las leyes de inmigración. \nH. Participar en juegos de azar, a menudo involucra apuestas o juegos de dinero. \nI. Apoyo financiero pagado por un cónyuge a otro después de un divorcio o separación. \nJ. Proporcionar información falsa o engañosa para recibir fraudulentamente asistencia pública o beneficios."
+      "question": "If any of Item Numbers 22. – 28. apply to you, you must answer “Yes” even if your records have been sealed, expunged, or otherwise cleared. You must disclose this information even if someone, including a judge, law enforcement officer, or attorney, told you that it no longer constitutes a record or told you that you do not have to disclose the information.",
+      "question_vn": "Nếu bất kỳ số 22.-28. áp dụng cho bạn, bạn phải trả lời “Có” ngay cả khi hồ sơ của bạn đã được niêm phong, tẩy, hoặc xóa. Bạn phải tiết lộ thông tin này, ngay cả nếu có ai, kể cả thẩm phán, cán bộ thực thi pháp luật, hoặc luật sư, nói với bạn rằng nó không còn tạo thành một hồ sơ nữa hoặc nói với bạn rằng bạn không cần phải tiết lộ thông tin.",
+      "question_es": "Si alguno de los números de los ítems 22 al 28 se aplica a usted, debe responder 'Sí', incluso si sus registros han sido sellados, eliminados o de alguna otra manera aclarados. Debe revelar esta información incluso si alguien, incluyendo a un juez, un oficial de aplicación de la ley o un abogado, le dijo que ya no constituye un registro o le dijo que no tiene que divulgar la información.",
+      "words": [
+        {
+            "word": "Record",
+            "explanation": "a written account of something that is kept so that it can be looked at and used in the future"
+        },
+        {
+            "word": "Seal",
+            "explanation": "to close an envelope, etc. by sticking the edges of the opening together"
+        },
+        {
+            "word": "Expunge",
+            "explanation": "to rub off or remove information from a piece of writing"
+        },
+        {
+            "word": "Clear",
+            "explanation": "to remove things that are not wanted or needed from something"
+        },
+        {
+            "word": "Disclose",
+            "explanation": "to give somebody information about something, especially something that was previously secret"
+        },
+        {
+            "word": "Judge",
+            "explanation": "a person in a court who has the authority to decide how criminals should be punished or to make legal decisions"
+        },
+        {
+            "word": "Attorney",
+            "explanation": "a lawyer, especially one who can act for somebody in court"
+        },
+        {
+            "word": "Constitute",
+            "explanation": "to be considered to be something"
+        }
+      ]
     },
     {
-        "question": "give information that is fraudulent or misleading",
-        "explanation": "tell lies",
-        "explanation_vn": "cung cấp thông tin gian lận hoặc gây hiểu lầm",
-        "explanation_es": "dar información fraudulenta o engañosa"
+      "question": "22. Have you EVER committed, assisted in committing, or attempted to commit, a crime or offense for which you were NOT arrested?",
+      "question_vn": "22. Bạn có bao giờ cam kết, hứa hỗ trợ, hoặc thử thực hiện, một tội phạm hoặc hành vi phạm tội mà bạn không bị bắt không?",
+      "question_es": "22. ¿Alguna vez has cometido, ayudado a cometer o intentado cometer un delito por el que no fuiste arrestado?",
+      "words": [
+        {
+            "word": "Commit",
+            "explanation": "to promise sincerely that you will definitely do something, keep to an agreement or arrangement, etc."
+        }
+      ]
     },
     {
-        "question": "give documentation that is fraudulent or misleading",
-        "explanation": "tell lies on paper (sign something that’s not true)",
-        "explanation_vn": "cung cấp tài liệu gian lận hoặc gây hiểu lầm",
-        "explanation_es": "dar documentación fraudulenta o engañosa (firmar algo que no es cierto)"
+      "question": "23. Have you EVER been arrested, cited, or detained by any law enforcement officer (including any immigration official or any official of the U.S. armed forces) for any reason?",
+      "question_vn": "23. Bạn có bao giờ bị bắt giữ, biên phạt, hoặc bị giam giữ bởi bất kỳ viên chức thực thi pháp luật (bao gồm bất kỳ và tất cả các quan chức nhập cư hoặc các lực lượng vũ trang Hoa Kỳ) vì bất kỳ lý do nào không?",
+      "question_es": "23. ¿Alguna vez has sido arrestado, citado o detenido por algún oficial de la ley (incluyendo cualquier oficial de inmigración o cualquier oficial de las fuerzas armadas de EE. UU.) por cualquier motivo?",
+      "words": [
+        {
+            "word": "Arrest",
+            "explanation": "to use legal authority to catch and take someone to a place where the person may be accused of a crime"
+        },
+        {
+            "word": "Detain",
+            "explanation": "to keep somebody in an official place, such as a police station, a prison or a hospital, and prevent them from leaving"
+        },
+        {
+            "word": "Immigration",
+            "explanation": "the process of coming to live permanently in a country that is not your own; the number of people who do this"
+        }
+      ]
     },
     {
-        "question": "removed, excluded, deported",
-        "explanation": "a judge says you have to leave the U.S.",
-        "explanation_vn": "bị trục xuất, bị loại trừ, bị đuổi ra khỏi Hoa Kỳ",
-        "explanation_es": "expulsado, excluido, deportado \nun juez dice que debes salir de EE. UU."
+      "question": "24. Have you EVER been charged with committing, attempting to commit, or assisting in committing a crime or offense?",
+      "question_vn": "24. Bạn có bao giờ bị buộc tội vi phạm, dự định thực hiện, hoặc hỗ trợ tội phạm hoặc vi phạm không?",
+      "question_es": "24. ¿Alguna vez ha sido acusado de cometer, intentar cometer o ayudar en la comisión de un delito o infracción?",
+      "words": [
+        {
+            "word": "Crime",
+            "explanation": "activities that involve breaking the law"
+        },
+        {
+            "word": "Offense",
+            "explanation": "an illegal act"
+        }
+      ]
     },
     {
-        "question": "pending against you",
-        "explanation": "waiting for you",
-        "explanation_vn": "đang chờ đợi bạn",
-        "explanation_es": "pendiente en tu contra"
+      "question": "25. Have you EVER been convicted of a crime or offense?",
+      "question_vn": "25. Bạn có bao giờ bị kết án về một tội phạm hoặc vi phạm không?",
+      "question_es": "25. ¿Alguna vez ha sido condenado por un delito o infracción?",
+      "words": [
+        {
+            "word": "Convict",
+            "explanation": "to decide and state officially in court that somebody is guilty of a crime"
+        }
+      ]
     },
     {
-        "question": "armed forces",
-        "explanation": "army",
-        "explanation_vn": "lực lượng vũ trang",
-        "explanation_es": "fuerzas armadas"
+      "question": "26. Have you EVER been placed in an alternative sentencing or a rehabilitative program (for example, diversion, deferred prosecution, withheld adjudication, deferred adjudication)?",
+      "question_vn": "26. Bạn có bao giờ bị án thay thế hoặc phải tham gia chương trình phục hồi chức năng (ví dụ, như chuyển đổi, đình hoãn truy tố, giữ lại xét xử, đình hoãn xét xử) không?",
+      "question_es": "26. ¿Alguna vez ha sido colocado en un programa de sentencia alternativa o de rehabilitación (por ejemplo, desviación, enjuiciamiento diferido, adjudicación retenida, adjudicación diferida)?",
+      "words": [
+        {
+            "word": "Alternative",
+            "explanation": "that can be used instead of something else"
+        },
+        {
+            "word": "Rehabilitative",
+            "explanation": "helping to restore to good condition"
+        },
+        {
+            "word": "Diversion",
+            "explanation": "the act of changing the direction that somebody/something is following, or what something is used for"
+        },
+        {
+            "word": "Prosecution",
+            "explanation": "the process of trying to prove in court that somebody is guilty of a crime (= of prosecuting them); the process of being officially charged with a crime in court"
+        },
+        {
+            "word": "Withhold",
+            "explanation": "to refuse to give something to somebody"
+        },
+        {
+            "word": "Adjudication",
+            "explanation": "the act of judging a case, competition, or argument, or of making a formal decision about something"
+        },
+        {
+            "word": "Defer",
+            "explanation": "to delay something until a later time"
+        }
+      ]
     },
     {
-        "question": "court-martialed, administratively separated, disciplined",
-        "explanation": "when a soldier does something wrong",
-        "explanation_vn": "bị tòa án quân sự xử lý, tách ra quản lý hành chính, bị kỷ luật",
-        "explanation_es": "tribunal marcial, separación administrativa, disciplinado \ncuando un soldado hace algo mal"
+      "question": "27. A. Have you EVER received a suspended sentence, been placed on probation, or been paroled?",
+      "question_vn": "Bạn có bao giờ bị bản án đình chỉ, án treo, hoặc quản chế không?",
+      "question_es": "27. A. ¿Alguna vez ha recibido una sentencia suspendida, ha estado en libertad condicional o ha estado en libertad condicional bajo palabra?",
+      "words": [
+        {
+            "word": "Probation",
+            "explanation": "a situation in which a criminal is allowed to stay out of prison if they do not commit any more crimes and follow particular rules"
+        },
+        {
+            "word": "Parole",
+            "explanation": "to give a prisoner permission to leave prison before the end of their sentence on condition that they behave well"
+        }
+      ]
     },
     {
-        "question": "discharged",
-        "explanation": "kicked out ",
-        "explanation_vn": "bị đuổi ra",
-        "explanation_es": "dado de baja"
+      "question": "B. If you answered “Yes,” have you completed the probation or parole?",
+      "question_vn": "Nếu “Có” bạn đã hoàn thành lệnh quản chế hoặc tạm tha không?",
+      "question_es": "B. Si respondió 'Sí', ¿ha completado la libertad condicional o la libertad condicional bajo palabra?",
+      "words": [
+      ]
     },
     {
-        "question": "drafted",
-        "explanation": "the law says you have to join the army",
-        "explanation_vn": "bị nhập ngũ",
-        "explanation_es": "el derecho dice que debes unirte al ejército"
+      "question": "28: A. Have you EVER been in jail or prison?",
+      "question_vn": "Bạn có bao giờ bị giam giữ hoặc ở tù không?",
+      "question_es": "28: A. ¿Alguna vez ha estado en la cárcel o prisión?",
+      "words": [
+      ]
     },
     {
-        "question": "exemption",
-        "explanation": "a reason for not joining the army",
-        "explanation_vn": "sự miễn trừ",
-        "explanation_es": "exención"
+      "question": "B. If you answered “Yes,” how long were you in jail or prison?",
+      "question_vn": "Nếu “Có”, bạn bị giam giữ hoặc ở tù bao lâu?",
+      "question_es": "B. Si respondió 'Sí', ¿cuánto tiempo estuvo en la cárcel o prisión?",
+      "words": [
+        {
+            "word": "Jail or prison",
+            "explanation": "places of confinement"
+        }
+      ]
     },
     {
-        "question": "deserted",
-        "explanation": "leave the army without permission",
-        "explanation_vn": "bỏ trốn khỏi quân đội mà không được phép",
-        "explanation_es": "desertado"
+      "question": "29. If you answered “No” to ALL questions in Item Numbers 23 - 28., then skip this item and go to Item Number 30. If you answered “Yes,” to any question in Item Numbers 23 - 28., then complete this table. If you need extra space, use additional sheets of paper and provide any evidence to support your answers. \n- Why were you arrested, cited, detained, or charged? \n- Date arrested, cited, detained, or charged. (mm/dd/yyyy) \n- Where were you arrested, cited, detained, or charged? (City or Town, State, Country) \n- Outcome or disposition of the arrest, citation, detention, or charge (no charges filed, charges dismissed, jail, probation, etc.)",
+      "question_vn": "29. Nếu bạn trả lời “Không” cho tất cả các số mục 23 - 28., thì bỏ qua mục này đi đến số 30. \nNếu bạn trả lời “Có” cho số 23 - 28., vui lòng hoàn thành bảng thông tin dưới đây. Nếu bạn cần thêm chỗ điền, đính kèm chi tiết thông tin trên một tờ giấy và cung cấp bằng chứng để hỗ trợ câu trả lời của bạn. \n- Tại sao bạn bị bắt, biên phạt, hoặc giam giữ? \n- Ngày bị bắt, biên phạt, hoặc giam giữ? (tháng/ngày/năm) \n- Nơi bị bắt, biên phạt, hoặc giam giữ? (Thành phố, Tiểu Bang, Quốc Gia) \n- Kết quả hoặc định đoạt về bị bắt, biên phạt, hoặc giam giữ, (không bị buộc tội, hủy, tù, quản chế, vv)",
+      "question_es": "29. Si respondió 'No' a TODAS las preguntas en los Ítems Números 23 - 28, entonces omita este ítem y vaya al Ítem Número 30. Si respondió 'Sí' a alguna pregunta en los Ítems Números 23 - 28, complete esta tabla. Si necesita espacio adicional, utilice hojas de papel adicionales y proporcione cualquier evidencia que respalde sus respuestas. \n- ¿Por qué fue arrestado, citado, detenido o acusado? \n- Fecha de arresto, citación, detención o acusación. (mm/dd/aaaa) \n- ¿Dónde fue arrestado, citado, detenido o acusado? (Ciudad o Pueblo, Estado, País) \n- Resultado o disposición del arresto, citación, detención o acusación (sin cargos presentados, cargos desestimados, cárcel, libertad condicional, etc.)",
+      "words": [
+      ]
     },
     {
-        "question": "selective service",
-        "explanation": "if the U.S. needs soldiers, your name is on a list",
-        "explanation_vn": "dịch vụ tuyển chọn",
-        "explanation_es": "servicio selectivo"
+      "question": "Answer Item Numbers 30 - 46. If you answer “Yes” to any of these questions, except Item Numbers 37. and 38., include a typed or printed explanation on additional sheets of paper and provide any evidence to support your answers.",
+      "question_vn": "Trả lời số 30 - 46. Nếu bạn trả lời “Có” cho bất kỳ câu hỏi nào, ngoại trừ số 37. và 38., vui lòng đính kèm văn bản giải thích trên một tờ bổ sung giấy và cung cấp bằng chứng để hỗ trợ câu trả lời của bạn.",
+      "question_es": "Responda los Ítems Números 30 - 46. Si responde 'Sí' a alguna de estas preguntas, excepto los Ítems Números 37 y 38, incluya una explicación escrita o impresa en hojas adicionales y proporcione cualquier evidencia que respalde sus respuestas.",
+      "words": [
+      ]
+    },
+    {
+      "question": "30. Have you EVER: \nA. Been a habitual drunkard? \nB. Been a prostitute, or procured anyone for prostitution? \nC. Sold or smuggled controlled substances, illegal drugs, or narcotics? \nD. Been married to more than one person at the same time? \nE. Married someone in order to obtain an immigration benefit? \nF. Helped anyone to enter, or try to enter, the United States illegally? \nG. Gambled illegally or received income from illegal gambling? Is gambling legal in the United States? \nH. Failed to support your dependents or to pay alimony? \nI. Made any misrepresentation to obtain any public benefit in the United States?",
+      "question_vn": "30. Bạn có bao giờ: \nA. Là người nghiện rượu không? \nB. Làm nghề mãi dâm hoặc môi giới mãi dâm không? \nC. Buôn lậu hoặc chuyển lậu các loại chất gây nghiện, thuốc cấm, hay ma túy không? \nD. Lập gia đình với 2 người hoặc nhiều hơn cùng một lúc? \nE. Kết hôn với ai đó để hưởng lợi về di trú? \nF. Giúp bất cứ một ai nhập cảnh vào Hoa Kỳ bất hợp pháp không? \nG. Cờ bạc hay nhận lợi tức từ cờ bạc bất hợp pháp không? Cờ bạc là hợp pháp ở Hoa Kỳ? \nH. Không chịu trả tiền cấp dưỡng cho những người phụ thuộc hoặc con cái không? \nI. Khai gian để được hưởng bất kỳ phúc lợi xã hội nào tại Hoa Kỳ?",
+      "question_es": "30. ¿Alguna vez has: \nA. Sido un bebedor habitual? \nB. Sido prostituta o facilitado la prostitución de alguien? \nC. Vendido o contrabandeado sustancias controladas, drogas ilegales o narcóticos? \nD. Estado casado con más de una persona al mismo tiempo? \nE. Casado con alguien con el fin de obtener un beneficio migratorio? \nF. Ayudado a alguien a ingresar o intentar ingresar ilegalmente a los Estados Unidos? \nG. Apostado ilegalmente o recibido ingresos de apuestas ilegales? ¿Es el juego legal en los Estados Unidos? \nH. Dejado de mantener a tus dependientes o de pagar pensión alimenticia? \nI. Hecho alguna tergiversación para obtener algún beneficio público en los Estados Unidos?",
+      "words": [
+        {
+            "word": "Habitual drunkard",
+            "explanation": "a person who who drinks too much alcohol (a person who gets drunk regularly)"
+        },
+        {
+            "word": "Prostitute",
+            "explanation": "a person who has sex for money"
+        },
+        {
+            "word": "Procure",
+            "explanation": "to provide a prostitute for somebody"
+        },
+        {
+            "word": "Prostitution",
+            "explanation": "the work of a prostitute"
+        },
+        {
+            "word": "Smuggle",
+            "explanation": "to take, send or bring goods or people secretly and illegally into or out of a country, etc."
+        },
+        {
+            "word": "Substance",
+            "explanation": "a drug, especially an illegal one"
+        },
+        {
+            "word": "Illegal",
+            "explanation": "not allowed by the law"
+        },
+        {
+            "word": "Drug",
+            "explanation": "an illegal substance that some people smoke, inject, etc. for the physical and mental effects it has"
+        },
+        {
+            "word": "Illegal drugs/Narcotic",
+            "explanation": "a powerful illegal drug that affects the mind in a harmful way"
+        },
+        {
+            "word": "Marry",
+            "explanation": "to become the husband or wife of somebody"
+        },
+        {
+            "word": "Obtain",
+            "explanation": "to get something, especially by making an effort"
+        },
+        {
+            "word": "Benefit",
+            "explanation": "an advantage that something gives you"
+        },
+        {
+            "word": "Enter",
+            "explanation": "to come or go into something"
+        },
+        {
+            "word": "Illegally",
+            "explanation": "in a way that is not allowed by the law"
+        },
+        {
+            "word": "Gamble",
+            "explanation": "to risk money on a card game, horse race, etc"
+        },
+        {
+            "word": "Gambling",
+            "explanation": "the activity of playing games of chance for money and of betting on horses, etc."
+        },
+        {
+            "word": "Dependen",
+            "explanation": "a person who is financially supported by another person"
+        },
+        {
+            "word": "Alimony",
+            "explanation": "money you pay to your partner after a divorce."
+        },
+        {
+            "word": "Misrepresentation",
+            "explanation": "giving information that is not true"
+        }
+      ]
+    },
+    {
+      "question": "31. Have you EVER given any U.S. Government officials any information or documentation that was false, fraudulent, or misleading?",
+      "question_vn": "31. Bạn có bao giờ cung cấp cho bất kỳ quan chức Chính phủ Hoa Kỳ bất kỳ thông tin hoặc tài liệu sai sự thật, lừa đảo hoặc gây hiểu lầm không?",
+      "question_es": "31. ¿Alguna vez has proporcionado a funcionarios del Gobierno de EE. UU. información o documentación que fuera falsa, fraudulenta o engañosa?",
+      "words": [
+        {
+            "word": "Documentation",
+            "explanation": "pieces of paper containing official information"
+        },
+        {
+            "word": "Fraudulent",
+            "explanation": "dishonest and illegal"
+        },
+        {
+            "word": "Misleading",
+            "explanation": "causing someone to believe something that is not true"
+        }
+      ]
+    },
+    {
+      "question": "32. Have you EVER lied to any U.S. Government officials to gain entry or admission into the United States or to gain immigration benefits while in the United States?",
+      "question_vn": "32. Bạn có bao giờ nói dối với bất kỳ quan chức chính phủ Hoa Kỳ để đạt được nhập cảnh vào Hoa Kỳ hoặc để đạt được lợi ích nhập cư trong khi ở Hoa Kỳ không?",
+      "question_es": "31. ¿Alguna vez has mentido a funcionarios del Gobierno de EE. UU. para ingresar o ser admitido en los Estados Unidos o para obtener beneficios de inmigración mientras te encontrabas en los Estados Unidos?",
+      "words": [
+        {
+            "word": "Lie",
+            "explanation": "to say or write something that is not true in order to deceive someone"
+        }
+      ]
+    },
+    {
+      "question": "33. Have you EVER been removed, excluded, or deported from the United States?",
+      "question_vn": "33. Bạn có bao giờ bị loại trừ, hoặc bị trục xuất khỏi Hoa Kỳ không?",
+      "question_es": "33. ¿Alguna vez has sido removido, excluido o deportado de los Estados Unidos?",
+      "words": [
+        {
+            "word": "Remove",
+            "explanation": "to take somebody/something away from a place"
+        },
+        {
+            "word": "Exclude",
+            "explanation": "to prevent somebody/something from entering a place or taking part in something"
+        },
+        {
+            "word": "Deport",
+            "explanation": "to force somebody to leave a country"
+        }
+      ]
+    },
+    {
+      "question": "34. Have you EVER been ordered removed, excluded, or deported from the United States",
+      "question_vn": "34. Bạn có bao giờ nhận lệnh bị loại trừ, hoặc bị trục xuất khỏi Hoa Kỳ không?",
+      "question_es": "34. ¿Alguna vez has recibido una orden de ser removido, excluido o deportado de los Estados Unidos?",
+      "words": [
+      ]
+    },
+    {
+      "question": "35. Have you EVER been placed in removal, exclusion, rescission, or deportation proceedings?",
+      "question_vn": "35. Bạn có bao giờ bị đặt trong tình trạng bị loại bỏ, loại trừ, hủy bỏ, hoặc thủ tục tố tụng trục xuất không?",
+      "question_es": "35. ¿Alguna vez has sido sometido a procedimientos de remoción, exclusión, rescisión o deportación?",
+      "words": [
+        {
+            "word": "Removal",
+            "explanation": "the act of taking somebody/something away from a particular place"
+        },
+        {
+            "word": "Exclusion",
+            "explanation": "the act of preventing somebody/something from entering a place or taking part in something"
+        },
+        {
+            "word": "Rescission",
+            "explanation": "the act of cancelling or ending a law, an order, or an agreement"
+        },
+        {
+            "word": "Deportation",
+            "explanation": "the act of forcing somebody to leave a country, usually because they have broken the law or because they have no legal right to be there"
+        },
+        {
+            "word": "Proceeding",
+            "explanation": "an event or a series of actions"
+        }
+      ]
+    },
+    {
+      "question": "36. Are removal, exclusion, rescission, or deportation proceedings (including administratively closed proceedings) currently pending against you?",
+      "question_vn": "36. Bạn có đang trong tình trạng chờ xử lý về việc bị loại bỏ, loại trừ, hủy bỏ, hoặc thủ tục tố tụng trục xuất (bao gồm cả thủ tục tố tụng hành chính đã đóng) không?",
+      "question_es": "36. ¿Tienes actualmente pendientes procedimientos de remoción, exclusión, rescisión o deportación (incluyendo procedimientos administrativos cerrados) en tu contra?",
+      "words": [
+      ]
+    },
+    {
+      "question": "37. Have you EVER served in the U.S. armed forces?",
+      "question_vn": "37. Bạn có bao giờ phục vụ lực lượng vũ trang Hoa Kỳ không?",
+      "question_es": "37. ¿Has servido alguna vez en las fuerzas armadas de los Estados Unidos?",
+      "words": [
+        {
+            "word": "Serve",
+            "explanation": "to work or perform duties for a person, an organization, a country…"
+        }
+      ]
+    },
+    {
+      "question": "38A. Are you currently a member of the U.S. armed forces?",
+      "question_vn": "38A. Bạn có đang là thành viên của lực lượng vũ trang Hoa Kỳ không?",
+      "question_es": "38A. ¿Eres actualmente miembro de las fuerzas armadas de los Estados Unidos?",
+      "words": [
+      ]
+    },
+    {
+      "question": "38B. If you answered “Yes,” are you scheduled to deploy overseas, including to a vessel, within the next three months? (Refer to the Address Change section in the Instructions on how to notify USCIS if you learn of your deployment plans after you file your Form N-400.)",
+      "question_vn": "38B. Nếu bạn trả lời “Có”, bạn có được lên kế hoạch để triển khai ở nước ngoài, luôn cả trên tàu, trong vòng 3 tháng tới? (Xem phần địa chỉ thay đổi trong mẫu đơn N- 400 Hướng dẫn về cách thông báo cho USCIS nếu bạn biết được kế hoạch triển khai của bạn sau khi quý vị nộp mẫu đơn N-400 của bạn.)",
+      "question_es": "38B. Si respondiste “Sí”, ¿tienes programado desplegarte en el extranjero, incluyendo en una embarcación, en los próximos tres meses? (Consulta la sección de Cambio de Dirección en las Instrucciones sobre cómo notificar a USCIS si te enteras de tus planes de despliegue después de presentar tu Formulario N-400).",
+      "words": [
+      ]
+    },
+    {
+      "question": "38C. If you answered “Yes,” are you currently stationed overseas?",
+      "question_vn": "38C. Nếu trả lời “Có”, bạn có hiện đang đóng quân ở nước ngoài không?",
+      "question_es": "38C. Si respondiste “Sí”, ¿te encuentras actualmente estacionado en el extranjero?",
+      "words": [
+        {
+            "word": "Member",
+            "explanation": "a person, company, or country that belongs to a group or organization"
+        },
+        {
+            "word": "Schedule",
+            "explanation": "to arrange for something to happen at a particular time"
+        },
+        {
+            "word": "Deploy",
+            "explanation": "to move soldiers or weapons into a position where they are ready for military action"
+        },
+        {
+            "word": "Station",
+            "explanation": "to send somebody, especially from one of the armed forces, to work in a place for a period of time"
+        },
+        {
+            "word": "Overseas",
+            "explanation": "to or in a foreign country, especially those separated from your country by the sea or ocean"
+        }
+      ]
+    },
+    {
+      "question": "39. Have you EVER been court-martialed, administratively separated, or disciplined, or have you received an other than honorable discharge, while in the U.S. armed forces?",
+      "question_vn": "39. Bạn có bao giờ bị hầu Tòa án Quân sự, tách hành chính hoặc xử lý kỷ luật, hoặc bạn đã nhận lệnh giải ngũ mà không phải là giải ngũ danh dự, khi phục vụ trong lực lượng vũ trang Hoa Kỳ không?",
+      "question_es": "39. ¿Alguna vez has sido sometido a un tribunal militar, separado administrativamente, disciplinado o recibido una baja que no sea honorable mientras servías en las fuerzas armadas de los Estados Unidos?",
+      "words": [
+        {
+            "word": "Court-martialed",
+            "explanation": "a person, company, or country that belongs to a group or organization"
+        },
+        {
+            "word": "Administratively",
+            "explanation": "in a way that is connected with organizing the work of a business or an institution"
+        },
+        {
+            "word": "Separate",
+            "explanation": "to divide into different parts or groups; to divide things into different parts or groups"
+        },
+        {
+            "word": "Discipline",
+            "explanation": "to punish somebody for something they have done"
+        },
+        {
+            "word": "Discharge",
+            "explanation": "to give somebody official permission to leave the police or the armed forces; to make somebody leave the police or the armed forces"
+        }
+      ]
+    },
+    {
+      "question": "40. Have you EVER been discharged from training or service in the U.S. armed forces because you were an alien?",
+      "question_vn": "40. Bạn có bao giờ được miễn những huấn luyện hoặc phục vụ trong các lực lượng vũ trang Hoa Kỳ bởi vì bạn là một người ngoại quốc?",
+      "question_es": "40. ¿Alguna vez has sido dado de baja de la capacitación o servicio en las fuerzas armadas de los Estados Unidos porque eras un extranjero?",
+      "words": [
+        {
+            "word": "Alien",
+            "explanation": "a person who is not a citizen of the country in which they live or work"
+        }
+      ]
+    },
+    {
+      "question": "41. Have you EVER left the United States to avoid being drafted in the U.S. armed forces?",
+      "question_vn": "41. Bạn có bao giờ rời khỏi Hoa Kỳ để tránh bị động viên vào các lực lượng vũ trang Hoa Kỳ không?",
+      "question_es": "41. ¿Alguna vez has salido de los Estados Unidos para evitar ser reclutado en las fuerzas armadas de EE. UU.?",
+      "words": [
+        {
+            "word": "Draft",
+            "explanation": "to choose people and send them somewhere for a special task"
+        }
+      ]
+    },
+    {
+      "question": "42. Have you EVER applied for any kind of exemption from military service in the U.S. armed forces?",
+      "question_vn": "42. Bạn có bao giờ xin miễn nghĩa vụ quân sự dưới mọi hình thức trong các lực lượng vũ trang Hoa Kỳ không?",
+      "question_es": "42. ¿Alguna vez has solicitado algún tipo de exención del servicio militar en las fuerzas armadas de EE. UU.?",
+      "words": [
+        {
+            "word": "Exemption",
+            "explanation": "official permission not to do something or pay something that you would normally have to do or pay"
+        }
+      ]
+    },
+    {
+      "question": "43. Have you EVER deserted from the U.S. armed forces?",
+      "question_vn": "43. Bạn có bao giờ đào ngũ từ các lực lượng vũ trang Hoa Kỳ không?",
+      "question_es": "43. ¿Alguna vez has desertado de las fuerzas armadas de EE. UU.?",
+      "words": [
+        {
+            "word": "Desert",
+            "explanation": "to leave the armed forces without permission"
+        }
+      ]
+    },
+    {
+      "question": "44A. Are you a male who lived in the United States at any time between your 18th and 26th birthdays? (This does not include living in the United States as a lawful nonimmigrant.)",
+      "question_vn": "44A. Bạn là phái NAM và cư ngụ tại Hoa Kỳ trong lứa tuổi từ 18 đến 26? (Điều này không bao gồm những người không phải là di dân và sống hợp pháp tại Hoa Kỳ).",
+      "question_es": "44A. ¿Eres un hombre que vivió en los Estados Unidos en algún momento entre tu 18vo y 26to cumpleaños? (Esto no incluye vivir en los Estados Unidos como no inmigrante legal).",
+      "words": [
+      ]
+    },
+    {
+      "question": "44B. If you answered “Yes,” when did you register for the Selective Service? Provide the information below.",
+      "question_vn": "44B. Nếu “Có,” khi nào bạn đã ghi danh với cơ quan Tuyển Chọn Quân Dịch? Cung cấp các thông tin dưới đây.",
+      "question_es": "44B. Si respondiste “Sí”, ¿cuándo te registraste en el Servicio Selectivo? Proporciona la información a continuación.",
+      "words": [
+      ]
+    },
+    {
+      "question": "44C. If you answered “Yes,” but you did not register with the Selective Service System and you are:",
+      "question_vn": "44C. Nếu trả lời “Có”, nhưng bạn đã không ghi danh với cơ quan Tuyển Chọn Quân Dịch và bạn:",
+      "question_es": "",
+      "words": [
+      ]
+    },
+    {
+      "question": "44C.1 Still under 26 years of age, you must register before you apply for naturalization, and complete the Selective Service information above; OR",
+      "question_vn": "44C.1 Dưới 26 tuổi, bạn phải ghi danh trước khi bạn nộp đơn xin nhập tịch, và điền đầy đủ thông tin về ghi danh quân dịch như trên; hoặc",
+      "question_es": "44C.1 Si todavía tienes menos de 26 años de edad, debes registrarte antes de solicitar la naturalización y completar la información del Servicio Selectivo anterior; O",
+      "words": [
+        {
+            "word": "Naturalization",
+            "explanation": "the process of making somebody who was not born in a particular country a citizen of that country"
+        },
+        {
+            "word": "Selective Service",
+            "explanation": "a system in which people have to spend a period of time in the armed forces by law"
+        }
+      ]
+    },
+    {
+      "question": "44C.2 Now 26 to 31 years of age (29 years of age if you are filing under INA section 319(a)), but you did not register with the Selective Service, you must attach a statement explaining why you did not register, and provide a status information letter from the Selective Service.",
+      "question_vn": "44C.2 Hiện tại đang 26-31 tuổi (29 tuổi trở lên nếu bạn đang nộp đơn dưới INA phần 319 (a), nhưng bạn đã không ghi danh với cơ quan Tuyển Chọn Quân Dịch, bạn phải đính kèm một tuyên bố giải thích lý do tại sao bạn không ghi danh, và cung cấp thư xác nhận tình trạng của cơ quan Tuyển Chọn Quân Dịch.",
+      "question_es": "44C.2 Si actualmente tienes entre 26 y 31 años de edad (29 años de edad si estás presentando la solicitud bajo la sección 319(a) del INA), pero no te registraste en el Servicio Selectivo, debes adjuntar una declaración explicando por qué no te registraste y proporcionar una carta de información sobre tu estado del Servicio Selectivo.",
+      "words": [
+        {
+            "word": "Statement",
+            "explanation": "something that you say or write that gives information or an opinion"
+        },
+        {
+            "word": "Explain",
+            "explanation": "to tell somebody about something in a way that makes it easy to understand"
+        }
+      ]
+    },
+    {
+      "question": "Answer Item Numbers 45. – 50. If you answer ”No” to any of these questions, include a typed or printed explanation on additional sheets of paper and provide any evidence to support your answers.",
+      "question_vn": "Trả lời số 45.-50. Nếu bạn trả lời “Không” cho bất kỳ câu hỏi nào, xin bao gồm lời giải thích bằng văn bản trên một tờ giấy bổ sung và cung cấp bằng chứng để hỗ trợ câu trả lời của bạn.",
+      "question_es": "Respuesta a los números de ítem 45 al 50. Si respondes ”No” a cualquiera de estas preguntas, incluye una explicación escrita a máquina o impresa en hojas adicionales y proporciona cualquier evidencia para respaldar tus respuestas.",
+      "words": [
+        {
+            "word": "Explanation",
+            "explanation": "a statement or piece of writing that tells you how something works or makes something easier to understand"
+        }
+      ]
+    },
+    {
+      "question": "45. Do you support the Constitution and form of Government of the United States?",
+      "question_vn": "45. Bạn có ủng hộ hiến pháp và cơ cấu của chính quyền Hoa Kỳ không?",
+      "question_es": "45. ¿Apoyas la Constitución y la forma de Gobierno de los Estados Unidos?",
+      "words": [
+        {
+            "word": "Constitution",
+            "explanation": "the supreme law of the land"
+        },
+        {
+            "word": "form of Government of the United States",
+            "explanation": "republic"
+        }
+      ]
+    },
+    {
+      "question": "46. Do you understand the full Oath of Allegiance to the United States?",
+      "question_vn": "46. Bạn có hiểu sự tuyên thệ trung thành với quốc gia Hoa Kỳ không?",
+      "question_es": "46. ¿Comprendes el juramento completo de lealtad a los Estados Unidos?",
+      "words": [
+        {
+            "word": "Oath",
+            "explanation": "a promise, especially that you will tell the truth"
+        },
+        {
+            "word": "Allegiance",
+            "explanation": "a loyalty"
+        },
+        {
+            "word": "Oath of Allegiance",
+            "explanation": "Loyalty to the country"
+        }
+      ]
+    },
+    {
+      "question": "47. Are you willing to take the full Oath of Allegiance to the United States?",
+      "question_vn": "47. Bạn có sẵn sàng tuyên thệ trung thành với quốc gia Hoa Kỳ không?",
+      "question_es": "47. ¿Estás dispuesto a prestar el juramento completo de lealtad a los Estados Unidos?",
+      "words": [
+      ]
+    },
+    {
+      "question": "48. If the law requires it, are you willing to bear arms on behalf of the United States?",
+      "question_vn": "48. Nếu pháp luật yêu cầu, bạn có sẵn sàng cầm súng để chiến đấu cho quốc gia Hoa Kỳ không?",
+      "question_es": "48. Si la ley lo requiere, ¿estás dispuesto a portar armas en nombre de los Estados Unidos?",
+      "words": [
+        {
+            "word": "On behalf of",
+            "explanation": "as the representative of somebody or instead of them"
+        },
+        {
+            "word": "Bear arms on behalf",
+            "explanation": "will fight for the United States if the government asks me to"
+        }
+      ]
+    },
+    {
+      "question": "49. If the law requires it, are you willing to perform noncombatant services in the U.S. armed forces?",
+      "question_vn": "49. Nếu pháp luật yêu cầu, bạn có sẵn sàng thi hành nhiệm vụ trợ giúp trong lực lượng vũ trang Hoa Kỳ không?",
+      "question_es": "49. Si la ley lo requiere, ¿estás dispuesto a realizar servicios no combatientes en las fuerzas armadas de los Estados Unidos?",
+      "words": [
+        {
+            "word": "Noncombatant",
+            "explanation": "a member of the armed forces who does not actually fight in a war, for example an army doctor"
+        },
+        {
+            "word": "Service",
+            "explanation": "a system that provides something that the public needs, organized by the government or a private company"
+        }
+      ]
+    },
+    {
+      "question": "50. If the law requires it, are you willing to perform work of national importance under civilian direction?",
+      "question_vn": "50. Nếu pháp luật yêu cầu, bạn có sẵn sàng thi hành những công tác quan trọng của quốc gia dưới sự hướng dẫn dân sự không?",
+      "question_es": "50. Si la ley lo requiere, ¿estás dispuesto a realizar trabajos de importancia nacional bajo dirección civil?",
+      "words": [
+        {
+            "word": "Perform",
+            "explanation": "to do something, such as a piece of work, task or duty"
+        },
+        {
+            "word": "Importance",
+            "explanation": "the quality of being important"
+        },
+        {
+            "word": "Civilian",
+            "explanation": "connected with people who are not members of the armed forces or the police"
+        },
+        {
+            "word": "Direction",
+            "explanation": "instructions about how to do something, where to go, etc."
+        }
+      ]
     }
 ]}

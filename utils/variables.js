@@ -31,3 +31,15 @@ export const LOGIN_TYPE = {
 	GOOGLE: 1,
 	APPLE: 2
 }
+
+export const TRANSLATE_TYPE = {
+	ES: 'es',
+	EN: 'en',
+	VN: 'vn',
+	QUESTION_ES: 'question_es',
+	QUESTION_EN: 'question_en',
+	QUESTION_VN: 'question_vn',
+	TRANSLATE_ES: 'translate_es',
+	TRANSLATE_EN: 'translate_en',
+	TRANSLATE_VN: 'translate_vn'
+}

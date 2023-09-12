@@ -33,8 +33,8 @@ const N400Screen = ({ route, navigation }: Props) => {
   let defaultSubSizeNumber = 20;
   const [primaryFontSize, setPrimaryFontSize] = useState<number>(20);
   const [subFontSize, setSubFontSize] = useState<number>(18);
-  const defaultTranslateExplanationTxt = 'explanation_';
-  const [translateExplanationLn, setTranslateExplanationLn] = useState('');
+  const defaultTranslateQuestionTxt = 'question_';
+  const [traslateQuestionLn, setTraslateQuestionLn] = useState('');
 
   const changeFontsizeHandler = (action:number) => {
     
@@ -59,7 +59,7 @@ const N400Screen = ({ route, navigation }: Props) => {
       const language = await StorageService.getItem(StorageService.APP_LANGUAGE);
       if(language && language?.language) {
         // setTraslateQuestionLn(defaultTranslateQuestionTxt + "" + language.language);
-        setTranslateExplanationLn(defaultTranslateExplanationTxt + "" + language.language);
+        setTraslateQuestionLn(defaultTranslateQuestionTxt + "" + language.language);
       }
     }
     getLanguage();
@@ -87,6 +87,10 @@ const N400Screen = ({ route, navigation }: Props) => {
   const toggleTranslateHandler = () => {
     setToggleTranslate(!toggleTranslate);
   }
+  const [showTranslate, setShowTranslate] = useState<boolean>(false);
+  const setShowTranslateHandler = () => {
+    setShowTranslate(!showTranslate);
+  }
 
   return (
     <View className="flex-columns items-center w-full h-max">
@@ -113,7 +117,10 @@ const N400Screen = ({ route, navigation }: Props) => {
                                                 primaryFontSize={primaryFontSize}
                                                 subFontSize={subFontSize}
                                                 toggleTranslate={toggleTranslate}
-                                                translate_explanation={item[translateExplanationLn]}
+                                                toggleTranslateHandler={toggleTranslateHandler}
+                                                showTranslate={showTranslate}
+                                                setShowTranslateHandler={setShowTranslateHandler}
+                                                translate_question={item[traslateQuestionLn]}
                                                 setPreviousPlayingAudioHandler={setPreviousPlayingAudioHandler}
                                                 stopPreviousPlayingAudioHandler={stopPreviousPlayingAudioHandler}
                                       />
